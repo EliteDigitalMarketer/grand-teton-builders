@@ -59,7 +59,7 @@ const propertySchema = {
   image: [
     'https://grand-teton-builders.vercel.app/powder-chalet-front-sunset.png',
     'https://grand-teton-builders.vercel.app/powder-chalet-front-elevation-square.png',
-    'https://grand-teton-builders.vercel.app/powder-chalet-side-elevation.png',
+    'https://grand-teton-builders.vercel.app/powder-chalet-side-elevation-square.png',
   ],
   address: {
     '@type': 'PostalAddress',
@@ -221,7 +221,7 @@ const renderings = [
     caption: 'Front elevation',
   },
   {
-    src: '/powder-chalet-side-elevation.png',
+    src: '/powder-chalet-side-elevation-square.png',
     alt: 'The Powder Chalet — side elevation rendering showing the dramatic gabled roofline, floor-to-ceiling windows, and covered patio of the new mountain modern home in Driggs Idaho',
     caption: 'Side elevation with covered patio',
   },

@@ -10,7 +10,7 @@ export default function Footer() {
         {/* Brand column */}
         <div>
           <Image
-            src="/GTB Logo Light.png"
+            src="/gtb-logo-light.png"
             alt="Grand Teton Builders"
             width={224}
             height={80}
@@ -18,7 +18,7 @@ export default function Footer() {
           />
           <p className="footer-brand-desc">
             Grand Teton Builders creates refined mountain homes in Driggs, Idaho
-            and throughout Teton Valley — blending timeless architecture, durable
+            and throughout Teton Valley &mdash; blending timeless architecture, durable
             materials, and thoughtful design for the way people live in the
             mountains.
           </p>
@@ -38,7 +38,7 @@ export default function Footer() {
             </li>
             <li>
               <Link href="/new-construction-home-for-sale-driggs-idaho#inquiry">
-                Request Details
+                Request Details &amp; Pricing
               </Link>
             </li>
             <li>
@@ -53,9 +53,9 @@ export default function Footer() {
         <div>
           <p className="footer-col-title">Services</p>
           <ul className="footer-links">
-            <li><Link href="/custom-home-builders-driggs-idaho">Custom Home Builders</Link></li>
-            <li><Link href="/luxury-homes-teton-valley">Luxury Homes Teton Valley</Link></li>
-            <li><Link href="/spec-homes-driggs-idaho">Spec Homes Driggs Idaho</Link></li>
+            <li><Link href="/custom-home-builders-driggs-idaho">Custom Home Builders in Driggs</Link></li>
+            <li><Link href="/luxury-homes-teton-valley">Luxury Homes in Teton Valley</Link></li>
+            <li><Link href="/spec-homes-driggs-idaho">Spec Homes in Driggs, Idaho</Link></li>
             <li><Link href="/build-process">Our Build Process</Link></li>
           </ul>
         </div>
@@ -64,10 +64,10 @@ export default function Footer() {
         <div>
           <p className="footer-col-title">Company</p>
           <ul className="footer-links">
-            <li><Link href="/about">About Us</Link></li>
+            <li><Link href="/about">About Grand Teton Builders</Link></li>
             <li><Link href="/projects">Projects</Link></li>
-            <li><Link href="/blog">Blog</Link></li>
-            <li><Link href="/contact">Contact</Link></li>
+            <li><Link href="/blog">Mountain Home Blog</Link></li>
+            <li><Link href="/contact">Contact Us</Link></li>
           </ul>
         </div>
       </div>

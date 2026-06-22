@@ -29,11 +29,11 @@ export default function Footer() {
 
         {/* Current Home */}
         <div>
-          <p className="footer-col-title">Current Home</p>
+          <p className="footer-col-title">The Powder Chalet</p>
           <ul className="footer-links">
             <li>
               <Link href="/new-construction-home-for-sale-driggs-idaho">
-                New Construction Home for Sale in Driggs, Idaho
+                View Home Details
               </Link>
             </li>
             <li>

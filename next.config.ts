@@ -1,14 +1,1 @@
-import type { NextConfig } from 'next'
-
-const nextConfig: NextConfig = {
-  images: {
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'images.unsplash.com',
-      },
-    ],
-  },
-}
-
-export default nextConfig
+// This file is intentionally empty.\n// Next.js config is in next.config.js\n

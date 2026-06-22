@@ -2,8 +2,6 @@ import type { Metadata } from 'next'
 import { Montserrat } from 'next/font/google'
 import './globals.css'
 
-// Note: GFS Didot is loaded via @import in globals.css as a fallback
-// because next/font/google requires specific subset config
 const montserrat = Montserrat({
   weight: ['300', '400', '500', '600', '700'],
   subsets: ['latin'],
@@ -11,8 +9,10 @@ const montserrat = Montserrat({
   display: 'swap',
 })
 
+const BASE_URL = 'https://grand-teton-builders.vercel.app'
+
 export const metadata: Metadata = {
-  metadataBase: new URL('https://grand-teton-builders.vercel.app'),
+  metadataBase: new URL(BASE_URL),
   title: {
     default: 'Grand Teton Builders | Luxury Homes in Driggs, Idaho',
     template: '%s | Grand Teton Builders',
@@ -30,14 +30,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://grand-teton-builders.vercel.app',
+    url: BASE_URL,
     siteName: 'Grand Teton Builders',
     title: 'Grand Teton Builders | Luxury Homes in Driggs, Idaho',
     description:
       'Grand Teton Builders creates refined mountain homes, custom builds, and spec homes in Driggs, Idaho and throughout Teton Valley.',
     images: [
       {
-        url: '/og-image.jpg',
+        url: '/gtb-og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Grand Teton Builders — Luxury Mountain Homes in Driggs, Idaho',
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     title: 'Grand Teton Builders | Luxury Homes in Driggs, Idaho',
     description:
       'Grand Teton Builders creates refined mountain homes, custom builds, and spec homes in Driggs, Idaho and throughout Teton Valley.',
-    images: ['/og-image.jpg'],
+    images: ['/gtb-og-image.jpg'],
   },
   robots: {
     index: true,
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://grand-teton-builders.vercel.app',
+    canonical: BASE_URL,
   },
 }
 
@@ -81,8 +81,17 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap"
           rel="stylesheet"
         />
+        <link
+          rel="icon"
+          type="image/png"
+          href="/gtb-favicon.png"
+        />
       </head>
-      <body>{children}</body>
+      <body>
+        <div id="main-content" tabIndex={-1} style={{ outline: 'none' }}>
+          {children}
+        </div>
+      </body>
     </html>
   )
 }

@@ -1,14 +1,9 @@
 import type { Metadata } from 'next'
-import { GFS_Didot, Montserrat } from 'next/font/google'
+import { Montserrat } from 'next/font/google'
 import './globals.css'
 
-const gfsDidot = GFS_Didot({
-  weight: '400',
-  subsets: ['greek', 'latin'],
-  variable: '--font-gfs-didot',
-  display: 'swap',
-})
-
+// Note: GFS Didot is loaded via @import in globals.css as a fallback
+// because next/font/google requires specific subset config
 const montserrat = Montserrat({
   weight: ['300', '400', '500', '600', '700'],
   subsets: ['latin'],
@@ -78,7 +73,15 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${gfsDidot.variable} ${montserrat.variable}`}>
+    <html lang="en" className={montserrat.variable}>
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap"
+          rel="stylesheet"
+        />
+      </head>
       <body>{children}</body>
     </html>
   )

@@ -11,6 +11,7 @@
   --text: #1F2421;
   --text-mid: #59666A;
   --text-light: #8A9598;
+  --font-gfs-didot: 'GFS Didot', serif;
 }
 
 html { scroll-behavior: smooth; }
@@ -57,7 +58,7 @@ nav {
 }
 .hero-eyebrow::before { content: ''; display: block; width: 32px; height: 1px; background: var(--brass); }
 .hero h1 {
-  font-family: var(--font-gfs-didot), 'GFS Didot', serif;
+  font-family: var(--font-gfs-didot);
   font-size: clamp(42px, 6vw, 84px);
   font-weight: 400; line-height: 1.05;
   color: var(--limestone); margin-bottom: 24px; letter-spacing: 0.02em;
@@ -99,7 +100,7 @@ nav {
   flex-wrap: wrap; gap: 24px; border-bottom: 2px solid var(--brass);
 }
 .trust-item { display: flex; align-items: center; gap: 12px; color: #fff; }
-.trust-num { font-family: var(--font-gfs-didot), 'GFS Didot', serif; font-size: 32px; font-weight: 400; color: var(--brass); line-height: 1; }
+.trust-num { font-family: var(--font-gfs-didot); font-size: 32px; font-weight: 400; color: var(--brass); line-height: 1; }
 .trust-label { font-size: 10px; color: rgba(255,255,255,0.6); letter-spacing: 0.12em; text-transform: uppercase; }
 .trust-divider { width: 1px; height: 40px; background: rgba(255,255,255,0.15); }
 
@@ -111,7 +112,7 @@ section { padding: 96px 5vw; }
 }
 .section-eyebrow::before { content: ''; width: 28px; height: 1px; background: var(--brass); display: block; }
 .section-title {
-  font-family: var(--font-gfs-didot), 'GFS Didot', serif;
+  font-family: var(--font-gfs-didot);
   font-size: clamp(30px, 4vw, 52px); font-weight: 400;
   line-height: 1.1; color: var(--charcoal); margin-bottom: 20px; letter-spacing: 0.02em;
 }
@@ -127,7 +128,7 @@ section { padding: 96px 5vw; }
   background: #000; color: #fff;
   padding: 28px 24px; text-align: center; border-left: 4px solid var(--brass);
 }
-.about-badge strong { display: block; font-family: var(--font-gfs-didot), 'GFS Didot', serif; font-size: 38px; color: var(--brass); line-height: 1; font-weight: 400; }
+.about-badge strong { display: block; font-family: var(--font-gfs-didot); font-size: 38px; color: var(--brass); line-height: 1; font-weight: 400; }
 .about-badge span { font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; opacity: 0.7; color: #fff; }
 .about-list { list-style: none; margin-top: 32px; display: flex; flex-direction: column; gap: 14px; }
 .about-list li { display: flex; align-items: flex-start; gap: 12px; font-size: 13px; font-weight: 400; letter-spacing: 0.03em; color: var(--text-mid); }
@@ -155,11 +156,11 @@ section { padding: 96px 5vw; }
 }
 .status-dot { width: 6px; height: 6px; background: var(--brass); border-radius: 50%; animation: pulse 2s infinite; }
 @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.3; } }
-.featured-home-name { font-family: var(--font-gfs-didot), 'GFS Didot', serif; font-size: 32px; font-weight: 400; color: var(--limestone); margin-bottom: 8px; letter-spacing: 0.02em; }
+.featured-home-name { font-family: var(--font-gfs-didot); font-size: 32px; font-weight: 400; color: var(--limestone); margin-bottom: 8px; letter-spacing: 0.02em; }
 .featured-home-loc { font-size: 12px; letter-spacing: 0.1em; color: rgba(231,224,210,0.5); margin-bottom: 24px; text-transform: uppercase; }
 .featured-home-desc { font-size: 14px; font-weight: 300; color: rgba(231,224,210,0.65); line-height: 1.85; margin-bottom: 32px; letter-spacing: 0.03em; }
 .featured-home-specs { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; margin-bottom: 36px; padding-top: 24px; border-top: 1px solid rgba(176,138,74,0.2); }
-.spec-val { font-family: var(--font-gfs-didot), 'GFS Didot', serif; font-size: 22px; font-weight: 400; color: var(--brass); }
+.spec-val { font-family: var(--font-gfs-didot); font-size: 22px; font-weight: 400; color: var(--brass); }
 .spec-key { font-size: 10px; letter-spacing: 0.12em; color: rgba(231,224,210,0.45); text-transform: uppercase; margin-top: 2px; }
 
 /* GALLERY */
@@ -207,11 +208,9 @@ section { padding: 96px 5vw; }
   padding: 6px 14px; margin-bottom: 24px; width: fit-content;
   border: 1px solid rgba(176,138,74,0.3);
 }
-.property-name { font-family: var(--font-gfs-didot), 'GFS Didot', serif; font-size: 28px; font-weight: 400; color: var(--limestone); margin-bottom: 8px; letter-spacing: 0.02em; }
+.property-name { font-family: var(--font-gfs-didot); font-size: 28px; font-weight: 400; color: var(--limestone); margin-bottom: 8px; letter-spacing: 0.02em; }
 .property-loc { font-size: 12px; letter-spacing: 0.1em; color: rgba(231,224,232,0.5); margin-bottom: 28px; text-transform: uppercase; }
 .property-specs { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; margin-bottom: 32px; }
-.spec-val { font-family: var(--font-gfs-didot), 'GFS Didot', serif; font-size: 22px; font-weight: 400; color: var(--brass); }
-.spec-key { font-size: 10px; letter-spacing: 0.12em; color: rgba(231,224,210,0.45); text-transform: uppercase; margin-top: 2px; }
 .progress-label-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
 .progress-label { font-size: 10px; letter-spacing: 0.12em; color: rgba(231,224,210,0.5); text-transform: uppercase; }
 .progress-pct { font-size: 12px; color: var(--brass); font-weight: 600; }
@@ -264,14 +263,14 @@ section { padding: 96px 5vw; }
 }
 .service-card:hover .service-img { transform: scale(1.04); filter: sepia(4%) contrast(1.08) brightness(0.95); }
 .service-card-body { padding: 24px 24px 28px; }
-.service-name { font-family: var(--font-gfs-didot), 'GFS Didot', serif; font-size: 18px; font-weight: 400; color: var(--limestone); margin-bottom: 10px; letter-spacing: 0.02em; }
+.service-name { font-family: var(--font-gfs-didot); font-size: 18px; font-weight: 400; color: var(--limestone); margin-bottom: 10px; letter-spacing: 0.02em; }
 .service-desc { font-size: 13px; font-weight: 300; letter-spacing: 0.03em; color: rgba(231,224,210,0.5); line-height: 1.8; }
 
 /* PROCESS */
 .process { background: var(--limestone); }
 .process .section-title { color: var(--charcoal); }
 .process-steps { display: grid; grid-template-columns: repeat(4,1fr); gap: 32px; margin-top: 56px; }
-.step-num { font-family: var(--font-gfs-didot), 'GFS Didot', serif; font-size: 56px; font-weight: 400; color: rgba(176,138,74,0.2); line-height: 1; margin-bottom: 8px; }
+.step-num { font-family: var(--font-gfs-didot); font-size: 56px; font-weight: 400; color: rgba(176,138,74,0.2); line-height: 1; margin-bottom: 8px; }
 .step-title { font-size: 12px; font-weight: 600; letter-spacing: 0.12em; color: var(--charcoal); margin-bottom: 8px; text-transform: uppercase; }
 .step-desc { font-size: 13px; font-weight: 300; letter-spacing: 0.03em; color: var(--slate); line-height: 1.8; }
 

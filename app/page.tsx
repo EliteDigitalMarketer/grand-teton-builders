@@ -89,7 +89,7 @@ export default function HomePage() {
             </p>
             <div className="hero-actions">
               <Link href="/new-construction-home-for-sale-driggs-idaho" className="btn-primary">
-                View the Driggs Home
+                View The Powder Chalet
               </Link>
               <Link href="#about" className="btn-outline">
                 About Grand Teton Builders
@@ -134,18 +134,18 @@ export default function HomePage() {
         <section className="featured-home" aria-labelledby="featured-home-heading">
           <p className="section-eyebrow">Coming Soon &mdash; New Construction</p>
           <h2 className="section-title" id="featured-home-heading">
-            New 4-Bedroom Mountain Modern Home in Driggs, Idaho
+            The Powder Chalet &mdash; New 4-Bedroom Mountain Modern Home in Driggs, Idaho
           </h2>
           <p className="section-sub">
-            1230 Wind River Trail is a new mountain modern home in Shoshoni Plains,
-            Driggs, Idaho &mdash; 2,258 sq ft, 4 bedrooms, 2.5 baths, single-level
-            living with an attached 2-car garage. Inquire now about availability
-            and finish selections.
+            The Powder Chalet at 1230 Wind River Trail is a new mountain modern
+            home in Shoshoni Plains, Driggs, Idaho &mdash; 2,258 sq ft, 4 bedrooms,
+            2.5 baths, single-level living with an attached 2-car garage. Inquire
+            now about availability and finish selections.
           </p>
           <div className="featured-home-card">
             <Image
               src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200&q=85"
-              alt="New 4-bedroom mountain modern home at 1230 Wind River Trail in Driggs, Idaho by Grand Teton Builders"
+              alt="The Powder Chalet — new 4-bedroom mountain modern home at 1230 Wind River Trail in Driggs, Idaho by Grand Teton Builders"
               width={900}
               height={420}
               className="featured-home-img"
@@ -156,8 +156,8 @@ export default function HomePage() {
                 <span className="status-dot" aria-hidden="true" />
                 Coming Soon &mdash; Inquiries Welcome
               </div>
-              <h3 className="featured-home-name">1230 Wind River Trail &mdash; Driggs, Idaho</h3>
-              <p className="featured-home-loc">&#x1F4CD; Shoshoni Plains, Driggs, Teton Valley, Idaho</p>
+              <h3 className="featured-home-name">The Powder Chalet</h3>
+              <p className="featured-home-loc">&#x1F4CD; 1230 Wind River Trail &middot; Shoshoni Plains, Driggs, Idaho</p>
               <p className="featured-home-desc">
                 A new 4-bedroom mountain modern home with 2,258 sq ft of finished
                 single-level living, open-concept main living area, primary suite
@@ -440,7 +440,7 @@ export default function HomePage() {
           <p className="section-eyebrow">Let&rsquo;s Talk</p>
           <h2 className="section-title" id="contact-heading">Start Your Project</h2>
           <p className="section-sub">
-            Whether you&rsquo;re interested in the Driggs home or ready to build
+            Whether you&rsquo;re interested in The Powder Chalet or ready to build
             your own mountain home in Teton Valley &mdash; we&rsquo;d love to hear
             from you.
           </p>
@@ -476,11 +476,11 @@ export default function HomePage() {
                 </div>
               </div>
               <div className="contact-highlight">
-                <p className="contact-highlight-title">Interested in the Driggs Home?</p>
+                <p className="contact-highlight-title">Interested in The Powder Chalet?</p>
                 <p className="contact-highlight-body">
-                  1230 Wind River Trail is currently in pre-construction. Reach out
-                  now to inquire about availability, finishes, or to schedule a
-                  private conversation about the home.
+                  The Powder Chalet at 1230 Wind River Trail is currently in
+                  pre-construction. Reach out now to inquire about availability,
+                  finishes, or to schedule a private conversation about the home.
                 </p>
               </div>
             </div>
@@ -506,7 +506,7 @@ export default function HomePage() {
               <div className="form-group">
                 <label className="form-label" htmlFor="interest">I&rsquo;m interested in</label>
                 <select id="interest" name="interest" className="form-select">
-                  <option>1230 Wind River Trail in Driggs, Idaho</option>
+                  <option>The Powder Chalet in Driggs, Idaho</option>
                   <option>Building a custom home in Teton Valley</option>
                   <option>Learning more about Grand Teton Builders</option>
                   <option>A future project or spec home</option>

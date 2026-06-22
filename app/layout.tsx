@@ -27,6 +27,13 @@ export const metadata: Metadata = {
     'spec homes Driggs Idaho',
     'luxury mountain homes Teton Valley',
   ],
+  icons: {
+    icon: [
+      { url: '/gtb-favicon.png', type: 'image/png', sizes: '64x64' },
+    ],
+    shortcut: '/gtb-favicon.png',
+    apple: '/gtb-favicon.png',
+  },
   openGraph: {
     type: 'website',
     locale: 'en_US',
@@ -80,11 +87,6 @@ export default function RootLayout({
         <link
           href="https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap"
           rel="stylesheet"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          href="/gtb-favicon.png"
         />
       </head>
       <body>

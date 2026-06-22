@@ -17,6 +17,30 @@
 html { scroll-behavior: smooth; }
 body { font-family: var(--font-montserrat), 'Montserrat', sans-serif; background: var(--snowfield); color: var(--text); line-height: 1.6; }
 
+/* Skip to content link — accessibility */
+.skip-to-content {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: 9999;
+}
+.skip-to-content:focus {
+  left: 16px;
+  top: 16px;
+  width: auto;
+  height: auto;
+  overflow: visible;
+  background: var(--brass);
+  color: var(--charcoal);
+  padding: 8px 16px;
+  font-weight: 600;
+  font-size: 13px;
+  text-decoration: none;
+}
+
 nav {
   position: fixed; top: 0; left: 0; right: 0; z-index: 100;
   background: rgba(31, 36, 33, 0.97);

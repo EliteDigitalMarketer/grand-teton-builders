@@ -169,7 +169,7 @@ section { padding: 96px 5vw; }
   border: 1px solid rgba(176,138,74,0.2);
   overflow: hidden;
 }
-.featured-home-img { width: 100%; height: 420px; object-fit: cover; display: block; filter: sepia(8%) contrast(1.06); }
+.featured-home-img { width: 100%; height: 100%; min-height: 420px; object-fit: cover; display: block; filter: sepia(8%) contrast(1.06); }
 .featured-home-info { padding: 56px 48px; display: flex; flex-direction: column; justify-content: center; }
 .featured-home-status {
   display: inline-flex; align-items: center; gap: 8px;
@@ -374,7 +374,7 @@ footer {
 @media (max-width: 1024px) {
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .featured-home-card { grid-template-columns: 1fr; }
-  .featured-home-img { height: 320px; }
+  .featured-home-img { height: 320px; min-height: 0; }
 }
 @media (max-width: 900px) {
   .gallery-grid { grid-template-columns: 1fr 1fr; }

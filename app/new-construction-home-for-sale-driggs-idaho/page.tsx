@@ -307,22 +307,21 @@ export default function DriggsHomePage() {
           className="hero"
           style={{
             backgroundImage:
-              "linear-gradient(180deg, rgba(31,36,33,0.35) 0%, rgba(31,36,33,0.55) 50%, rgba(31,36,33,0.97) 100%), url('/powder-chalet-front-sunset.png')",
-            minHeight: '75vh',
+              "linear-gradient(180deg, rgba(31,36,33,0.4) 0%, rgba(31,36,33,0.6) 50%, rgba(31,36,33,0.97) 100%), url('/powder-chalet-front-sunset.png')",
             paddingTop: 116,
           }}
           aria-label="The Powder Chalet hero"
         >
           <div className="hero-content">
-            <p className="hero-eyebrow">The Powder Chalet &mdash; 1230 Wind River Trail, Driggs, Idaho</p>
+            <p className="hero-eyebrow">Coming Soon &mdash; 1230 Wind River Trail</p>
             <h1>
               The Powder Chalet<br />
-              <em>New 4-Bedroom Mountain Modern Home in Driggs, Idaho</em>
+              in <em>Driggs, Idaho</em>
             </h1>
             <p>
-              A new 2,258 sq ft mountain modern home in Shoshoni Plains, Driggs, Idaho.
-              4 bedrooms, 2.5 baths, single-level living, attached 2-car garage, and
-              expansive patio &mdash; designed for refined Teton Valley living.
+              A new 4-bedroom mountain modern home with 2,258 sq ft of single-level
+              living, 2.5 baths, attached 2-car garage, and expansive patio &mdash;
+              designed for refined Teton Valley living.
             </p>
             <div className="hero-actions">
               <a href="#inquiry" className="btn-primary">
@@ -333,6 +332,7 @@ export default function DriggsHomePage() {
               </a>
             </div>
           </div>
+          <div className="hero-scroll" aria-hidden="true">Scroll</div>
         </section>
 
         {/* PROPERTY OVERVIEW */}

@@ -4,33 +4,7 @@ import Image from 'next/image'
 export default function Nav() {
   return (
     <>
-      <a
-        href="#main-content"
-        style={{
-          position: 'absolute',
-          left: '-9999px',
-          top: 'auto',
-          width: 1,
-          height: 1,
-          overflow: 'hidden',
-        }}
-        onFocus={(e) => {
-          e.currentTarget.style.left = '16px'
-          e.currentTarget.style.top = '16px'
-          e.currentTarget.style.width = 'auto'
-          e.currentTarget.style.height = 'auto'
-          e.currentTarget.style.overflow = 'visible'
-          e.currentTarget.style.zIndex = '9999'
-          e.currentTarget.style.background = 'var(--brass)'
-          e.currentTarget.style.color = 'var(--charcoal)'
-          e.currentTarget.style.padding = '8px 16px'
-          e.currentTarget.style.fontWeight = '600'
-          e.currentTarget.style.fontSize = '13px'
-        }}
-        onBlur={(e) => {
-          e.currentTarget.style.left = '-9999px'
-        }}
-      >
+      <a href="#main-content" className="skip-to-content">
         Skip to main content
       </a>
       <nav aria-label="Main navigation">

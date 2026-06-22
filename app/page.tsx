@@ -156,10 +156,10 @@ export default function HomePage() {
           </p>
           <div className="featured-home-card">
             <Image
-              src="/powder-chalet-side-elevation.png"
-              alt="The Powder Chalet — side elevation of the new 4-bedroom mountain modern home at 1230 Wind River Trail in Driggs, Idaho by Grand Teton Builders"
-              width={900}
-              height={420}
+              src="/powder-chalet-front-elevation.png"
+              alt="The Powder Chalet — front elevation of the new 4-bedroom mountain modern home at 1230 Wind River Trail in Driggs, Idaho by Grand Teton Builders"
+              width={1664}
+              height={934}
               className="featured-home-img"
               loading="lazy"
             />

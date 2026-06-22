@@ -17,6 +17,18 @@ export const metadata: Metadata = {
     description:
       'Grand Teton Builders creates refined mountain homes, custom builds, and spec homes in Driggs, Idaho and throughout Teton Valley.',
     url: 'https://grand-teton-builders.vercel.app',
+    images: [
+      {
+        url: '/powder-chalet-front-sunset.png',
+        width: 1240,
+        height: 1245,
+        alt: 'The Powder Chalet — new mountain modern home by Grand Teton Builders in Driggs, Idaho',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    images: ['/powder-chalet-front-sunset.png'],
   },
 }
 
@@ -28,7 +40,7 @@ const organizationSchema = {
     'Grand Teton Builders creates refined mountain homes, custom builds, and spec homes in Driggs, Idaho and throughout Teton Valley.',
   url: 'https://grand-teton-builders.vercel.app',
   logo: 'https://grand-teton-builders.vercel.app/gtb-logo-light.png',
-  image: 'https://grand-teton-builders.vercel.app/gtb-logo-light.png',
+  image: 'https://grand-teton-builders.vercel.app/powder-chalet-front-sunset.png',
   telephone: '+1-208-262-3669',
   email: 'Hello@grandtetonbuilders.com',
   foundingDate: '2024',
@@ -144,8 +156,8 @@ export default function HomePage() {
           </p>
           <div className="featured-home-card">
             <Image
-              src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200&q=85"
-              alt="The Powder Chalet — new 4-bedroom mountain modern home at 1230 Wind River Trail in Driggs, Idaho by Grand Teton Builders"
+              src="/powder-chalet-side-elevation.png"
+              alt="The Powder Chalet — side elevation of the new 4-bedroom mountain modern home at 1230 Wind River Trail in Driggs, Idaho by Grand Teton Builders"
               width={900}
               height={420}
               className="featured-home-img"
@@ -243,14 +255,14 @@ export default function HomePage() {
           <div className="gallery-grid" role="list" aria-label="Project gallery">
             <div className="gallery-item gallery-large" role="listitem">
               <Image
-                src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200&q=85"
-                alt="Grand Teton Builders luxury mountain home exterior with dark timber and stone in Teton Valley Idaho"
+                src="/powder-chalet-front-sunset.png"
+                alt="The Powder Chalet — front view at sunset with Teton mountain backdrop, new mountain modern home in Driggs, Idaho by Grand Teton Builders"
                 width={900}
                 height={600}
                 className="gallery-img"
                 loading="lazy"
               />
-              <div className="gallery-caption">Dark timber &amp; stone &mdash; built to belong on the mountain</div>
+              <div className="gallery-caption">The Powder Chalet &mdash; built to belong on the mountain</div>
             </div>
             <div className="gallery-item" role="listitem">
               <Image
@@ -265,14 +277,14 @@ export default function HomePage() {
             </div>
             <div className="gallery-item" role="listitem">
               <Image
-                src="https://images.unsplash.com/photo-1520608421676-9a7b78571f3e?w=700&q=85"
-                alt="Mountain home glowing at dusk in Teton Valley Idaho winter"
+                src="/powder-chalet-side-elevation.png"
+                alt="The Powder Chalet — side elevation with floor-to-ceiling windows and covered patio in Driggs, Idaho"
                 width={600}
                 height={400}
                 className="gallery-img"
                 loading="lazy"
               />
-              <div className="gallery-caption">Built for Idaho winters</div>
+              <div className="gallery-caption">Floor-to-ceiling windows &amp; covered patio</div>
             </div>
             <div className="gallery-item" role="listitem">
               <Image
@@ -287,14 +299,14 @@ export default function HomePage() {
             </div>
             <div className="gallery-item" role="listitem">
               <Image
-                src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=700&q=85"
-                alt="Luxury kitchen with wood and stone finishes in a custom mountain home in Idaho"
+                src="/powder-chalet-front-elevation.png"
+                alt="The Powder Chalet — front elevation showing wood siding, stone accents, and dark modern exterior finishes in Driggs Idaho"
                 width={600}
                 height={400}
                 className="gallery-img"
                 loading="lazy"
               />
-              <div className="gallery-caption">Refined interiors, mountain soul</div>
+              <div className="gallery-caption">Wood, stone &amp; dark modern finishes</div>
             </div>
             <div className="gallery-item gallery-wide" role="listitem">
               <Image

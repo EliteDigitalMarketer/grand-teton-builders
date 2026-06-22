@@ -7,22 +7,23 @@ import SchemaOrg from '@/components/SchemaOrg'
 import Breadcrumbs from '@/components/Breadcrumbs'
 
 export const metadata: Metadata = {
-  title: 'New 4-Bedroom Mountain Modern Home for Sale in Driggs, Idaho | 1230 Wind River Trail',
+  title: 'The Powder Chalet | New 4-Bedroom Mountain Modern Home for Sale in Driggs, Idaho',
   description:
-    'Explore 1230 Wind River Trail, a new 4-bedroom mountain modern home in Driggs, Idaho with 2,258 sq ft, 2.5 baths, office/flex bedroom, attached 2-car garage, and large patio.',
+    'The Powder Chalet at 1230 Wind River Trail — a new 4-bedroom mountain modern home in Driggs, Idaho with 2,258 sq ft, 2.5 baths, office/flex bedroom, attached 2-car garage, and large patio.',
   alternates: {
     canonical:
       'https://grand-teton-builders.vercel.app/new-construction-home-for-sale-driggs-idaho',
   },
   openGraph: {
-    title: 'New 4-Bedroom Mountain Modern Home for Sale in Driggs, Idaho | 1230 Wind River Trail',
+    title: 'The Powder Chalet | New 4-Bedroom Mountain Modern Home for Sale in Driggs, Idaho',
     description:
-      'Explore 1230 Wind River Trail, a new 4-bedroom mountain modern home in Driggs, Idaho with 2,258 sq ft, 2.5 baths, office/flex bedroom, attached 2-car garage, and large patio.',
+      'The Powder Chalet at 1230 Wind River Trail — a new 4-bedroom mountain modern home in Driggs, Idaho with 2,258 sq ft, 2.5 baths, office/flex bedroom, attached 2-car garage, and large patio.',
     url: 'https://grand-teton-builders.vercel.app/new-construction-home-for-sale-driggs-idaho',
   },
 }
 
 const propertyDetails = {
+  name: 'The Powder Chalet',
   address: '1230 Wind River Trail',
   subdivision: 'Shoshoni Plains',
   status: 'Coming Soon / Pre-Construction',
@@ -39,9 +40,10 @@ const propertyDetails = {
 const propertySchema = {
   '@context': 'https://schema.org',
   '@type': 'SingleFamilyResidence',
-  name: '1230 Wind River Trail — New 4-Bedroom Mountain Modern Home in Driggs, Idaho',
+  name: 'The Powder Chalet — 1230 Wind River Trail, Driggs, Idaho',
+  alternateName: 'The Powder Chalet',
   description:
-    'A new 4-bedroom mountain modern home in Driggs, Idaho featuring 2,258 sq ft of single-level living, an open-concept main living area, primary suite, office/flex bedroom, 2.5 bathrooms, attached 2-car garage, and 882 sq ft of patio space. Located in Shoshoni Plains, Teton Valley.',
+    'The Powder Chalet is a new 4-bedroom mountain modern home in Driggs, Idaho featuring 2,258 sq ft of single-level living, an open-concept main living area, primary suite, office/flex bedroom, 2.5 bathrooms, attached 2-car garage, and 882 sq ft of patio space. Located in Shoshoni Plains, Teton Valley.',
   address: {
     '@type': 'PostalAddress',
     streetAddress: '1230 Wind River Trail',
@@ -90,7 +92,7 @@ const breadcrumbSchema = {
     {
       '@type': 'ListItem',
       position: 2,
-      name: '1230 Wind River Trail — New 4-Bedroom Mountain Modern Home in Driggs, Idaho',
+      name: 'The Powder Chalet — New 4-Bedroom Home in Driggs, Idaho',
       item: 'https://grand-teton-builders.vercel.app/new-construction-home-for-sale-driggs-idaho',
     },
   ],
@@ -102,18 +104,18 @@ const faqSchema = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'Is the 1230 Wind River Trail home in Driggs available for purchase?',
+      name: 'Is The Powder Chalet available for purchase?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes. 1230 Wind River Trail is a new 4-bedroom mountain modern home in Shoshoni Plains, Driggs, Idaho, currently in pre-construction. Grand Teton Builders is accepting buyer inquiries now. Contact us to learn about availability, pricing, and the build timeline.',
+        text: 'Yes. The Powder Chalet at 1230 Wind River Trail is a new 4-bedroom mountain modern home in Shoshoni Plains, Driggs, Idaho, currently in pre-construction. Grand Teton Builders is accepting buyer inquiries now. Contact us to learn about availability, pricing, and the build timeline.',
       },
     },
     {
       '@type': 'Question',
-      name: 'How big is the home and what is the floor plan?',
+      name: 'How big is The Powder Chalet and what is the floor plan?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'The home offers 2,258 sq ft of finished single-level living with 4 bedrooms and 2.5 bathrooms, including an open great room, dining area, kitchen with large island and walk-in pantry, a primary suite with walk-in closet, two additional bedrooms in a separate wing, and a 4th bedroom designed as a flexible office or guest room with closet. The home also includes a 692 sq ft attached 2-car garage and 882 sq ft of concrete patio/deck space.',
+        text: 'The Powder Chalet offers 2,258 sq ft of finished single-level living with 4 bedrooms and 2.5 bathrooms, including an open great room, dining area, kitchen with large island and walk-in pantry, a primary suite with walk-in closet, two additional bedrooms in a separate wing, and a 4th bedroom designed as a flexible office or guest room with closet. The home also includes a 692 sq ft attached 2-car garage and 882 sq ft of concrete patio/deck space.',
       },
     },
     {
@@ -121,23 +123,23 @@ const faqSchema = {
       name: 'Can I select finishes or make changes to the home?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Because the home is currently in pre-construction, early buyers may have the opportunity to participate in certain finish selections and customization. Contact Grand Teton Builders to discuss what is possible based on the current build timeline.',
+        text: 'Because The Powder Chalet is currently in pre-construction, early buyers may have the opportunity to participate in certain finish selections and customization. Contact Grand Teton Builders to discuss what is possible based on the current build timeline.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Is this a custom home or a spec home?',
+      name: 'Is The Powder Chalet a custom home or a spec home?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'This is a mountain modern spec home built by Grand Teton Builders to the same quality standards as our custom homes. It is designed to reflect the mountain lifestyle of Teton Valley without requiring a buyer to manage a full custom build process from the ground up.',
+        text: 'The Powder Chalet is a mountain modern spec home built by Grand Teton Builders to the same quality standards as our custom homes. It is designed to reflect the mountain lifestyle of Teton Valley without requiring a buyer to manage a full custom build process from the ground up.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Where is 1230 Wind River Trail located?',
+      name: 'Where is The Powder Chalet located?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'The home is located at 1230 Wind River Trail in the Shoshoni Plains subdivision in Driggs, Idaho, in the heart of Teton Valley. Driggs offers easy access to Grand Targhee Resort, the Tetons, Jackson Hole, and four-season mountain recreation.',
+        text: 'The Powder Chalet is located at 1230 Wind River Trail in the Shoshoni Plains subdivision in Driggs, Idaho, in the heart of Teton Valley. Driggs offers easy access to Grand Targhee Resort, the Tetons, Jackson Hole, and four-season mountain recreation.',
       },
     },
     {
@@ -145,21 +147,22 @@ const faqSchema = {
       name: 'Can I schedule a private tour or site visit?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes. We welcome qualified buyers to schedule site visits and private conversations about the home. Use the inquiry form on this page, call 208-262-3669, or email Hello@grandtetonbuilders.com to arrange a visit.',
+        text: 'Yes. We welcome qualified buyers to schedule site visits and private conversations about The Powder Chalet. Use the inquiry form on this page, call 208-262-3669, or email Hello@grandtetonbuilders.com to arrange a visit.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Is this home a good fit for second-home or full-time buyers?',
+      name: 'Is The Powder Chalet a good fit for second-home or full-time buyers?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Both. With single-level living, 4 bedrooms including an office/flex room, generous storage, and an attached 2-car garage, the home is designed to work equally well for full-time mountain residents, second-home buyers, and remote-work-friendly lifestyle buyers in Teton Valley.',
+        text: 'Both. With single-level living, 4 bedrooms including an office/flex room, generous storage, and an attached 2-car garage, The Powder Chalet is designed to work equally well for full-time mountain residents, second-home buyers, and remote-work-friendly lifestyle buyers in Teton Valley.',
       },
     },
   ],
 }
 
 const specs = [
+  { label: 'Home Name', value: 'The Powder Chalet' },
   { label: 'Address', value: '1230 Wind River Trail' },
   { label: 'Subdivision', value: 'Shoshoni Plains' },
   { label: 'Location', value: 'Driggs, Idaho' },
@@ -171,7 +174,6 @@ const specs = [
   { label: 'Garage', value: '692 sq ft, 2-car attached' },
   { label: 'Patio / Deck', value: '882 sq ft concrete' },
   { label: 'Status', value: 'Coming Soon / Pre-Construction' },
-  { label: 'Price', value: 'Available upon request' },
 ]
 
 const features = [
@@ -219,32 +221,32 @@ const whyDriggs = [
 
 const faqs = [
   {
-    q: 'Is the 1230 Wind River Trail home in Driggs available for purchase?',
-    a: 'Yes. 1230 Wind River Trail is a new 4-bedroom mountain modern home in Shoshoni Plains, Driggs, Idaho, currently in pre-construction. Grand Teton Builders is accepting buyer inquiries now. Contact us to learn about availability, pricing, and the build timeline.',
+    q: 'Is The Powder Chalet available for purchase?',
+    a: 'Yes. The Powder Chalet at 1230 Wind River Trail is a new 4-bedroom mountain modern home in Shoshoni Plains, Driggs, Idaho, currently in pre-construction. Grand Teton Builders is accepting buyer inquiries now. Contact us to learn about availability, pricing, and the build timeline.',
   },
   {
-    q: 'How big is the home and what is the floor plan?',
-    a: 'The home offers 2,258 sq ft of finished single-level living with 4 bedrooms and 2.5 bathrooms, including an open great room, dining area, kitchen with large island and walk-in pantry, a primary suite with walk-in closet, two additional bedrooms in a separate wing, and a 4th bedroom designed as a flexible office or guest room with closet. The home also includes a 692 sq ft attached 2-car garage and 882 sq ft of concrete patio/deck space.',
+    q: 'How big is The Powder Chalet and what is the floor plan?',
+    a: 'The Powder Chalet offers 2,258 sq ft of finished single-level living with 4 bedrooms and 2.5 bathrooms, including an open great room, dining area, kitchen with large island and walk-in pantry, a primary suite with walk-in closet, two additional bedrooms in a separate wing, and a 4th bedroom designed as a flexible office or guest room with closet. The home also includes a 692 sq ft attached 2-car garage and 882 sq ft of concrete patio/deck space.',
   },
   {
     q: 'Can I select finishes or make changes to the home?',
-    a: 'Because the home is currently in pre-construction, early buyers may have the opportunity to participate in certain finish selections and customization. Contact Grand Teton Builders to discuss what is possible based on the current build timeline.',
+    a: 'Because The Powder Chalet is currently in pre-construction, early buyers may have the opportunity to participate in certain finish selections and customization. Contact Grand Teton Builders to discuss what is possible based on the current build timeline.',
   },
   {
-    q: 'Is this a custom home or a spec home?',
-    a: 'This is a mountain modern spec home built by Grand Teton Builders to the same quality standards as our custom homes. It is designed to reflect the mountain lifestyle of Teton Valley without requiring a buyer to manage a full custom build process from the ground up.',
+    q: 'Is The Powder Chalet a custom home or a spec home?',
+    a: 'The Powder Chalet is a mountain modern spec home built by Grand Teton Builders to the same quality standards as our custom homes. It is designed to reflect the mountain lifestyle of Teton Valley without requiring a buyer to manage a full custom build process from the ground up.',
   },
   {
-    q: 'Where is 1230 Wind River Trail located?',
-    a: 'The home is located at 1230 Wind River Trail in the Shoshoni Plains subdivision in Driggs, Idaho, in the heart of Teton Valley. Driggs offers easy access to Grand Targhee Resort, the Tetons, Jackson Hole, and four-season mountain recreation.',
+    q: 'Where is The Powder Chalet located?',
+    a: 'The Powder Chalet is located at 1230 Wind River Trail in the Shoshoni Plains subdivision in Driggs, Idaho, in the heart of Teton Valley. Driggs offers easy access to Grand Targhee Resort, the Tetons, Jackson Hole, and four-season mountain recreation.',
   },
   {
     q: 'Can I schedule a private tour or site visit?',
-    a: 'Yes. We welcome qualified buyers to schedule site visits and private conversations about the home. Use the inquiry form below, call 208-262-3669, or email Hello@grandtetonbuilders.com to arrange a visit.',
+    a: 'Yes. We welcome qualified buyers to schedule site visits and private conversations about The Powder Chalet. Use the inquiry form below, call 208-262-3669, or email Hello@grandtetonbuilders.com to arrange a visit.',
   },
   {
-    q: 'Is this home a good fit for second-home or full-time buyers?',
-    a: 'Both. With single-level living, 4 bedrooms including an office/flex room, generous storage, and an attached 2-car garage, the home is designed to work equally well for full-time mountain residents, second-home buyers, and remote-work-friendly lifestyle buyers in Teton Valley.',
+    q: 'Is The Powder Chalet a good fit for second-home or full-time buyers?',
+    a: 'Both. With single-level living, 4 bedrooms including an office/flex room, generous storage, and an attached 2-car garage, The Powder Chalet is designed to work equally well for full-time mountain residents, second-home buyers, and remote-work-friendly lifestyle buyers in Teton Valley.',
   },
 ]
 
@@ -261,7 +263,7 @@ export default function DriggsHomePage() {
         <Breadcrumbs
           items={[
             { label: 'Home', href: '/' },
-            { label: 'New 4-Bedroom Mountain Modern Home in Driggs, Idaho' },
+            { label: 'The Powder Chalet — Driggs, Idaho' },
           ]}
         />
 
@@ -274,13 +276,13 @@ export default function DriggsHomePage() {
             minHeight: '75vh',
             paddingTop: 116,
           }}
-          aria-label="Property hero"
+          aria-label="The Powder Chalet hero"
         >
           <div className="hero-content">
-            <p className="hero-eyebrow">1230 Wind River Trail &mdash; Driggs, Idaho</p>
+            <p className="hero-eyebrow">The Powder Chalet &mdash; 1230 Wind River Trail, Driggs, Idaho</p>
             <h1>
-              New 4-Bedroom Mountain Modern Home<br />
-              <em>for Sale in Driggs, Idaho</em>
+              The Powder Chalet<br />
+              <em>New 4-Bedroom Mountain Modern Home in Driggs, Idaho</em>
             </h1>
             <p>
               A new 2,258 sq ft mountain modern home in Shoshoni Plains, Driggs, Idaho.
@@ -289,7 +291,7 @@ export default function DriggsHomePage() {
             </p>
             <div className="hero-actions">
               <a href="#inquiry" className="btn-primary">
-                Inquire About This Home
+                Inquire About The Powder Chalet
               </a>
               <a href="#details" className="btn-outline">
                 View Property Details
@@ -310,7 +312,7 @@ export default function DriggsHomePage() {
             id="property-overview-heading"
             style={{ color: 'var(--limestone)' }}
           >
-            1230 Wind River Trail &mdash; Driggs, Idaho
+            The Powder Chalet &mdash; 1230 Wind River Trail
           </h2>
           <div
             style={{
@@ -366,16 +368,17 @@ export default function DriggsHomePage() {
         >
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 64, alignItems: 'start' }}>
             <div>
-              <p className="section-eyebrow">About This Home</p>
+              <p className="section-eyebrow">About The Powder Chalet</p>
               <h2 className="section-title" id="description-heading">
                 A New 4-Bedroom Mountain Modern Home Built for Teton Valley Living
               </h2>
               <p className="section-sub" style={{ maxWidth: '100%', marginBottom: 24 }}>
-                Welcome to 1230 Wind River Trail, a new 4-bedroom mountain modern home
-                designed for comfortable year-round living in Driggs, Idaho. With warm
-                vertical wood siding, dark modern accents, stone detailing, black-framed
-                windows, and a low-profile roofline, the exterior creates a refined Teton
-                Valley look that feels both contemporary and rooted in its mountain setting.
+                Welcome to The Powder Chalet at 1230 Wind River Trail &mdash; a new
+                4-bedroom mountain modern home designed for comfortable year-round
+                living in Driggs, Idaho. With warm vertical wood siding, dark modern
+                accents, stone detailing, black-framed windows, and a low-profile
+                roofline, the exterior creates a refined Teton Valley look that feels
+                both contemporary and rooted in its mountain setting.
               </p>
               <p
                 style={{
@@ -419,17 +422,17 @@ export default function DriggsHomePage() {
                   lineHeight: 1.85,
                 }}
               >
-                Built with mountain living in mind, the home also includes a large
-                laundry/mudroom, winter/sports storage, lock-off storage, a snowmobile
-                bench area, and an attached two-car garage. The expansive patio space
-                creates room for outdoor dining, relaxing, and enjoying the surrounding
-                Teton Valley lifestyle.
+                Built with mountain living in mind, The Powder Chalet also includes a
+                large laundry/mudroom, winter/sports storage, lock-off storage, a
+                snowmobile bench area, and an attached two-car garage. The expansive
+                patio space creates room for outdoor dining, relaxing, and enjoying the
+                surrounding Teton Valley lifestyle.
               </p>
             </div>
             <div>
               <Image
                 src="https://images.unsplash.com/photo-1416331108676-a22ccb276e35?w=900&q=85"
-                alt="New 4-bedroom mountain modern home rendering at 1230 Wind River Trail in Driggs Idaho"
+                alt="The Powder Chalet — new 4-bedroom mountain modern home rendering at 1230 Wind River Trail in Driggs Idaho"
                 width={900}
                 height={600}
                 style={{ width: '100%', height: 'auto', display: 'block' }}
@@ -446,7 +449,7 @@ export default function DriggsHomePage() {
         >
           <p className="section-eyebrow">Home Features</p>
           <h2 className="section-title" id="features-heading">
-            What&rsquo;s Included at 1230 Wind River Trail
+            What&rsquo;s Included at The Powder Chalet
           </h2>
           <ul
             style={{
@@ -603,7 +606,7 @@ export default function DriggsHomePage() {
         >
           <p className="section-eyebrow">Get in Touch</p>
           <h2 className="section-title" id="inquiry-heading">
-            Inquire About 1230 Wind River Trail
+            Inquire About The Powder Chalet
           </h2>
           <p className="section-sub">
             Request details, ask about finish selections, or schedule a private
@@ -641,9 +644,9 @@ export default function DriggsHomePage() {
                 </div>
               </div>
               <div className="contact-highlight">
-                <p className="contact-highlight-title">Coming Soon &mdash; Driggs, Idaho</p>
+                <p className="contact-highlight-title">The Powder Chalet &mdash; Coming Soon</p>
                 <p className="contact-highlight-body">
-                  1230 Wind River Trail is currently in pre-construction. Early
+                  The Powder Chalet is currently in pre-construction. Early
                   inquiries may have the opportunity to participate in certain
                   finish selections.
                 </p>
@@ -688,7 +691,7 @@ export default function DriggsHomePage() {
                 </ul>
               </div>
             </div>
-            <form className="contact-form" aria-label="Property inquiry form">
+            <form className="contact-form" aria-label="The Powder Chalet inquiry form">
               <div className="form-row">
                 <div className="form-group">
                   <label className="form-label" htmlFor="inq-first">First Name</label>
@@ -727,7 +730,7 @@ export default function DriggsHomePage() {
               <div className="form-group">
                 <label className="form-label" htmlFor="inq-interest">I am interested in</label>
                 <select id="inq-interest" name="interest" className="form-select">
-                  <option>1230 Wind River Trail in Driggs, Idaho</option>
+                  <option>The Powder Chalet in Driggs, Idaho</option>
                   <option>A future Grand Teton Builders project</option>
                   <option>Both</option>
                 </select>

@@ -31,6 +31,7 @@ const organizationSchema = {
   image: 'https://grand-teton-builders.vercel.app/gtb-logo-light.png',
   telephone: '+1-208-262-3669',
   email: 'Hello@grandtetonbuilders.com',
+  foundingDate: '2024',
   address: {
     '@type': 'PostalAddress',
     addressLocality: 'Driggs',
@@ -202,8 +203,8 @@ export default function HomePage() {
                 loading="lazy"
               />
               <div className="about-badge">
-                <strong>Est.</strong>
-                <span>Driggs, Idaho</span>
+                <strong>2024</strong>
+                <span>Established in Driggs, Idaho</span>
               </div>
             </div>
             <div>

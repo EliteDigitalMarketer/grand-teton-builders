@@ -4,7 +4,6 @@ import Link from 'next/link'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 import SchemaOrg from '@/components/SchemaOrg'
-import Breadcrumbs from '@/components/Breadcrumbs'
 
 export const metadata: Metadata = {
   title: 'The Powder Chalet | New 4-Bedroom Mountain Modern Home for Sale in Driggs, Idaho',
@@ -295,13 +294,6 @@ export default function DriggsHomePage() {
       <Nav />
 
       <main>
-        <Breadcrumbs
-          items={[
-            { label: 'Home', href: '/' },
-            { label: 'The Powder Chalet — Driggs, Idaho' },
-          ]}
-        />
-
         {/* HERO */}
         <section
           className="hero"

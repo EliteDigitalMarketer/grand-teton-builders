@@ -28,10 +28,7 @@ export const metadata: Metadata = {
     'luxury mountain homes Teton Valley',
   ],
   icons: {
-    icon: [
-      { url: '/gtb-favicon.png', type: 'image/png', sizes: '64x64' },
-    ],
-    shortcut: '/gtb-favicon.png',
+    icon: '/gtb-favicon.png',
     apple: '/gtb-favicon.png',
   },
   openGraph: {

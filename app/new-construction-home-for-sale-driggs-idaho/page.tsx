@@ -58,7 +58,7 @@ const propertySchema = {
     'The Powder Chalet is a new 4-bedroom mountain modern home in Driggs, Idaho featuring 2,258 sq ft of single-level living, an open-concept main living area, primary suite, office/flex bedroom, 2.5 bathrooms, attached 2-car garage, and 882 sq ft of patio space. Located in Shoshoni Plains, Teton Valley.',
   image: [
     'https://grand-teton-builders.vercel.app/powder-chalet-front-sunset.png',
-    'https://grand-teton-builders.vercel.app/powder-chalet-front-elevation.png',
+    'https://grand-teton-builders.vercel.app/powder-chalet-front-elevation-square.png',
     'https://grand-teton-builders.vercel.app/powder-chalet-side-elevation.png',
   ],
   address: {
@@ -216,7 +216,7 @@ const renderings = [
     caption: 'Front view at sunset',
   },
   {
-    src: '/powder-chalet-front-elevation.png',
+    src: '/powder-chalet-front-elevation-square.png',
     alt: 'The Powder Chalet — straight-on front elevation rendering showing wood siding, stone accents, and dark modern finishes of the new 4-bedroom home in Driggs Idaho',
     caption: 'Front elevation',
   },
@@ -517,8 +517,8 @@ export default function DriggsHomePage() {
                 <Image
                   src={src}
                   alt={alt}
-                  width={1400}
-                  height={900}
+                  width={1240}
+                  height={1240}
                   style={{ width: '100%', height: 'auto', display: 'block' }}
                   loading="lazy"
                 />

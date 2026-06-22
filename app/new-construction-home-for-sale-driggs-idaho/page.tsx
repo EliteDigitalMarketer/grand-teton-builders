@@ -466,10 +466,10 @@ export default function DriggsHomePage() {
             </div>
             <div>
               <Image
-                src="/powder-chalet-front-elevation.png"
-                alt="The Powder Chalet — front elevation rendering of the new 4-bedroom mountain modern home at 1230 Wind River Trail in Driggs, Idaho"
-                width={1664}
-                height={934}
+                src="/powder-chalet-front-elevation-portrait.png"
+                alt="The Powder Chalet — portrait rendering of the new 4-bedroom mountain modern home at 1230 Wind River Trail in Driggs, Idaho"
+                width={1000}
+                height={1400}
                 style={{ width: '100%', height: 'auto', display: 'block' }}
                 loading="lazy"
               />

@@ -73,10 +73,23 @@ export default function Footer() {
       </div>
 
       <div className="footer-bottom">
-        <p className="footer-copy">
-          &copy; {currentYear} Grand Teton Builders LLC &middot; Driggs, Idaho
-          &middot; All rights reserved
-        </p>
+        <div style={{ display: 'flex', gap: 20, alignItems: 'center', flexWrap: 'wrap' }}>
+          <p className="footer-copy">
+            &copy; {currentYear} Grand Teton Builders LLC &middot; Driggs, Idaho
+            &middot; All rights reserved
+          </p>
+          <Link
+            href="/privacy-policy"
+            style={{
+              fontSize: 11,
+              color: 'rgba(231,224,210,0.4)',
+              textDecoration: 'none',
+              letterSpacing: '0.06em',
+            }}
+          >
+            Privacy Policy
+          </Link>
+        </div>
         <p className="footer-tagline">&ldquo;Built for Generations. Inspired by Nature.&rdquo;</p>
       </div>
     </footer>

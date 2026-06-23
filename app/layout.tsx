@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Montserrat } from 'next/font/google'
+import Script from 'next/script'
 import './globals.css'
 
 const montserrat = Montserrat({
@@ -90,6 +91,16 @@ export default function RootLayout({
         <div id="main-content" tabIndex={-1} style={{ outline: 'none' }}>
           {children}
         </div>
+
+        {/* TEMPORARY: LeadConnector chat widget — remove when replacing with custom solution */}
+        <Script
+          id="leadconnector-chat-widget"
+          src="https://widgets.leadconnectorhq.com/loader.js"
+          data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"
+          data-widget-id="6a38af776eb44d6f32d89c31"
+          data-source="WEB_USER"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   )

@@ -58,40 +58,8 @@ export default function ContactPage() {
                 </div>
               </div>
             </div>
-            <form className="contact-form" aria-label="Contact form">
-              <div className="form-row">
-                <div className="form-group">
-                  <label className="form-label" htmlFor="c-first">First Name</label>
-                  <input type="text" id="c-first" name="first_name" className="form-input" placeholder="John" autoComplete="given-name" />
-                </div>
-                <div className="form-group">
-                  <label className="form-label" htmlFor="c-last">Last Name</label>
-                  <input type="text" id="c-last" name="last_name" className="form-input" placeholder="Smith" autoComplete="family-name" />
-                </div>
-              </div>
-              <div className="form-group">
-                <label className="form-label" htmlFor="c-email">Email</label>
-                <input type="email" id="c-email" name="email" className="form-input" placeholder="john@example.com" autoComplete="email" />
-              </div>
-              <div className="form-group">
-                <label className="form-label" htmlFor="c-phone">Phone</label>
-                <input type="tel" id="c-phone" name="phone" className="form-input" placeholder="(208) 555-0000" autoComplete="tel" />
-              </div>
-              <div className="form-group">
-                <label className="form-label" htmlFor="c-interest">I&rsquo;m interested in</label>
-                <select id="c-interest" name="interest" className="form-select">
-                  <option>1230 Wind River Trail in Driggs, Idaho</option>
-                  <option>Building a custom home in Teton Valley</option>
-                  <option>A future project or spec home</option>
-                  <option>Other</option>
-                </select>
-              </div>
-              <div className="form-group">
-                <label className="form-label" htmlFor="c-message">Message</label>
-                <textarea id="c-message" name="message" className="form-input" placeholder="Tell us about your project or questions..." rows={4} />
-              </div>
-              <button type="submit" className="form-submit">Send Message</button>
-            </form>
+            {/* Contact form removed — placeholder reserves grid space until custom form is added */}
+            <div className="contact-form" aria-hidden="true" />
           </div>
         </section>
       </main>

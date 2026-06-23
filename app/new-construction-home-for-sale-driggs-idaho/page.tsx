@@ -163,7 +163,7 @@ const faqSchema = {
       name: 'Can I schedule a private tour or site visit?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes. We welcome qualified buyers to schedule site visits and private conversations about The Powder Chalet. Use the inquiry form on this page, call 208-262-3669, or email Hello@grandtetonbuilders.com to arrange a visit.',
+        text: 'Yes. We welcome qualified buyers to schedule site visits and private conversations about The Powder Chalet. Call 208-262-3669 or email Hello@grandtetonbuilders.com to arrange a visit.',
       },
     },
     {
@@ -276,7 +276,7 @@ const faqs = [
   },
   {
     q: 'Can I schedule a private tour or site visit?',
-    a: 'Yes. We welcome qualified buyers to schedule site visits and private conversations about The Powder Chalet. Use the inquiry form below, call 208-262-3669, or email Hello@grandtetonbuilders.com to arrange a visit.',
+    a: 'Yes. We welcome qualified buyers to schedule site visits and private conversations about The Powder Chalet. Call 208-262-3669 or email Hello@grandtetonbuilders.com to arrange a visit.',
   },
   {
     q: 'Is The Powder Chalet a good fit for second-home or full-time buyers?',
@@ -779,75 +779,8 @@ export default function DriggsHomePage() {
                 </ul>
               </div>
             </div>
-            <form className="contact-form" aria-label="The Powder Chalet inquiry form">
-              <div className="form-row">
-                <div className="form-group">
-                  <label className="form-label" htmlFor="inq-first">First Name</label>
-                  <input type="text" id="inq-first" name="first_name" className="form-input" placeholder="John" autoComplete="given-name" />
-                </div>
-                <div className="form-group">
-                  <label className="form-label" htmlFor="inq-last">Last Name</label>
-                  <input type="text" id="inq-last" name="last_name" className="form-input" placeholder="Smith" autoComplete="family-name" />
-                </div>
-              </div>
-              <div className="form-group">
-                <label className="form-label" htmlFor="inq-email">Email</label>
-                <input type="email" id="inq-email" name="email" className="form-input" placeholder="john@example.com" autoComplete="email" />
-              </div>
-              <div className="form-group">
-                <label className="form-label" htmlFor="inq-phone">Phone</label>
-                <input type="tel" id="inq-phone" name="phone" className="form-input" placeholder="(208) 555-0000" autoComplete="tel" />
-              </div>
-              <div className="form-group">
-                <label className="form-label" htmlFor="inq-agent">Are you represented by a real estate agent?</label>
-                <select id="inq-agent" name="agent" className="form-select">
-                  <option value="no">No</option>
-                  <option value="yes">Yes</option>
-                  <option value="looking">Still deciding</option>
-                </select>
-              </div>
-              <div className="form-group">
-                <label className="form-label" htmlFor="inq-timeline">Desired timeline</label>
-                <select id="inq-timeline" name="timeline" className="form-select">
-                  <option>As soon as possible</option>
-                  <option>Within 6 months</option>
-                  <option>6-12 months</option>
-                  <option>Just exploring</option>
-                </select>
-              </div>
-              <div className="form-group">
-                <label className="form-label" htmlFor="inq-interest">I am interested in</label>
-                <select id="inq-interest" name="interest" className="form-select">
-                  <option>The Powder Chalet in Driggs, Idaho</option>
-                  <option>A future Grand Teton Builders project</option>
-                  <option>Both</option>
-                </select>
-              </div>
-              <div className="form-group">
-                <label className="form-label" htmlFor="inq-message">Message or Questions</label>
-                <textarea
-                  id="inq-message"
-                  name="message"
-                  className="form-input"
-                  placeholder="Tell us what you are looking for, any questions about the home, or request a private conversation..."
-                  rows={5}
-                />
-              </div>
-              <button type="submit" className="form-submit">
-                Submit Inquiry
-              </button>
-              <p
-                style={{
-                  fontSize: 11,
-                  color: 'rgba(255,255,255,0.25)',
-                  letterSpacing: '0.04em',
-                  marginTop: 12,
-                  lineHeight: 1.6,
-                }}
-              >
-                We respond to all inquiries within one business day.
-              </p>
-            </form>
+            {/* Inquiry form removed — placeholder reserves grid space until custom form is added */}
+            <div className="contact-form" aria-hidden="true" />
           </div>
         </section>
       </main>

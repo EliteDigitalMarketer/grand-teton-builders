@@ -91,7 +91,7 @@ export default function HomePage() {
           <div className="hero-content">
             <p className="hero-eyebrow">Custom Home Builder &mdash; Driggs, Idaho</p>
             <h1>
-              Luxury Mountain Homes<br />
+              Quality Mountain Homes<br />
               in <em>Driggs, Idaho</em>
             </h1>
             <p>

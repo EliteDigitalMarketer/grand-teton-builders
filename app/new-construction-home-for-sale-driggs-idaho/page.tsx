@@ -20,16 +20,16 @@ export const metadata: Metadata = {
     url: 'https://grand-teton-builders.vercel.app/new-construction-home-for-sale-driggs-idaho',
     images: [
       {
-        url: '/powder-chalet-front-sunset.png',
+        url: '/Front%20Elevation%20Left%20Angle%203d%20Rendering%20Square%20Mountains.png',
         width: 1240,
-        height: 1245,
-        alt: 'The Powder Chalet — new 4-bedroom mountain modern home at 1230 Wind River Trail in Driggs, Idaho',
+        height: 1240,
+        alt: 'The Powder Chalet — new 4-bedroom mountain modern home at 1230 Wind River Trail in Driggs, Idaho with Teton mountain backdrop',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    images: ['/powder-chalet-front-sunset.png'],
+    images: ['/Front%20Elevation%20Left%20Angle%203d%20Rendering%20Square%20Mountains.png'],
   },
 }
 
@@ -56,9 +56,10 @@ const propertySchema = {
   description:
     'The Powder Chalet is a new 4-bedroom mountain modern home in Driggs, Idaho featuring 2,258 sq ft of single-level living, an open-concept main living area, primary suite, office/flex bedroom, 2.5 bathrooms, attached 2-car garage, and 882 sq ft of patio space. Located in Shoshoni Plains, Teton Valley.',
   image: [
-    'https://grand-teton-builders.vercel.app/powder-chalet-front-sunset.png',
-    'https://grand-teton-builders.vercel.app/powder-chalet-front-elevation-square.png',
-    'https://grand-teton-builders.vercel.app/powder-chalet-side-elevation-square.png',
+    'https://grand-teton-builders.vercel.app/Front%20Elevation%20Left%20Angle%203d%20Rendering%20Square%20Mountains.png',
+    'https://grand-teton-builders.vercel.app/Front%20Elevation%203d%20Rendering%20Square.png',
+    'https://grand-teton-builders.vercel.app/Left%20Elevation%203d%20Rendering%20Square.png',
+    'https://grand-teton-builders.vercel.app/Left%20Rear%20Elevation%203d%20Rendering%20Square.png',
   ],
   address: {
     '@type': 'PostalAddress',
@@ -210,19 +211,19 @@ const features = [
 
 const renderings = [
   {
-    src: '/powder-chalet-front-sunset.png',
-    alt: 'The Powder Chalet — angled front view at sunset with Teton mountain range behind, new 4-bedroom mountain modern home at 1230 Wind River Trail in Driggs Idaho',
-    caption: 'Front view at sunset',
-  },
-  {
-    src: '/powder-chalet-front-elevation-square.png',
+    src: '/Front%20Elevation%203d%20Rendering%20Square.png',
     alt: 'The Powder Chalet — straight-on front elevation rendering showing wood siding, stone accents, and dark modern finishes of the new 4-bedroom home in Driggs Idaho',
     caption: 'Front elevation',
   },
   {
-    src: '/powder-chalet-side-elevation-square.png',
-    alt: 'The Powder Chalet — side elevation rendering showing the dramatic gabled roofline, floor-to-ceiling windows, and covered patio of the new mountain modern home in Driggs Idaho',
-    caption: 'Side elevation with covered patio',
+    src: '/Left%20Elevation%203d%20Rendering%20Square.png',
+    alt: 'The Powder Chalet — side elevation rendering showing the gabled roofline and material rhythm of the new mountain modern home in Driggs Idaho',
+    caption: 'Side elevation',
+  },
+  {
+    src: '/Left%20Rear%20Elevation%203d%20Rendering%20Square.png',
+    alt: 'The Powder Chalet — rear elevation rendering showing the covered patio, outdoor living area, and hot tub designed for four-season mountain use at 1230 Wind River Trail in Driggs Idaho',
+    caption: 'Rear with outdoor living',
   },
 ]
 
@@ -299,7 +300,7 @@ export default function DriggsHomePage() {
           className="hero"
           style={{
             backgroundImage:
-              "linear-gradient(180deg, rgba(31,36,33,0.4) 0%, rgba(31,36,33,0.6) 50%, rgba(31,36,33,0.97) 100%), url('/powder-chalet-front-sunset.png')",
+              "linear-gradient(180deg, rgba(31,36,33,0.4) 0%, rgba(31,36,33,0.6) 50%, rgba(31,36,33,0.97) 100%), url('/Front%20Elevation%20Left%20Angle%203d%20Rendering%20Square%20Mountains.png')",
             paddingTop: 116,
           }}
           aria-label="The Powder Chalet hero"
@@ -458,8 +459,8 @@ export default function DriggsHomePage() {
             </div>
             <div>
               <Image
-                src="/powder-chalet-front-elevation-portrait.png"
-                alt="The Powder Chalet — portrait rendering of the new 4-bedroom mountain modern home at 1230 Wind River Trail in Driggs, Idaho"
+                src="/Front%20Elevation%203d%20Rendering%20Portrait.png"
+                alt="The Powder Chalet — portrait rendering of the new 4-bedroom mountain modern home at 1230 Wind River Trail in Driggs, Idaho with Teton mountain backdrop at sunset"
                 width={1000}
                 height={1400}
                 style={{ width: '100%', height: 'auto', display: 'block' }}

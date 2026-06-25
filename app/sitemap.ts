@@ -18,6 +18,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1.0,
     },
     {
+      url: `${baseUrl}/new-construction-home-for-sale-santa-fe-new-mexico`,
+      lastModified: now,
+      changeFrequency: 'weekly',
+      priority: 1.0,
+    },
+    {
       url: `${baseUrl}/custom-home-builders-driggs-idaho`,
       lastModified: now,
       changeFrequency: 'monthly',

@@ -55,6 +55,7 @@ const organizationSchema = {
     { '@type': 'City', name: 'Victor' },
     { '@type': 'City', name: 'Tetonia' },
     { '@type': 'City', name: 'Alta' },
+    { '@type': 'City', name: 'Santa Fe' },
     { '@type': 'AdministrativeArea', name: 'Teton Valley' },
     { '@type': 'AdministrativeArea', name: 'Teton County, Idaho' },
   ],
@@ -377,12 +378,12 @@ export default function HomePage() {
         >
           <p className="section-eyebrow">Portfolio</p>
           <h2 className="section-title" id="projects-heading">
-            Current and Future Homes
+            Current Homes
           </h2>
           <p className="section-sub">
-            A growing portfolio of refined mountain homes developed by Grand Teton
-            Builders &mdash; thoughtfully designed, carefully built, and rooted in
-            Teton Valley.
+            A growing portfolio of refined homes developed by Grand Teton
+            Builders &mdash; thoughtfully designed, carefully built, and shaped
+            by the landscapes they sit within.
           </p>
           <div
             style={{
@@ -394,7 +395,7 @@ export default function HomePage() {
             role="list"
             aria-label="Project portfolio"
           >
-            {/* Current home card */}
+            {/* The Powder Chalet — Driggs, Idaho */}
             <article
               role="listitem"
               style={{
@@ -423,7 +424,7 @@ export default function HomePage() {
               >
                 <div className="featured-home-status" style={{ marginBottom: 16 }}>
                   <span className="status-dot" aria-hidden="true" />
-                  In Development
+                  Coming Soon
                 </div>
                 <h3
                   style={{
@@ -473,73 +474,84 @@ export default function HomePage() {
               </div>
             </article>
 
-            {/* Future homes placeholder card */}
+            {/* The High Desert — Santa Fe, New Mexico */}
             <article
               role="listitem"
               style={{
-                background: 'rgba(255,255,255,0.6)',
-                border: '1px dashed rgba(31,36,33,0.25)',
-                padding: 40,
+                background: 'var(--charcoal)',
+                border: '1px solid rgba(176,138,74,0.2)',
+                overflow: 'hidden',
                 display: 'flex',
                 flexDirection: 'column',
-                justifyContent: 'center',
-                alignItems: 'flex-start',
-                minHeight: 360,
               }}
             >
-              <p
+              {/* PLACEHOLDER IMAGE: swap with real Santa Fe property photo when available */}
+              <Image
+                src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&q=85"
+                alt="The High Desert — contemporary Santa Fe home at 6 High Desert Vista (placeholder image)"
+                width={1200}
+                height={800}
+                style={{ width: '100%', height: 280, objectFit: 'cover', display: 'block' }}
+                loading="lazy"
+              />
+              <div
                 style={{
-                  fontSize: 10,
-                  letterSpacing: '0.18em',
-                  textTransform: 'uppercase',
-                  color: 'var(--brass)',
-                  marginBottom: 16,
-                  fontWeight: 600,
+                  padding: '28px 28px 32px',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  flex: 1,
                 }}
               >
-                Future Homes
-              </p>
-              <h3
-                style={{
-                  fontFamily: 'var(--font-gfs-didot)',
-                  fontSize: 24,
-                  fontWeight: 400,
-                  color: 'var(--charcoal)',
-                  letterSpacing: '0.02em',
-                  marginBottom: 12,
-                  lineHeight: 1.2,
-                }}
-              >
-                More Homes in Development
-              </h3>
-              <p
-                style={{
-                  fontSize: 14,
-                  fontWeight: 300,
-                  color: 'var(--text-mid)',
-                  lineHeight: 1.8,
-                  letterSpacing: '0.02em',
-                  marginBottom: 24,
-                }}
-              >
-                Additional refined mountain homes are in early planning. Contact
-                Grand Teton Builders to be notified about upcoming releases.
-              </p>
-              <Link
-                href="#contact"
-                style={{
-                  fontSize: 11,
-                  fontWeight: 600,
-                  letterSpacing: '0.18em',
-                  textTransform: 'uppercase',
-                  color: 'var(--brass)',
-                  textDecoration: 'none',
-                  borderBottom: '1px solid var(--brass)',
-                  paddingBottom: 4,
-                }}
-              >
-                Notify Me &rarr;
-              </Link>
+                <div className="featured-home-status" style={{ marginBottom: 16 }}>
+                  <span className="status-dot" aria-hidden="true" />
+                  For Sale &mdash; $1,400,000
+                </div>
+                <h3
+                  style={{
+                    fontFamily: 'var(--font-gfs-didot)',
+                    fontSize: 22,
+                    fontWeight: 400,
+                    color: 'var(--limestone)',
+                    letterSpacing: '0.02em',
+                    marginBottom: 8,
+                  }}
+                >
+                  The High Desert
+                </h3>
+                <p
+                  style={{
+                    fontSize: 11,
+                    letterSpacing: '0.12em',
+                    color: 'rgba(231,224,210,0.5)',
+                    textTransform: 'uppercase',
+                    marginBottom: 16,
+                  }}
+                >
+                  6 High Desert Vista &middot; Santa Fe, New Mexico
+                </p>
+                <p
+                  style={{
+                    fontSize: 14,
+                    fontWeight: 300,
+                    color: 'rgba(231,224,210,0.65)',
+                    lineHeight: 1.75,
+                    letterSpacing: '0.02em',
+                    marginBottom: 24,
+                    flex: 1,
+                  }}
+                >
+                  A new contemporary Santa Fe home on 2.7 acres &mdash; designed
+                  for modern luxury, indoor-outdoor living, and panoramic high
+                  desert views.
+                </p>
+                <Link
+                  href="/new-construction-home-for-sale-santa-fe-new-mexico"
+                  className="btn-primary"
+                  style={{ alignSelf: 'flex-start' }}
+                >
+                  View Home
+                </Link>
+              </div>
             </article>
           </div>
         </section>
@@ -578,18 +590,19 @@ export default function HomePage() {
         <section className="contact" id="contact" aria-labelledby="contact-heading">
           <p className="section-eyebrow">Get In Touch</p>
           <h2 className="section-title" id="contact-heading">
-            Inquire About Current and Future Homes
+            Inquire About Current Homes
           </h2>
           <p className="section-sub">
-            Connect with Grand Teton Builders to request details about current
-            homes, future releases, or select build opportunities.
+            Connect with Grand Teton Builders to request details about The
+            Powder Chalet in Driggs, The High Desert in Santa Fe, or select
+            build opportunities.
           </p>
           <div className="contact-inner">
             <div className="contact-info">
               <div className="contact-item">
                 <div className="contact-item-icon" aria-hidden="true">&#x1F4CD;</div>
                 <div>
-                  <div className="contact-item-label">Location</div>
+                  <div className="contact-item-label">Based In</div>
                   <div className="contact-item-val">Driggs, Teton Valley, Idaho</div>
                 </div>
               </div>
@@ -616,11 +629,12 @@ export default function HomePage() {
                 </div>
               </div>
               <div className="contact-highlight">
-                <p className="contact-highlight-title">Interested in The Powder Chalet?</p>
+                <p className="contact-highlight-title">Current Homes</p>
                 <p className="contact-highlight-body">
-                  The Powder Chalet at 1230 Wind River Trail is currently in
-                  development. Reach out to inquire about availability, finishes,
-                  or to schedule a private conversation about the home.
+                  The Powder Chalet (Driggs, ID) is in pre-construction. The
+                  High Desert (Santa Fe, NM) is for sale at $1,400,000 with
+                  staging in early July. Reach out to inquire about either home
+                  or to schedule a private conversation.
                 </p>
               </div>
             </div>

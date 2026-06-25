@@ -8,7 +8,7 @@ import SchemaOrg from '@/components/SchemaOrg'
 export const metadata: Metadata = {
   title: 'The High Desert | New Contemporary Santa Fe Home for Sale at 6 High Desert Vista',
   description:
-    'The High Desert at 6 High Desert Vista — a new 3-bedroom contemporary Santa Fe home for sale by Grand Teton Builders. 2,495 sq ft on 2.7 acres with panoramic high desert views. Listed at $1,400,000.',
+    'The High Desert at 6 High Desert Vista — a new 3-bedroom Contemporary Pueblo home for sale in the gated Longview community, Santa Fe. 2,495 sq ft on 2.7 acres with panoramic high desert views. Listed at $1,400,000.',
   alternates: {
     canonical:
       'https://grand-teton-builders.vercel.app/new-construction-home-for-sale-santa-fe-new-mexico',
@@ -16,14 +16,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'The High Desert | Contemporary Santa Fe Home for Sale',
     description:
-      'New 3-bedroom contemporary Santa Fe home at 6 High Desert Vista — 2,495 sq ft on 2.7 acres with panoramic high desert views. Listed at $1,400,000 by Grand Teton Builders.',
+      'New 3-bedroom Contemporary Pueblo home at 6 High Desert Vista — 2,495 sq ft on 2.7 acres in the gated Longview community with panoramic high desert views. Listed at $1,400,000.',
     url: 'https://grand-teton-builders.vercel.app/new-construction-home-for-sale-santa-fe-new-mexico',
     images: [
       {
         url: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1800&q=85',
         width: 1200,
         height: 800,
-        alt: 'The High Desert — new contemporary Santa Fe home at 6 High Desert Vista (placeholder image)',
+        alt: 'The High Desert — new Contemporary Pueblo home at 6 High Desert Vista in Santa Fe (placeholder image)',
       },
     ],
   },
@@ -55,7 +55,7 @@ const propertySchema = {
   name: 'The High Desert — 6 High Desert Vista, Santa Fe, New Mexico',
   alternateName: 'The High Desert',
   description:
-    'The High Desert at 6 High Desert Vista is a new contemporary Santa Fe home featuring 2,495 sq ft of finished living space on a 2.7-acre lot. Built by Grand Teton Builders, the home offers 3 bedrooms, 3 bathrooms, an open-concept floor plan, chef-grade kitchen, fireplace-anchored great room, spa-inspired primary suite, oversize 3-car garage, and panoramic high desert views.',
+    'The High Desert at 6 High Desert Vista is a new Contemporary Pueblo home developed by Grand Teton Builders in partnership with HiLow Builders. The home features 2,495 sq ft of single-level finished living on a 2.7-acre lot in the gated Longview community, with 3 bedrooms, 3 bathrooms (2 full, 1 half), an open-concept floor plan, chef-grade kitchen with ENERGY STAR appliances, gas fireplace, concrete flooring, exposed beams, spa-inspired primary suite, attached 3-car garage, and panoramic high desert views.',
   image: [
     'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1800&q=85',
     'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200&q=85',
@@ -71,6 +71,8 @@ const propertySchema = {
   },
   numberOfBedrooms: 3,
   numberOfBathroomsTotal: 3,
+  numberOfFullBathrooms: 2,
+  numberOfPartialBathrooms: 1,
   floorSize: {
     '@type': 'QuantitativeValue',
     value: 2495,
@@ -82,20 +84,52 @@ const propertySchema = {
     unitCode: 'ACR',
   },
   yearBuilt: 2026,
+  additionalProperty: [
+    {
+      '@type': 'PropertyValue',
+      name: 'Architectural Style',
+      value: 'Contemporary Pueblo',
+    },
+    {
+      '@type': 'PropertyValue',
+      name: 'Build Partner',
+      value: 'HiLow Builders',
+    },
+    {
+      '@type': 'PropertyValue',
+      name: 'Subdivision',
+      value: 'Longview (Gated Community)',
+    },
+    {
+      '@type': 'PropertyValue',
+      name: 'Parcel Number',
+      value: '099305643',
+    },
+  ],
   amenityFeature: [
-    { '@type': 'LocationFeatureSpecification', name: 'Open-concept floor plan' },
+    { '@type': 'LocationFeatureSpecification', name: 'Contemporary Pueblo architectural style' },
+    { '@type': 'LocationFeatureSpecification', name: 'Single-level living with no interior steps' },
+    { '@type': 'LocationFeatureSpecification', name: 'Open-concept great room, dining, and kitchen' },
     { '@type': 'LocationFeatureSpecification', name: 'Chef-grade kitchen with large island and walk-in pantry' },
-    { '@type': 'LocationFeatureSpecification', name: 'Fireplace in living room' },
-    { '@type': 'LocationFeatureSpecification', name: 'Primary suite with spa-inspired bathroom' },
-    { '@type': 'LocationFeatureSpecification', name: 'Dual vanities and walk-in shower' },
+    { '@type': 'LocationFeatureSpecification', name: 'ENERGY STAR appliances: dishwasher, disposal, oven, range, refrigerator' },
+    { '@type': 'LocationFeatureSpecification', name: 'Gas fireplace with insert in great room' },
+    { '@type': 'LocationFeatureSpecification', name: 'Concrete flooring throughout' },
+    { '@type': 'LocationFeatureSpecification', name: 'High ceilings with exposed beams' },
+    { '@type': 'LocationFeatureSpecification', name: 'Insulated windows' },
+    { '@type': 'LocationFeatureSpecification', name: 'Primary suite with spa-inspired bathroom, dual vanities, and walk-in shower' },
     { '@type': 'LocationFeatureSpecification', name: 'Large walk-in primary closet' },
-    { '@type': 'LocationFeatureSpecification', name: 'Attached oversize 3-car garage' },
+    { '@type': 'LocationFeatureSpecification', name: 'Forced air heating (propane)' },
+    { '@type': 'LocationFeatureSpecification', name: 'Central refrigerated cooling' },
+    { '@type': 'LocationFeatureSpecification', name: 'Tankless water heater (ENERGY STAR)' },
+    { '@type': 'LocationFeatureSpecification', name: 'Frame construction with slab foundation and flat membrane roof' },
+    { '@type': 'LocationFeatureSpecification', name: 'Shared well water and septic system' },
+    { '@type': 'LocationFeatureSpecification', name: 'Low-flow plumbing fixtures and water-smart landscaping' },
+    { '@type': 'LocationFeatureSpecification', name: 'High-speed internet available' },
+    { '@type': 'LocationFeatureSpecification', name: '220V electrical service' },
+    { '@type': 'LocationFeatureSpecification', name: 'Attached 3-car garage (6 total parking spaces)' },
     { '@type': 'LocationFeatureSpecification', name: 'Covered portals and patio for indoor-outdoor living' },
-    { '@type': 'LocationFeatureSpecification', name: 'Panoramic high desert views' },
-    { '@type': 'LocationFeatureSpecification', name: 'Large energy-efficient windows and doors' },
-    { '@type': 'LocationFeatureSpecification', name: 'High ceilings with beams and contemporary finishes' },
-    { '@type': 'LocationFeatureSpecification', name: 'Ducted forced air heating and refrigerated air' },
-    { '@type': 'LocationFeatureSpecification', name: 'Contemporary Santa Fe architectural design' },
+    { '@type': 'LocationFeatureSpecification', name: 'Panoramic high desert views on 2.7-acre lot' },
+    { '@type': 'LocationFeatureSpecification', name: 'Gated Longview community with security' },
   ],
   offers: {
     '@type': 'Offer',
@@ -138,20 +172,28 @@ const faqs = [
     a: 'Yes. The High Desert at 6 High Desert Vista is currently listed for sale at $1,400,000. The home is substantially complete, with staging scheduled for early July. Contact Grand Teton Builders to schedule a private showing or request additional information.',
   },
   {
-    q: 'How big is the home and what is the floor plan?',
-    a: 'The home offers 2,495 sq ft of finished living space with 3 bedrooms, 3 bathrooms, and an attached oversize 3-car garage on a 2.7-acre lot. The open-concept floor plan features a chef-grade kitchen with high-end appliances, custom cabinetry, a large island, and a walk-in pantry. The great room is anchored by a fireplace and large windows framing the surrounding landscape. The private primary suite includes outdoor access, a spa-inspired bathroom with dual vanities and a walk-in shower, and a large walk-in closet. Two additional guest bedrooms are thoughtfully separated for privacy, and a flexible space can be used as a home office, studio, or media room.',
+    q: 'Who built The High Desert?',
+    a: 'The High Desert was developed by Grand Teton Builders in partnership with HiLow Builders, a Santa Fe-based builder with deep familiarity with the regional design vernacular and local construction practices. The collaboration brought together Grand Teton Builders\u2019 standards for thoughtful design, durable construction, and refined craftsmanship with HiLow Builders\u2019 Santa Fe expertise.',
   },
   {
-    q: 'When was the home built?',
-    a: 'The High Desert was built in 2026 by Grand Teton Builders. The home is substantially complete and ready for buyers, with final staging completing in early July.',
+    q: 'How big is the home and what is the floor plan?',
+    a: 'The home offers 2,495 sq ft of single-level finished living with 3 bedrooms, 3 bathrooms (2 full, 1 half), and an attached 3-car garage with 6 total parking spaces on a 2.7-acre lot. The open-concept floor plan features a chef-grade kitchen with ENERGY STAR appliances, custom cabinetry, a large island, and a walk-in pantry. The great room is anchored by a gas fireplace and large insulated windows framing the surrounding landscape. The private primary suite includes outdoor access, a spa-inspired bathroom with dual vanities and a walk-in shower, and a large walk-in closet. Two additional guest bedrooms are thoughtfully separated for privacy, and a flexible space can be used as a home office, studio, or media room.',
+  },
+  {
+    q: 'What architectural style is the home?',
+    a: 'The High Desert is designed in a Contemporary Pueblo style, combining clean modern architecture with the heritage of Southwestern design. The home features a flat membrane roof, exposed beams, concrete flooring throughout, and high ceilings \u2014 finishes that align with both the Santa Fe vernacular and contemporary luxury construction.',
+  },
+  {
+    q: 'What are the heating, cooling, and utility systems?',
+    a: 'The home uses forced air heating (propane) with central refrigerated cooling. Water is supplied via a shared well with a septic system on the property. An ENERGY STAR tankless water heater serves the home, and low-flow plumbing fixtures plus water-smart landscaping support water conservation. Electrical service is 220 volts, and high-speed internet is available.',
   },
   {
     q: 'Where is the home located?',
-    a: 'The home is located at 6 High Desert Vista in Santa Fe, New Mexico (87505), on a private 2.7-acre lot with expansive high desert views. The property offers privacy and open skies while remaining within an easy drive of central Santa Fe.',
+    a: 'The home is located at 6 High Desert Vista in the gated Longview community in Santa Fe, New Mexico (87505), on a private 2.7-acre lot with expansive high desert views. The property offers privacy, open skies, and gated security while remaining within an easy drive of central Santa Fe.',
   },
   {
-    q: 'What does the listing include?',
-    a: 'The listing price is $1,400,000 with monthly HOA dues of $150. Contact Grand Teton Builders for current availability, complete property details, and to discuss the home.',
+    q: 'What does the HOA cover and what is the listing price?',
+    a: 'The listing price is $1,400,000. HOA dues are $450 per quarter (approximately $150 per month) and cover common areas, insurance, road maintenance, and security in the gated Longview community. Contact Grand Teton Builders for current availability and complete property details.',
   },
   {
     q: 'Can I schedule a private showing?',
@@ -159,7 +201,7 @@ const faqs = [
   },
   {
     q: 'Does Grand Teton Builders build outside of Idaho?',
-    a: 'Yes. Grand Teton Builders develops the majority of our homes in Driggs and the Teton Valley in Idaho. The High Desert in Santa Fe represents a select project completed in another quality-driven mountain and high desert market that aligns with our standards for thoughtful design, durable construction, and refined craftsmanship.',
+    a: 'Yes. Grand Teton Builders develops the majority of our homes in Driggs and the Teton Valley in Idaho. The High Desert in Santa Fe was developed in partnership with Santa Fe-based HiLow Builders \u2014 a collaboration that brought Grand Teton Builders\u2019 standards for thoughtful design, durable construction, and refined craftsmanship to a new market and a new architectural style.',
   },
 ]
 
@@ -180,54 +222,92 @@ const specs = [
   { label: 'Home Name', value: 'The High Desert' },
   { label: 'Address', value: '6 High Desert Vista' },
   { label: 'Location', value: 'Santa Fe, New Mexico' },
+  { label: 'Subdivision', value: 'Longview (Gated)' },
   { label: 'Lot Size', value: '2.7 acres' },
-  { label: 'Home Style', value: 'Contemporary Santa Fe' },
+  { label: 'Architectural Style', value: 'Contemporary Pueblo' },
   { label: 'Finished Living Area', value: '2,495 sq ft' },
   { label: 'Bedrooms', value: '3' },
-  { label: 'Bathrooms', value: '3' },
-  { label: 'Garage', value: 'Oversize 3-car attached' },
+  { label: 'Bathrooms', value: '3 (2 full, 1 half)' },
+  { label: 'Stories', value: '1' },
+  { label: 'Garage', value: '3-car attached (6 total spaces)' },
   { label: 'Year Built', value: '2026' },
+  { label: 'Builders', value: 'Grand Teton Builders & HiLow Builders' },
   { label: 'Status', value: 'For Sale — Substantially Complete' },
   { label: 'Price', value: '$1,400,000' },
-  { label: 'HOA', value: '$150 / month' },
+  { label: 'HOA', value: '$450 / quarter (~$150 / mo)' },
+  { label: 'Parcel Number', value: '099305643' },
 ]
 
 const features = [
-  'New construction contemporary Santa Fe home, completed 2026',
-  '2,495 sq ft of finished living space',
-  '3 bedrooms and 3 bathrooms',
-  '2.7-acre lot with expansive high desert views',
+  '2,495 sq ft of single-level finished living with no interior steps',
+  '3 bedrooms and 3 bathrooms (2 full, 1 half)',
   'Open-concept great room, dining, and kitchen',
-  'Chef-grade kitchen with high-end appliances, custom cabinetry, large island, and walk-in pantry',
-  'Living area centered on a fireplace with large windows framing the landscape',
+  'Chef-grade kitchen with custom cabinetry, large island, and walk-in pantry',
+  'ENERGY STAR appliances included: dishwasher, disposal, oven, range, refrigerator',
+  'Gas fireplace with insert in the great room',
+  'Concrete flooring throughout',
+  'High ceilings with exposed beams',
+  'Insulated windows',
   'Private primary suite with outdoor access',
-  'Spa-inspired primary bathroom with dual vanities and walk-in shower',
+  'Spa-inspired primary bath with dual vanities and walk-in shower',
   'Large walk-in primary closet',
   'Guest bedrooms thoughtfully separated for privacy',
   'Flexible space — ideal for a home office, studio, or media room',
   'Covered portals and patio for indoor-outdoor living',
-  'Large energy-efficient windows and doors',
-  'High ceilings with beams and contemporary finishes',
-  'Ducted forced air heating and refrigerated air',
-  'Attached oversize 3-car garage',
-  'High-quality finishes and materials throughout',
+  '2.7-acre lot with panoramic high desert views',
+  'Attached 3-car garage (6 total parking spaces)',
+  'Located in the gated Longview community',
+]
+
+const constructionSystems = [
+  {
+    title: 'Construction & Materials',
+    items: [
+      'Contemporary Pueblo architectural style',
+      'Frame construction',
+      'Slab foundation',
+      'Flat membrane roof',
+      'New construction, completed 2026',
+    ],
+  },
+  {
+    title: 'Heating, Cooling & Water',
+    items: [
+      'Forced air heating (propane)',
+      'Central refrigerated cooling',
+      'Tankless water heater (ENERGY STAR)',
+      'Shared well water supply',
+      'Septic system',
+    ],
+  },
+  {
+    title: 'Site, Utilities & Community',
+    items: [
+      '2.7-acre lot in gated Longview community',
+      '220V electrical service',
+      'High-speed internet available',
+      'Low-flow plumbing fixtures',
+      'Water-smart landscaping',
+      'HOA: $450 / quarter (common areas, insurance, road maintenance, security)',
+    ],
+  },
 ]
 
 // PLACEHOLDER-GALLERY: swap these src URLs with real property photos when available
 const photos = [
   {
     src: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200&q=85',
-    alt: 'The High Desert — front elevation of the contemporary Santa Fe home at 6 High Desert Vista (placeholder image — replace with actual photo)',
+    alt: 'The High Desert — front elevation of the Contemporary Pueblo home at 6 High Desert Vista (placeholder image — replace with actual photo)',
     caption: 'Front elevation',
   },
   {
     src: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200&q=85',
-    alt: 'The High Desert — exterior detail showing contemporary Santa Fe architecture (placeholder image — replace with actual photo)',
+    alt: 'The High Desert — exterior detail showing Contemporary Pueblo architecture (placeholder image — replace with actual photo)',
     caption: 'Architectural detail',
   },
   {
     src: 'https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=1200&q=85',
-    alt: 'The High Desert — high desert landscape and views from the property (placeholder image — replace with actual photo)',
+    alt: 'The High Desert — high desert landscape and views from the 2.7-acre property (placeholder image — replace with actual photo)',
     caption: 'High desert setting',
   },
 ]
@@ -286,8 +366,8 @@ export default function SantaFeHomePage() {
               in <em>Santa Fe, New Mexico</em>
             </h1>
             <p>
-              A new contemporary Santa Fe home set on 2.7 acres with panoramic
-              high desert views &mdash; designed and built for modern luxury,
+              A new Contemporary Pueblo home set on 2.7 acres in the gated
+              Longview community &mdash; designed and built for modern luxury,
               indoor-outdoor living, and the dramatic beauty of the Southwest.
             </p>
             <div
@@ -392,6 +472,7 @@ export default function SantaFeHomePage() {
                     fontSize: 18,
                     color: 'var(--limestone)',
                     letterSpacing: '0.02em',
+                    lineHeight: 1.3,
                   }}
                 >
                   {value}
@@ -410,15 +491,17 @@ export default function SantaFeHomePage() {
             <div>
               <p className="section-eyebrow">About The High Desert</p>
               <h2 className="section-title" id="description-heading">
-                A New Contemporary Santa Fe Home Built for the High Desert
+                A New Contemporary Pueblo Home Built for the High Desert
               </h2>
               <p className="section-sub" style={{ maxWidth: '100%', marginBottom: 24 }}>
                 The High Desert at 6 High Desert Vista is a thoughtfully designed
-                contemporary Santa Fe home that brings together modern luxury and
-                the tranquil beauty of the high desert landscape. Set on a
-                2.7-acre homesite with expansive views, the home is designed to
-                capture natural light, dramatic sunsets, and panoramic vistas
-                from nearly every room.
+                Contemporary Pueblo home, developed by Grand Teton Builders in
+                partnership with Santa Fe-based HiLow Builders. The home brings
+                together clean modern architecture and the Southwestern design
+                heritage of Santa Fe. Set on a 2.7-acre homesite in the gated
+                Longview community, it is designed to capture natural light,
+                dramatic sunsets, and panoramic high desert vistas from nearly
+                every room.
               </p>
               <p
                 style={{
@@ -432,10 +515,10 @@ export default function SantaFeHomePage() {
               >
                 The open-concept floor plan brings together spacious living and
                 dining areas that flow seamlessly into a chef-grade kitchen with
-                high-end appliances, custom cabinetry, a large island, and
-                generous walk-in pantry space. The great room is centered on a
-                fireplace and framed by large windows, creating a warm and
-                inviting setting for both everyday living and entertaining.
+                ENERGY STAR appliances, custom cabinetry, a large island, and a
+                generous walk-in pantry. The great room is centered on a gas
+                fireplace and framed by large insulated windows, creating a warm
+                and inviting setting for both everyday living and entertaining.
               </p>
               <p
                 style={{
@@ -449,9 +532,10 @@ export default function SantaFeHomePage() {
               >
                 The private primary suite is designed as a retreat, with direct
                 outdoor access, a spa-inspired bathroom, dual vanities, a
-                walk-in shower, and a large walk-in closet. Guest bedrooms are
-                thoughtfully separated for privacy and comfort, and a flexible
-                room is suited to use as a home office, studio, or media room.
+                walk-in shower, and a large walk-in closet. Two guest bedrooms
+                are thoughtfully separated for privacy and comfort, and a
+                flexible room is suited to use as a home office, studio, or
+                media room.
               </p>
               <p
                 style={{
@@ -464,18 +548,19 @@ export default function SantaFeHomePage() {
               >
                 Outdoor living is central to the design. Covered portals and
                 patio areas extend the living space outdoors and take full
-                advantage of the views and the Santa Fe climate. High ceilings
-                with beams, energy-efficient windows, ducted forced air heating
-                with refrigerated air, and high-quality finishes complete a home
-                designed for comfort, durability, and indoor-outdoor living in a
-                beautiful high desert setting.
+                advantage of the high desert views and the Santa Fe climate.
+                Concrete flooring throughout, high ceilings with exposed beams,
+                an ENERGY STAR tankless water heater, forced air propane heating
+                with central refrigerated cooling, and high-quality finishes
+                complete a home designed for comfort, durability, and
+                indoor-outdoor living in a beautiful high desert setting.
               </p>
             </div>
             <div>
               {/* PLACEHOLDER-SIDEBAR: swap with vertical/portrait property photo when ready */}
               <Image
                 src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1000&q=85"
-                alt="The High Desert — placeholder vertical image of contemporary Santa Fe home interior, to be replaced with actual property photo"
+                alt="The High Desert — placeholder vertical image of Contemporary Pueblo home, to be replaced with actual property photo"
                 width={1000}
                 height={1400}
                 style={{ width: '100%', height: 'auto', display: 'block' }}
@@ -499,7 +584,7 @@ export default function SantaFeHomePage() {
             The High Desert in Detail
           </h2>
           <p className="section-sub" style={{ color: 'rgba(231,224,210,0.6)' }}>
-            Photos of the new contemporary Santa Fe home at 6 High Desert Vista.
+            Photos of the new Contemporary Pueblo home at 6 High Desert Vista.
             Additional photography will follow staging completion in early July.
           </p>
           <div
@@ -595,6 +680,87 @@ export default function SantaFeHomePage() {
               </li>
             ))}
           </ul>
+        </section>
+
+        {/* CONSTRUCTION & SYSTEMS */}
+        <section
+          style={{ background: 'var(--snowfield)', padding: '96px 5vw' }}
+          aria-labelledby="construction-heading"
+        >
+          <p className="section-eyebrow">Specifications</p>
+          <h2 className="section-title" id="construction-heading">
+            Construction &amp; Systems
+          </h2>
+          <p className="section-sub">
+            The home is built to durable, energy-conscious specifications &mdash;
+            grounded in Contemporary Pueblo architecture and outfitted with
+            modern systems throughout.
+          </p>
+          <div
+            style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+              gap: 24,
+              marginTop: 48,
+            }}
+            role="list"
+            aria-label="Construction and systems specifications"
+          >
+            {constructionSystems.map(({ title, items }) => (
+              <div
+                key={title}
+                role="listitem"
+                style={{
+                  background: '#fff',
+                  padding: '32px 28px',
+                  borderTop: '2px solid var(--brass)',
+                }}
+              >
+                <h3
+                  style={{
+                    fontFamily: 'var(--font-gfs-didot)',
+                    fontSize: 18,
+                    fontWeight: 400,
+                    color: 'var(--charcoal)',
+                    marginBottom: 20,
+                    letterSpacing: '0.02em',
+                  }}
+                >
+                  {title}
+                </h3>
+                <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 10 }}>
+                  {items.map((item) => (
+                    <li
+                      key={item}
+                      style={{
+                        display: 'flex',
+                        alignItems: 'flex-start',
+                        gap: 10,
+                        fontSize: 13,
+                        fontWeight: 400,
+                        color: 'var(--slate)',
+                        lineHeight: 1.6,
+                        letterSpacing: '0.02em',
+                      }}
+                    >
+                      <span
+                        aria-hidden="true"
+                        style={{
+                          display: 'block',
+                          width: 5,
+                          height: 5,
+                          background: 'var(--brass)',
+                          marginTop: 7,
+                          flexShrink: 0,
+                        }}
+                      />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
         </section>
 
         {/* WHY SANTA FE */}
@@ -751,8 +917,9 @@ export default function SantaFeHomePage() {
                 <p className="contact-highlight-title">The High Desert &mdash; For Sale</p>
                 <p className="contact-highlight-body">
                   Listed at $1,400,000. The home is substantially complete, with
-                  staging in early July. Qualified buyers are welcome to request
-                  a private showing.
+                  staging in early July. Developed by Grand Teton Builders in
+                  partnership with HiLow Builders. Qualified buyers are welcome
+                  to request a private showing.
                 </p>
               </div>
               <div style={{ marginTop: 24 }}>

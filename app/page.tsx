@@ -485,12 +485,11 @@ export default function HomePage() {
                 flexDirection: 'column',
               }}
             >
-              {/* PLACEHOLDER IMAGE: swap with real Santa Fe property photo when available */}
               <Image
-                src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&q=85"
-                alt="The High Desert — contemporary Santa Fe home at 6 High Desert Vista (placeholder image)"
-                width={1200}
-                height={800}
+                src="/santa-fe/modern-desert-home-front-exterior-aerial-mountain-backdrop.webp"
+                alt="The High Desert — aerial view of the new Contemporary Pueblo home at 6 High Desert Vista in Santa Fe with mountain backdrop"
+                width={1600}
+                height={1067}
                 style={{ width: '100%', height: 280, objectFit: 'cover', display: 'block' }}
                 loading="lazy"
               />
@@ -540,9 +539,9 @@ export default function HomePage() {
                     flex: 1,
                   }}
                 >
-                  A new contemporary Santa Fe home on 2.7 acres &mdash; designed
-                  for modern luxury, indoor-outdoor living, and panoramic high
-                  desert views.
+                  A new Contemporary Pueblo home on 2.7 acres in the gated
+                  Longview community &mdash; designed for modern luxury,
+                  indoor-outdoor living, and panoramic high desert views.
                 </p>
                 <Link
                   href="/new-construction-home-for-sale-santa-fe-new-mexico"

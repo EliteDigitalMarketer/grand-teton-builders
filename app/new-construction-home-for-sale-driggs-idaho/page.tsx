@@ -8,7 +8,7 @@ import SchemaOrg from '@/components/SchemaOrg'
 export const metadata: Metadata = {
   title: 'The Powder Chalet | New 4-Bedroom Mountain Modern Home for Sale in Driggs, Idaho',
   description:
-    'The Powder Chalet at 1230 Wind River Trail — a new 4-bedroom mountain modern home in Driggs, Idaho with 2,258 sq ft, 2.5 baths, office/flex bedroom, attached 2-car garage, and large patio.',
+    'The Powder Chalet at 1230 Wind River Trail — a new 4-bedroom mountain modern home on 0.33 acres in Driggs, Idaho with Teton mountain views, 2,258 sq ft, 2.5 baths, attached 2-car garage, and large patio.',
   alternates: {
     canonical:
       'https://grand-teton-builders.vercel.app/new-construction-home-for-sale-driggs-idaho',
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'The Powder Chalet | New 4-Bedroom Mountain Modern Home for Sale in Driggs, Idaho',
     description:
-      'The Powder Chalet at 1230 Wind River Trail — a new 4-bedroom mountain modern home in Driggs, Idaho with 2,258 sq ft, 2.5 baths, office/flex bedroom, attached 2-car garage, and large patio.',
+      'The Powder Chalet at 1230 Wind River Trail — a new 4-bedroom mountain modern home on 0.33 acres in Driggs, Idaho with Teton mountain views, 2,258 sq ft, 2.5 baths, attached 2-car garage, and large patio.',
     url: 'https://grand-teton-builders.vercel.app/new-construction-home-for-sale-driggs-idaho',
     images: [
       {
@@ -45,6 +45,8 @@ const propertyDetails = {
   garage: '692 sq ft, 2-car attached',
   patio: '882 sq ft concrete patio/deck',
   layout: 'Single-level living',
+  lotSize: '0.33 acres',
+  views: 'Tetons & Grand Teton',
   price: 'Price available upon request',
 }
 
@@ -54,7 +56,7 @@ const propertySchema = {
   name: 'The Powder Chalet — 1230 Wind River Trail, Driggs, Idaho',
   alternateName: 'The Powder Chalet',
   description:
-    'The Powder Chalet is a new 4-bedroom mountain modern home in Driggs, Idaho featuring 2,258 sq ft of single-level living, an open-concept main living area, primary suite, office/flex bedroom, 2.5 bathrooms, attached 2-car garage, and 882 sq ft of patio space. Located in Shoshoni Plains, Teton Valley.',
+    'The Powder Chalet is a new 4-bedroom mountain modern home on a 0.33-acre lot in Driggs, Idaho with views of the Tetons and Grand Teton. Features include 2,258 sq ft of single-level living, an open-concept main living area, primary suite, office/flex bedroom, 2.5 bathrooms, attached 2-car garage, and 882 sq ft of patio space. Located in Shoshoni Plains, Teton Valley.',
   image: [
     'https://grand-teton-builders.vercel.app/Front%20Elevation%20Left%20Angle%203d%20Rendering%20Square%20Mountains.png',
     'https://grand-teton-builders.vercel.app/Front%20Elevation%203d%20Rendering%20Square.png',
@@ -77,7 +79,14 @@ const propertySchema = {
     value: 2258,
     unitCode: 'FTK',
   },
+  lotSize: {
+    '@type': 'QuantitativeValue',
+    value: 0.33,
+    unitCode: 'ACR',
+  },
   amenityFeature: [
+    { '@type': 'LocationFeatureSpecification', name: 'Mountain views of the Tetons and Grand Teton' },
+    { '@type': 'LocationFeatureSpecification', name: '0.33-acre lot' },
     { '@type': 'LocationFeatureSpecification', name: 'Open-concept great room, dining, and kitchen' },
     { '@type': 'LocationFeatureSpecification', name: 'Large kitchen island and walk-in pantry' },
     { '@type': 'LocationFeatureSpecification', name: 'Primary suite with walk-in closet' },
@@ -132,7 +141,7 @@ const faqSchema = {
       name: 'How big is The Powder Chalet and what is the floor plan?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'The Powder Chalet offers 2,258 sq ft of finished single-level living with 4 bedrooms and 2.5 bathrooms, including an open great room, dining area, kitchen with large island and walk-in pantry, a primary suite with walk-in closet, two additional bedrooms in a separate wing, and a 4th bedroom designed as a flexible office or guest room with closet. The home also includes a 692 sq ft attached 2-car garage and 882 sq ft of concrete patio/deck space.',
+        text: 'The Powder Chalet offers 2,258 sq ft of finished single-level living with 4 bedrooms and 2.5 bathrooms, including an open great room, dining area, kitchen with large island and walk-in pantry, a primary suite with walk-in closet, two additional bedrooms in a separate wing, and a 4th bedroom designed as a flexible office or guest room with closet. The home also includes a 692 sq ft attached 2-car garage and 882 sq ft of concrete patio/deck space. The home sits on a 0.33-acre lot with views of the Tetons and Grand Teton.',
       },
     },
     {
@@ -156,7 +165,7 @@ const faqSchema = {
       name: 'Where is The Powder Chalet located?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'The Powder Chalet is located at 1230 Wind River Trail in the Shoshoni Plains subdivision in Driggs, Idaho, in the heart of Teton Valley. Driggs offers easy access to Grand Targhee Resort, the Tetons, Jackson Hole, and four-season mountain recreation.',
+        text: 'The Powder Chalet is located at 1230 Wind River Trail in the Shoshoni Plains subdivision in Driggs, Idaho, in the heart of Teton Valley. The 0.33-acre property offers mountain views of the Tetons and Grand Teton, with easy access to Grand Targhee Resort, Jackson Hole, and four-season mountain recreation.',
       },
     },
     {
@@ -183,6 +192,8 @@ const specs = [
   { label: 'Address', value: '1230 Wind River Trail' },
   { label: 'Subdivision', value: 'Shoshoni Plains' },
   { label: 'Location', value: 'Driggs, Idaho' },
+  { label: 'Lot Size', value: '0.33 acres' },
+  { label: 'Views', value: 'Tetons & Grand Teton' },
   { label: 'Home Style', value: 'Mountain Modern' },
   { label: 'Finished Living Area', value: '2,258 sq ft' },
   { label: 'Bedrooms', value: '4' },
@@ -195,6 +206,8 @@ const specs = [
 
 const features = [
   'New mountain modern home in Driggs, Idaho',
+  'Mountain views of the Tetons and Grand Teton',
+  '0.33-acre lot in the Shoshoni Plains subdivision',
   '2,258 sq ft of finished single-level living',
   '4 bedrooms — including a 4th bedroom designed as office/flex room with closet',
   '2.5 bathrooms',
@@ -261,7 +274,7 @@ const faqs = [
   },
   {
     q: 'How big is The Powder Chalet and what is the floor plan?',
-    a: 'The Powder Chalet offers 2,258 sq ft of finished single-level living with 4 bedrooms and 2.5 bathrooms, including an open great room, dining area, kitchen with large island and walk-in pantry, a primary suite with walk-in closet, two additional bedrooms in a separate wing, and a 4th bedroom designed as a flexible office or guest room with closet. The home also includes a 692 sq ft attached 2-car garage and 882 sq ft of concrete patio/deck space.',
+    a: 'The Powder Chalet offers 2,258 sq ft of finished single-level living with 4 bedrooms and 2.5 bathrooms, including an open great room, dining area, kitchen with large island and walk-in pantry, a primary suite with walk-in closet, two additional bedrooms in a separate wing, and a 4th bedroom designed as a flexible office or guest room with closet. The home also includes a 692 sq ft attached 2-car garage and 882 sq ft of concrete patio/deck space. The home sits on a 0.33-acre lot with views of the Tetons and Grand Teton.',
   },
   {
     q: 'Can I select finishes or make changes to the home?',
@@ -273,7 +286,7 @@ const faqs = [
   },
   {
     q: 'Where is The Powder Chalet located?',
-    a: 'The Powder Chalet is located at 1230 Wind River Trail in the Shoshoni Plains subdivision in Driggs, Idaho, in the heart of Teton Valley. Driggs offers easy access to Grand Targhee Resort, the Tetons, Jackson Hole, and four-season mountain recreation.',
+    a: 'The Powder Chalet is located at 1230 Wind River Trail in the Shoshoni Plains subdivision in Driggs, Idaho, in the heart of Teton Valley. The 0.33-acre property offers mountain views of the Tetons and Grand Teton, with easy access to Grand Targhee Resort, Jackson Hole, and four-season mountain recreation.',
   },
   {
     q: 'Can I schedule a private tour or site visit?',
@@ -403,10 +416,12 @@ export default function DriggsHomePage() {
               <p className="section-sub" style={{ maxWidth: '100%', marginBottom: 24 }}>
                 Welcome to The Powder Chalet at 1230 Wind River Trail &mdash; a new
                 4-bedroom mountain modern home designed for comfortable year-round
-                living in Driggs, Idaho. With warm vertical wood siding, dark modern
-                accents, stone detailing, black-framed windows, and a low-profile
-                roofline, the exterior creates a refined Teton Valley look that feels
-                both contemporary and rooted in its mountain setting.
+                living in Driggs, Idaho. Sited on a 0.33-acre lot with mountain
+                views of the Tetons and Grand Teton, the home features warm
+                vertical wood siding, dark modern accents, stone detailing,
+                black-framed windows, and a low-profile roofline that creates a
+                refined Teton Valley look &mdash; both contemporary and rooted in
+                its mountain setting.
               </p>
               <p
                 style={{

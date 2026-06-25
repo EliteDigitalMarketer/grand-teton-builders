@@ -19,16 +19,16 @@ export const metadata: Metadata = {
     url: 'https://grand-teton-builders.vercel.app',
     images: [
       {
-        url: '/powder-chalet-front-sunset.png',
+        url: '/Front%20Elevation%20Left%20Angle%203d%20Rendering%20Square%20Mountains.png',
         width: 1240,
-        height: 1245,
+        height: 1240,
         alt: 'The Powder Chalet — refined mountain home in Driggs, Idaho by Grand Teton Builders',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    images: ['/powder-chalet-front-sunset.png'],
+    images: ['/Front%20Elevation%20Left%20Angle%203d%20Rendering%20Square%20Mountains.png'],
   },
 }
 
@@ -40,7 +40,7 @@ const organizationSchema = {
     'Grand Teton Builders develops quality mountain homes with thoughtful design, durable materials, craftsmanship, and attention to detail. Based in Driggs, Idaho and serving Teton Valley.',
   url: 'https://grand-teton-builders.vercel.app',
   logo: 'https://grand-teton-builders.vercel.app/gtb-logo-light.png',
-  image: 'https://grand-teton-builders.vercel.app/powder-chalet-front-sunset.png',
+  image: 'https://grand-teton-builders.vercel.app/Front%20Elevation%20Left%20Angle%203d%20Rendering%20Square%20Mountains.png',
   telephone: '+1-208-262-3669',
   email: 'Hello@grandtetonbuilders.com',
   foundingDate: '2024',
@@ -159,8 +159,8 @@ export default function HomePage() {
           </p>
           <div className="featured-home-card">
             <Image
-              src="/powder-chalet-front-elevation.png"
-              alt="The Powder Chalet — front elevation of the new 4-bedroom mountain modern home at 1230 Wind River Trail in Driggs, Idaho by Grand Teton Builders"
+              src="/Front%20Elevation%203d%20Rendering%20Rectangle.png"
+              alt="The Powder Chalet — front elevation rendering of the new 4-bedroom mountain modern home at 1230 Wind River Trail in Driggs, Idaho by Grand Teton Builders"
               width={1664}
               height={934}
               className="featured-home-img"
@@ -302,8 +302,8 @@ export default function HomePage() {
           <div className="gallery-grid" role="list" aria-label="Detail showcase">
             <div className="gallery-item gallery-large" role="listitem">
               <Image
-                src="/powder-chalet-front-sunset.png"
-                alt="The Powder Chalet — front view at sunset with Teton mountain backdrop in Driggs, Idaho"
+                src="/Front%20Elevation%20Left%20Angle%203d%20Rendering%20Square%20Mountains.png"
+                alt="The Powder Chalet — front view at sunset with mountain backdrop in Driggs, Idaho"
                 width={900}
                 height={600}
                 className="gallery-img"
@@ -313,19 +313,19 @@ export default function HomePage() {
             </div>
             <div className="gallery-item" role="listitem">
               <Image
-                src="https://images.unsplash.com/photo-1588854337221-4cf9fa96059c?w=700&q=85"
-                alt="Exposed wood beam interior with refined craftsmanship"
+                src="/Front%20Elevation%20Right%20Angle%203d%20Rendering%20Rectangle.png"
+                alt="The Powder Chalet — right angle view showing material alignment of wood and stone"
                 width={600}
                 height={400}
                 className="gallery-img"
                 loading="lazy"
               />
-              <div className="gallery-caption">Material alignment &amp; warm interiors</div>
+              <div className="gallery-caption">Material alignment &amp; warm finishes</div>
             </div>
             <div className="gallery-item" role="listitem">
               <Image
-                src="/powder-chalet-side-elevation.png"
-                alt="The Powder Chalet — side elevation with floor-to-ceiling windows and covered patio"
+                src="/Left%20Elevation%203d%20Rendering%20Square.png"
+                alt="The Powder Chalet — side elevation showing roofline proportion and envelope detail"
                 width={600}
                 height={400}
                 className="gallery-img"
@@ -335,8 +335,8 @@ export default function HomePage() {
             </div>
             <div className="gallery-item" role="listitem">
               <Image
-                src="https://images.unsplash.com/photo-1510798831971-661eb04b3739?w=700&q=85"
-                alt="Mountain-ready exterior detail with pine and stone"
+                src="/Front%20Elevation%20Left%20Angle%203d%20Rendering%20Square.png"
+                alt="The Powder Chalet — left angle daytime view showing mountain-ready exterior"
                 width={600}
                 height={400}
                 className="gallery-img"
@@ -346,8 +346,8 @@ export default function HomePage() {
             </div>
             <div className="gallery-item" role="listitem">
               <Image
-                src="/powder-chalet-front-elevation.png"
-                alt="The Powder Chalet — front elevation showing wood siding, stone accents, and dark modern finishes"
+                src="/Front%20Elevation%203d%20Rendering%20Square.png"
+                alt="The Powder Chalet — straight-on front elevation showing wood, stone, and dark modern finishes"
                 width={600}
                 height={400}
                 className="gallery-img"
@@ -357,14 +357,14 @@ export default function HomePage() {
             </div>
             <div className="gallery-item gallery-wide" role="listitem">
               <Image
-                src="https://images.unsplash.com/photo-1476362555312-ab9e108a0b7e?w=1200&q=85"
-                alt="Panoramic mountain views from a refined Teton Valley home"
+                src="/Left%20Rear%20Elevation%203d%20Rendering%20Square.png"
+                alt="The Powder Chalet — rear view showing covered patio, outdoor dining, and hot tub designed for four-season mountain use"
                 width={900}
                 height={400}
                 className="gallery-img"
                 loading="lazy"
               />
-              <div className="gallery-caption">Designed for the way mountain homes live</div>
+              <div className="gallery-caption">Outdoor living, designed for four-season use</div>
             </div>
           </div>
         </section>
@@ -406,7 +406,7 @@ export default function HomePage() {
               }}
             >
               <Image
-                src="/powder-chalet-front-elevation-square.png"
+                src="/Front%20Elevation%203d%20Rendering%20Square.png"
                 alt="The Powder Chalet — refined 4-bedroom mountain modern home in development at 1230 Wind River Trail in Driggs, Idaho"
                 width={1240}
                 height={1240}

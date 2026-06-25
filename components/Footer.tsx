@@ -27,22 +27,27 @@ export default function Footer() {
           </p>
         </div>
 
-        {/* Current Home */}
+        {/* Current Homes */}
         <div>
-          <p className="footer-col-title">The Powder Chalet</p>
+          <p className="footer-col-title">Current Homes</p>
           <ul className="footer-links">
             <li>
               <Link href="/new-construction-home-for-sale-driggs-idaho">
-                View Home Details
+                The Powder Chalet &mdash; Driggs, ID
               </Link>
             </li>
             <li>
-              <Link href="/new-construction-home-for-sale-driggs-idaho#inquiry">
-                Request Details &amp; Pricing
+              <Link href="/new-construction-home-for-sale-santa-fe-new-mexico">
+                The High Desert &mdash; Santa Fe, NM
               </Link>
             </li>
             <li>
-              <Link href="/new-construction-home-for-sale-driggs-idaho#inquiry">
+              <Link href="/projects">
+                View All Projects
+              </Link>
+            </li>
+            <li>
+              <Link href="/contact">
                 Schedule a Private Showing
               </Link>
             </li>

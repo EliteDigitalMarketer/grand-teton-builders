@@ -38,7 +38,7 @@ export default function Footer() {
             </li>
             <li>
               <Link href="/new-construction-home-for-sale-santa-fe-new-mexico">
-                The High Desert &mdash; Santa Fe, NM
+                6 High Desert Vista &mdash; Santa Fe, NM
               </Link>
             </li>
             <li>

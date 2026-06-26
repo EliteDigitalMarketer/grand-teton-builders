@@ -474,7 +474,7 @@ export default function HomePage() {
               </div>
             </article>
 
-            {/* The High Desert — Santa Fe, New Mexico */}
+            {/* 6 High Desert Vista — Santa Fe, New Mexico */}
             <article
               role="listitem"
               style={{
@@ -487,7 +487,7 @@ export default function HomePage() {
             >
               <Image
                 src="/6-high-desert-vista/04-front-exterior-aerial-desert-modern-home-mountain-backdrop.jpg"
-                alt="The High Desert — aerial view of the new Contemporary Pueblo home at 6 High Desert Vista in Santa Fe with mountain backdrop"
+                alt="6 High Desert Vista — aerial view of the new Contemporary Pueblo home in Santa Fe with mountain backdrop"
                 width={1600}
                 height={1067}
                 style={{ width: '100%', height: 280, objectFit: 'cover', display: 'block' }}
@@ -515,7 +515,7 @@ export default function HomePage() {
                     marginBottom: 8,
                   }}
                 >
-                  The High Desert
+                  6 High Desert Vista
                 </h3>
                 <p
                   style={{
@@ -526,7 +526,7 @@ export default function HomePage() {
                     marginBottom: 16,
                   }}
                 >
-                  6 High Desert Vista &middot; Santa Fe, New Mexico
+                  Longview Community &middot; Santa Fe, New Mexico
                 </p>
                 <p
                   style={{
@@ -593,8 +593,8 @@ export default function HomePage() {
           </h2>
           <p className="section-sub">
             Connect with Grand Teton Builders to request details about The
-            Powder Chalet in Driggs, The High Desert in Santa Fe, or select
-            build opportunities.
+            Powder Chalet in Driggs, 6 High Desert Vista in Santa Fe, or
+            select build opportunities.
           </p>
           <div className="contact-inner">
             <div className="contact-info">
@@ -630,10 +630,10 @@ export default function HomePage() {
               <div className="contact-highlight">
                 <p className="contact-highlight-title">Current Homes</p>
                 <p className="contact-highlight-body">
-                  The Powder Chalet (Driggs, ID) is in pre-construction. The
-                  High Desert (Santa Fe, NM) is for sale at $1,400,000 with
-                  staging in early July. Reach out to inquire about either home
-                  or to schedule a private conversation.
+                  The Powder Chalet (Driggs, ID) is in pre-construction.
+                  6 High Desert Vista (Santa Fe, NM) is for sale at $1,400,000
+                  with staging in early July. Reach out to inquire about either
+                  home or to schedule a private conversation.
                 </p>
               </div>
             </div>

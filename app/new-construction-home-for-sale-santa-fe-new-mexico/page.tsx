@@ -5,9 +5,12 @@ import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 import SchemaOrg from '@/components/SchemaOrg'
 
-const HERO_IMAGE = '/santa-fe/modern-desert-home-front-exterior-aerial-mountain-backdrop.webp'
-const HERO_IMAGE_ABS =
-  'https://grand-teton-builders.vercel.app/santa-fe/modern-desert-home-front-exterior-aerial-mountain-backdrop.webp'
+const PHOTOS_DIR = '/6-high-desert-vista'
+const PHOTOS_DIR_ABS = 'https://grand-teton-builders.vercel.app/6-high-desert-vista'
+
+const HERO_IMAGE = `${PHOTOS_DIR}/06-front-exterior-aerial-modern-desert-home-sunset-light.jpg`
+const HERO_IMAGE_ABS = `${PHOTOS_DIR_ABS}/06-front-exterior-aerial-modern-desert-home-sunset-light.jpg`
+const SIDEBAR_IMAGE = `${PHOTOS_DIR}/04-front-exterior-aerial-desert-modern-home-mountain-backdrop.jpg`
 
 export const metadata: Metadata = {
   title: 'The High Desert | New Contemporary Santa Fe Home for Sale at 6 High Desert Vista',
@@ -27,7 +30,7 @@ export const metadata: Metadata = {
         url: HERO_IMAGE_ABS,
         width: 1600,
         height: 1067,
-        alt: 'The High Desert — aerial view of 6 High Desert Vista, a new Contemporary Pueblo home in Santa Fe with mountain backdrop',
+        alt: 'The High Desert — sunset aerial of the new Contemporary Pueblo home at 6 High Desert Vista, Santa Fe',
       },
     ],
   },
@@ -45,11 +48,11 @@ const propertySchema = {
   description:
     'The High Desert at 6 High Desert Vista is a new Contemporary Pueblo home developed by Grand Teton Builders in partnership with HiLow Builders. The home features 2,495 sq ft of single-level finished living on a 2.7-acre lot in the gated Longview community, with 3 bedrooms, 3 bathrooms (2 full, 1 half), an open-concept floor plan, chef-grade kitchen with ENERGY STAR appliances, gas fireplace, concrete flooring, exposed beams, spa-inspired primary suite, attached 3-car garage, and panoramic high desert views.',
   image: [
-    'https://grand-teton-builders.vercel.app/santa-fe/modern-desert-home-front-exterior-aerial-mountain-backdrop.webp',
-    'https://grand-teton-builders.vercel.app/santa-fe/modern-desert-home-front-exterior-aerial-mountain-view.webp',
-    'https://grand-teton-builders.vercel.app/santa-fe/modern-desert-home-rear-patio-exterior-aerial-view.webp',
-    'https://grand-teton-builders.vercel.app/santa-fe/modern-desert-home-living-room-beamed-ceiling-sliding-doors.webp',
-    'https://grand-teton-builders.vercel.app/santa-fe/modern-desert-home-kitchen-island-open-concept-render.webp',
+    `${PHOTOS_DIR_ABS}/06-front-exterior-aerial-modern-desert-home-sunset-light.jpg`,
+    `${PHOTOS_DIR_ABS}/04-front-exterior-aerial-desert-modern-home-mountain-backdrop.jpg`,
+    `${PHOTOS_DIR_ABS}/02-rear-exterior-aerial-desert-modern-home-mountain-views.jpg`,
+    `${PHOTOS_DIR_ABS}/15-open-concept-great-room-with-beams-and-fireplace.jpg`,
+    `${PHOTOS_DIR_ABS}/16-great-room-facing-covered-patio-and-mountain-views.jpg`,
   ],
   address: {
     '@type': 'PostalAddress',
@@ -283,52 +286,87 @@ const constructionSystems = [
   },
 ]
 
-// 9 photos curated from /public/santa-fe/ — mix of aerial photography (exteriors) and renderings (interiors, since the home is unstaged until early July)
+// 16 photos — full aerial sequence + interiors, ordered as a visual property tour
 const photos = [
   {
-    src: '/santa-fe/modern-desert-home-front-exterior-aerial-mountain-view.webp',
-    alt: 'The High Desert — front exterior aerial view with mountain backdrop at 6 High Desert Vista, Santa Fe',
-    caption: 'Front exterior — mountain backdrop',
+    src: `${PHOTOS_DIR}/04-front-exterior-aerial-desert-modern-home-mountain-backdrop.jpg`,
+    alt: 'The High Desert — front exterior aerial with mountain backdrop at 6 High Desert Vista, Santa Fe',
+    caption: 'Front with mountain backdrop',
   },
   {
-    src: '/santa-fe/modern-desert-home-front-aerial-wide-view.webp',
-    alt: 'The High Desert — wide aerial view of the property and surrounding high desert landscape',
-    caption: 'Property in setting',
+    src: `${PHOTOS_DIR}/06-front-exterior-aerial-modern-desert-home-sunset-light.jpg`,
+    alt: 'The High Desert — front exterior aerial in golden sunset light',
+    caption: 'Golden hour',
   },
   {
-    src: '/santa-fe/modern-desert-home-front-exterior-aerial-driveway-view.webp',
-    alt: 'The High Desert — front exterior aerial view showing the driveway approach',
-    caption: 'Driveway approach',
+    src: `${PHOTOS_DIR}/08-front-exterior-straight-on-aerial-modern-desert-home.jpg`,
+    alt: 'The High Desert — straight-on aerial of the front exterior',
+    caption: 'Straight-on aerial',
   },
   {
-    src: '/santa-fe/modern-desert-home-covered-entry-courtyard.webp',
-    alt: 'The High Desert — covered entry and courtyard detail of the Contemporary Pueblo home',
-    caption: 'Covered entry & courtyard',
+    src: `${PHOTOS_DIR}/07-front-exterior-oblique-aerial-modern-desert-home.jpg`,
+    alt: 'The High Desert — oblique aerial view of the front exterior',
+    caption: 'Oblique aerial',
   },
   {
-    src: '/santa-fe/modern-desert-home-side-exterior-aerial-view.webp',
-    alt: 'The High Desert — side elevation aerial view of the Contemporary Pueblo home',
+    src: `${PHOTOS_DIR}/09-front-exterior-right-angle-aerial-modern-desert-home.jpg`,
+    alt: 'The High Desert — right-angle aerial showing the garage and entry',
+    caption: 'Right-angle aerial',
+  },
+  {
+    src: `${PHOTOS_DIR}/12-front-exterior-overhead-aerial-modern-desert-home.jpg`,
+    alt: 'The High Desert — overhead aerial showing the home and site plan',
+    caption: 'Overhead aerial',
+  },
+  {
+    src: `${PHOTOS_DIR}/10-side-exterior-aerial-modern-desert-home-views.jpg`,
+    alt: 'The High Desert — side exterior aerial showing the mountain landscape',
     caption: 'Side elevation',
   },
   {
-    src: '/santa-fe/modern-desert-home-rear-patio-exterior-aerial-view.webp',
-    alt: 'The High Desert — rear patio and outdoor living aerial view',
-    caption: 'Rear patio & outdoor living',
+    src: `${PHOTOS_DIR}/02-rear-exterior-aerial-desert-modern-home-mountain-views.jpg`,
+    alt: 'The High Desert — rear exterior aerial with mountain views',
+    caption: 'Rear with mountain views',
   },
   {
-    src: '/santa-fe/modern-desert-home-living-room-beamed-ceiling-sliding-doors.webp',
-    alt: 'The High Desert — great room with beamed ceiling and sliding glass doors to the outdoors',
-    caption: 'Great room — beamed ceiling & sliding doors',
+    src: `${PHOTOS_DIR}/05-rear-exterior-aerial-desert-modern-home-wide-valley-views.jpg`,
+    alt: 'The High Desert — rear exterior aerial with wide valley views',
+    caption: 'Wide valley panorama',
   },
   {
-    src: '/santa-fe/modern-desert-home-kitchen-island-open-concept-render.webp',
-    alt: 'The High Desert — open-concept kitchen with island, light wood cabinetry, and high ceilings (rendering)',
-    caption: 'Open-concept kitchen (rendering)',
+    src: `${PHOTOS_DIR}/03-elevated-aerial-rooftop-and-valley-mountain-views.jpg`,
+    alt: 'The High Desert — elevated aerial showing rooftop and valley mountain views at dusk',
+    caption: 'Rooftop & valley views',
   },
   {
-    src: '/santa-fe/modern-desert-home-primary-bath-double-vanity-render.webp',
-    alt: 'The High Desert — primary bathroom with double vanity and walk-in shower (rendering)',
-    caption: 'Primary bath (rendering)',
+    src: `${PHOTOS_DIR}/11-covered-front-entry-modern-desert-home.jpg`,
+    alt: 'The High Desert — covered front entry detail at the Contemporary Pueblo home',
+    caption: 'Covered front entry',
+  },
+  {
+    src: `${PHOTOS_DIR}/14-entry-foyer-with-beamed-ceiling-and-tile-floors.jpg`,
+    alt: 'The High Desert — entry foyer with beamed ceiling and tile floors',
+    caption: 'Entry foyer with beams',
+  },
+  {
+    src: `${PHOTOS_DIR}/15-open-concept-great-room-with-beams-and-fireplace.jpg`,
+    alt: 'The High Desert — open-concept great room with exposed beams and gas fireplace',
+    caption: 'Great room with beams & fireplace',
+  },
+  {
+    src: `${PHOTOS_DIR}/16-great-room-facing-covered-patio-and-mountain-views.jpg`,
+    alt: 'The High Desert — great room facing covered patio and mountain views',
+    caption: 'Great room to outdoor patio',
+  },
+  {
+    src: `${PHOTOS_DIR}/17-open-living-and-kitchen-space-new-construction-home.jpg`,
+    alt: 'The High Desert — open living and kitchen space in the new construction home',
+    caption: 'Open living & kitchen',
+  },
+  {
+    src: `${PHOTOS_DIR}/13-bedroom-with-large-picture-windows-and-tile-floor.jpg`,
+    alt: 'The High Desert — bedroom with large picture windows framing high desert views',
+    caption: 'Bedroom with picture windows',
   },
 ]
 
@@ -575,25 +613,26 @@ export default function SantaFeHomePage() {
                 indoor-outdoor living in a beautiful high desert setting.
               </p>
             </div>
-            <div>
+            <div
+              style={{
+                width: '100%',
+                aspectRatio: '4 / 5',
+                position: 'relative',
+                overflow: 'hidden',
+              }}
+            >
               <Image
-                src="/santa-fe/modern-desert-home-aerial-front-elevation-wide.webp"
-                alt="The High Desert — aerial elevation view of the Contemporary Pueblo home at 6 High Desert Vista, Santa Fe"
-                width={1600}
-                height={1067}
-                style={{
-                  width: '100%',
-                  aspectRatio: '4 / 5',
-                  objectFit: 'cover',
-                  display: 'block',
-                }}
-                loading="lazy"
+                src={SIDEBAR_IMAGE}
+                alt="The High Desert — aerial view of the Contemporary Pueblo home with mountain backdrop at 6 High Desert Vista, Santa Fe"
+                fill
+                sizes="(max-width: 768px) 100vw, 50vw"
+                style={{ objectFit: 'cover' }}
               />
             </div>
           </div>
         </section>
 
-        {/* PHOTOS GALLERY */}
+        {/* PHOTOS GALLERY — square cards */}
         <section
           style={{ background: 'var(--charcoal)', padding: '96px 5vw' }}
           aria-labelledby="photos-heading"
@@ -607,15 +646,15 @@ export default function SantaFeHomePage() {
             The High Desert in Detail
           </h2>
           <p className="section-sub" style={{ color: 'rgba(231,224,210,0.6)' }}>
-            Aerial photography and interior renderings of the new Contemporary
-            Pueblo home at 6 High Desert Vista. Additional interior photography
-            will follow staging completion in early July.
+            Aerial and interior photography of the new Contemporary Pueblo home
+            at 6 High Desert Vista. Final furnishings and styling to follow
+            staging completion in early July.
           </p>
           <div
             style={{
               display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
-              gap: 24,
+              gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+              gap: 20,
               marginTop: 48,
             }}
             role="list"
@@ -629,21 +668,26 @@ export default function SantaFeHomePage() {
                   margin: 0,
                   background: 'rgba(255,255,255,0.04)',
                   borderTop: '2px solid rgba(176,138,74,0.3)',
+                  display: 'flex',
+                  flexDirection: 'column',
                 }}
               >
-                <Image
-                  src={src}
-                  alt={alt}
-                  width={1600}
-                  height={1067}
+                <div
                   style={{
                     width: '100%',
-                    aspectRatio: '3 / 2',
-                    objectFit: 'cover',
-                    display: 'block',
+                    aspectRatio: '1 / 1',
+                    position: 'relative',
+                    overflow: 'hidden',
                   }}
-                  loading="lazy"
-                />
+                >
+                  <Image
+                    src={src}
+                    alt={alt}
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    style={{ objectFit: 'cover' }}
+                  />
+                </div>
                 <figcaption
                   style={{
                     padding: '18px 22px',

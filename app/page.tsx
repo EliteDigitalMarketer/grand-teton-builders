@@ -486,7 +486,7 @@ export default function HomePage() {
               }}
             >
               <Image
-                src="/santa-fe/modern-desert-home-front-exterior-aerial-mountain-backdrop.webp"
+                src="/6-high-desert-vista/04-front-exterior-aerial-desert-modern-home-mountain-backdrop.jpg"
                 alt="The High Desert — aerial view of the new Contemporary Pueblo home at 6 High Desert Vista in Santa Fe with mountain backdrop"
                 width={1600}
                 height={1067}

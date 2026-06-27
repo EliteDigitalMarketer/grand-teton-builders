@@ -70,6 +70,9 @@ const websiteSchema = {
     'Quality mountain home development in Driggs, Idaho and Teton Valley — refined design, durable construction, and attention to detail.',
 }
 
+// Offsets the scroll position when navigating to an anchor so the fixed nav doesn't overlap the section heading.
+const anchorOffset = { scrollMarginTop: 96 }
+
 export default function HomePage() {
   return (
     <>
@@ -213,12 +216,17 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* QUALITY STANDARD */}
-        <section className="about" id="standard" aria-labelledby="standard-heading">
+        {/* ABOUT / QUALITY STANDARD — anchor for nav "About" link */}
+        <section
+          className="about"
+          id="about"
+          aria-labelledby="about-heading"
+          style={anchorOffset}
+        >
           <div className="about-inner">
             <div>
               <p className="section-eyebrow">Our Standard</p>
-              <h2 className="section-title" id="standard-heading">
+              <h2 className="section-title" id="about-heading">
                 Built to Last.<br />Detailed with Care.
               </h2>
               <p className="section-sub">
@@ -286,10 +294,15 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* CRAFTSMANSHIP IN THE DETAILS */}
-        <section className="gallery-section" id="craftsmanship" aria-labelledby="craftsmanship-heading">
+        {/* GALLERY — anchor for nav "Gallery" link (was id="craftsmanship") */}
+        <section
+          className="gallery-section"
+          id="gallery"
+          aria-labelledby="gallery-heading"
+          style={anchorOffset}
+        >
           <p className="section-eyebrow">Craftsmanship</p>
-          <h2 className="section-title" id="craftsmanship-heading">
+          <h2 className="section-title" id="gallery-heading">
             Craftsmanship in the Details
           </h2>
           <p className="section-sub">
@@ -372,7 +385,7 @@ export default function HomePage() {
 
         {/* PROJECTS / PORTFOLIO PREVIEW */}
         <section
-          style={{ background: 'var(--snowfield)', padding: '96px 5vw' }}
+          style={{ background: 'var(--snowfield)', padding: '96px 5vw', ...anchorOffset }}
           id="projects"
           aria-labelledby="projects-heading"
         >
@@ -555,16 +568,17 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* CUSTOM BUILDS SECONDARY */}
+        {/* SERVICES / CUSTOM BUILDS — anchor for nav "Services" link */}
         <section
-          style={{ background: 'var(--limestone)', padding: '72px 5vw' }}
-          aria-labelledby="custom-heading"
+          style={{ background: 'var(--limestone)', padding: '72px 5vw', ...anchorOffset }}
+          id="services"
+          aria-labelledby="services-heading"
         >
           <div style={{ maxWidth: 760 }}>
             <p className="section-eyebrow">Also Available</p>
             <h2
               className="section-title"
-              id="custom-heading"
+              id="services-heading"
               style={{ fontSize: 'clamp(26px, 3vw, 38px)' }}
             >
               Custom Builds by Request
@@ -586,7 +600,12 @@ export default function HomePage() {
         </section>
 
         {/* CONTACT / FINAL CTA */}
-        <section className="contact" id="contact" aria-labelledby="contact-heading">
+        <section
+          className="contact"
+          id="contact"
+          aria-labelledby="contact-heading"
+          style={anchorOffset}
+        >
           <p className="section-eyebrow">Get In Touch</p>
           <h2 className="section-title" id="contact-heading">
             Inquire About Current Homes

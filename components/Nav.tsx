@@ -1,11 +1,13 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 
 export default function Nav() {
   const [menuOpen, setMenuOpen] = useState(false)
+  const [navVisible, setNavVisible] = useState(true)
+  const lastScrollY = useRef(0)
   const closeMenu = () => setMenuOpen(false)
 
   // Close overlay on Escape key
@@ -29,9 +31,42 @@ export default function Nav() {
     }
   }, [menuOpen])
 
+  // Hide nav on scroll down, show on scroll up (beckbuilds-style)
+  useEffect(() => {
+    // Initialize to current scroll position in case the page loads mid-scroll
+    lastScrollY.current = window.scrollY
+
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY
+      const delta = currentScrollY - lastScrollY.current
+
+      // Ignore tiny movements to prevent flicker on trackpads
+      if (Math.abs(delta) < 5) return
+
+      if (currentScrollY < 100) {
+        // Near top of page: always visible
+        setNavVisible(true)
+      } else if (delta > 0) {
+        // Scrolling down: hide
+        setNavVisible(false)
+      } else {
+        // Scrolling up: show
+        setNavVisible(true)
+      }
+
+      lastScrollY.current = currentScrollY
+    }
+
+    window.addEventListener('scroll', handleScroll, { passive: true })
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
   return (
     <>
-      <nav aria-label="Main navigation">
+      <nav
+        aria-label="Main navigation"
+        className={navVisible ? '' : 'nav-hidden'}
+      >
         <button
           type="button"
           className="nav-menu-btn"

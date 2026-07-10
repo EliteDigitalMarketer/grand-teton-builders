@@ -82,13 +82,12 @@ export default function HomePage() {
       <Nav />
 
       <main>
-        {/* HERO */}
+        {/* HERO — full-bleed photo, content bottom-left */}
         <section
           className="hero"
           style={{
             backgroundImage:
-              "linear-gradient(180deg, rgba(31,36,33,0.4) 0%, rgba(31,36,33,0.6) 50%, rgba(31,36,33,0.97) 100%), url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1800&q=85')",
-            paddingTop: 116,
+              "url('/6-high-desert-vista/04-front-exterior-aerial-desert-modern-home-mountain-backdrop.jpg')",
           }}
           aria-label="Hero section"
         >

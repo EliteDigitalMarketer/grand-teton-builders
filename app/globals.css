@@ -43,7 +43,7 @@ body { font-family: var(--font-montserrat), 'Montserrat', sans-serif; background
 
 /* ===================================================================
    NAVIGATION — 3-column grid: [Menu button] [Logo center] [Inquire]
-   Near-transparent glass over hero image.
+   Near-transparent glass over hero image; auto-hides on scroll down.
    =================================================================== */
 nav {
   position: fixed; top: 0; left: 0; right: 0; z-index: 100;
@@ -55,6 +55,13 @@ nav {
   align-items: center;
   padding: 0 5vw; height: 116px;
   border-bottom: 1px solid rgba(176, 138, 74, 0.2);
+  transform: translateY(0);
+  transition: transform 0.35s cubic-bezier(0.4, 0.0, 0.2, 1);
+  will-change: transform;
+}
+/* Auto-hide state — slides fully off the top of the viewport */
+.nav-hidden {
+  transform: translateY(calc(-100% - 1px));
 }
 .nav-logo { justify-self: center; display: flex; align-items: center; text-decoration: none; }
 .nav-logo-img {

@@ -82,12 +82,12 @@ export default function HomePage() {
       <Nav />
 
       <main>
-        {/* HERO — full-bleed photo, content bottom-left */}
+        {/* HERO — full-bleed Grand Tetons photo, content bottom-left */}
         <section
           className="hero"
           style={{
-            backgroundImage:
-              "url('/6-high-desert-vista/04-front-exterior-aerial-desert-modern-home-mountain-backdrop.jpg')",
+            backgroundImage: "url('/hero-tetons.jpg')",
+            backgroundPosition: 'center 65%',
           }}
           aria-label="Hero section"
         >

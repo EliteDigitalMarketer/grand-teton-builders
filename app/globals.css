@@ -103,8 +103,8 @@ nav {
 
 /* ===================================================================
    NAV OVERLAY — full-screen menu
-   Close is absolute top-left; primary nav sits to the right at the
-   same top-y (indented past where Close sits).
+   Close floats top-left; body content sits lower with a top offset,
+   still indented to the right past the Close button.
    =================================================================== */
 .nav-overlay {
   position: fixed; top: 0; left: 0; right: 0; bottom: 0;
@@ -148,13 +148,14 @@ nav {
 .nav-close-icon::before { transform: rotate(45deg); }
 .nav-close-icon::after { transform: rotate(-45deg); }
 
-/* Body — starts at the top-y of Close; primary col indented right */
+/* Body — sits below Close vertically, indented right horizontally */
 .nav-overlay-body {
   flex: 1;
   display: flex;
   align-items: flex-start;
   gap: clamp(80px, 12vw, 220px);
   padding-left: clamp(160px, 14vw, 280px);
+  margin-top: 88px;
   max-width: 1500px;
   width: 100%;
 }
@@ -625,7 +626,7 @@ footer {
   .nav-overlay-topbar { top: 20px; left: 6vw; }
   .nav-overlay-close span:last-child { display: none; }
   .nav-overlay-close { gap: 0; padding: 8px 0; }
-  .nav-overlay-body { padding-left: 64px; }
+  .nav-overlay-body { padding-left: 64px; margin-top: 56px; }
   .nav-overlay-primary-list a { font-size: clamp(28px, 8vw, 40px); }
   .nav-overlay-divider { margin: 24px 0 16px; }
   .nav-overlay-footer {

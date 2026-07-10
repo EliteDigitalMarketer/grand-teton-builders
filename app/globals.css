@@ -102,8 +102,9 @@ nav {
 .nav-cta:hover { background: var(--brass-light) !important; color: var(--charcoal) !important; }
 
 /* ===================================================================
-   NAV OVERLAY — full-screen menu, mega-menu layout
-   Primary nav (left, serif) + Sublists group (right, tight pair)
+   NAV OVERLAY — full-screen menu
+   Close is absolute top-left; primary nav sits to the right at the
+   same top-y (indented past where Close sits).
    =================================================================== */
 .nav-overlay {
   position: fixed; top: 0; left: 0; right: 0; bottom: 0;
@@ -120,9 +121,12 @@ nav {
   to { opacity: 1; transform: translateY(0); }
 }
 
+/* Close button — floats at top-left, out of body flow */
 .nav-overlay-topbar {
-  flex-shrink: 0;
-  margin-bottom: 88px;
+  position: absolute;
+  top: 32px;
+  left: 5vw;
+  z-index: 1;
 }
 .nav-overlay-close {
   background: transparent; border: none;
@@ -144,13 +148,13 @@ nav {
 .nav-close-icon::before { transform: rotate(45deg); }
 .nav-close-icon::after { transform: rotate(-45deg); }
 
-/* Body — flex row: primary column + sublists group */
+/* Body — starts at the top-y of Close; primary col indented right */
 .nav-overlay-body {
   flex: 1;
   display: flex;
   align-items: flex-start;
   gap: clamp(80px, 12vw, 220px);
-  padding-left: clamp(24px, 4vw, 88px);
+  padding-left: clamp(160px, 14vw, 280px);
   max-width: 1500px;
   width: 100%;
 }
@@ -173,7 +177,7 @@ nav {
   font-weight: 400;
   color: var(--limestone);
   text-decoration: none;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.04em;
   line-height: 1.15;
   transition: color 0.2s;
   display: inline-block;
@@ -597,14 +601,14 @@ footer {
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .featured-home-card { grid-template-columns: 1fr; }
   .featured-home-img { height: 320px; min-height: 0; }
-  .nav-overlay-body { gap: 64px; padding-left: 2vw; }
+  .nav-overlay-body { gap: 64px; padding-left: clamp(140px, 14vw, 220px); }
   .nav-overlay-sublists { gap: 40px; }
 }
 @media (max-width: 900px) {
   .gallery-grid { grid-template-columns: 1fr 1fr; }
   .gallery-item.gallery-large { grid-column: span 2; }
   .gallery-item.gallery-wide { grid-column: span 2; }
-  .nav-overlay-body { flex-direction: column; gap: 48px; padding-left: 0; }
+  .nav-overlay-body { flex-direction: column; gap: 48px; padding-left: clamp(100px, 12vw, 180px); }
   .nav-overlay-sublists { gap: 40px; }
 }
 @media (max-width: 640px) {
@@ -618,9 +622,10 @@ footer {
   .nav-inquire { padding: 8px 16px; font-size: 10px; letter-spacing: 0.14em; }
 
   .nav-overlay { padding: 20px 6vw; }
-  .nav-overlay-topbar { margin-bottom: 40px; }
+  .nav-overlay-topbar { top: 20px; left: 6vw; }
   .nav-overlay-close span:last-child { display: none; }
   .nav-overlay-close { gap: 0; padding: 8px 0; }
+  .nav-overlay-body { padding-left: 64px; }
   .nav-overlay-primary-list a { font-size: clamp(28px, 8vw, 40px); }
   .nav-overlay-divider { margin: 24px 0 16px; }
   .nav-overlay-footer {

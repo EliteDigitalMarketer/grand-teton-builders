@@ -178,7 +178,7 @@ nav {
   font-weight: 400;
   color: var(--limestone);
   text-decoration: none;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.06em;
   line-height: 1.15;
   transition: color 0.2s;
   display: inline-block;

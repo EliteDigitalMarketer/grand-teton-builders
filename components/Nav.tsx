@@ -96,53 +96,54 @@ export default function Nav() {
               </div>
             </div>
 
-            {/* Middle column — Current Homes */}
-            <div className="nav-overlay-col">
-              <p className="nav-overlay-col-label">Current Homes</p>
-              <ul className="nav-overlay-col-list">
-                <li>
-                  <Link href="/new-construction-home-for-sale-driggs-idaho" onClick={closeMenu}>
-                    The Powder Chalet &mdash; Driggs, ID
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/new-construction-home-for-sale-santa-fe-new-mexico" onClick={closeMenu}>
-                    6 High Desert Vista &mdash; Santa Fe, NM
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/projects" onClick={closeMenu} className="nav-overlay-col-arrow">
-                    View All Projects &rarr;
-                  </Link>
-                </li>
-              </ul>
-            </div>
+            {/* Right grouping — Current Homes + Services, kept tight together */}
+            <div className="nav-overlay-sublists">
+              <div className="nav-overlay-col">
+                <p className="nav-overlay-col-label">Current Homes</p>
+                <ul className="nav-overlay-col-list">
+                  <li>
+                    <Link href="/new-construction-home-for-sale-driggs-idaho" onClick={closeMenu}>
+                      The Powder Chalet &mdash; Driggs, ID
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/new-construction-home-for-sale-santa-fe-new-mexico" onClick={closeMenu}>
+                      6 High Desert Vista &mdash; Santa Fe, NM
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/projects" onClick={closeMenu} className="nav-overlay-col-arrow">
+                      View All Projects &rarr;
+                    </Link>
+                  </li>
+                </ul>
+              </div>
 
-            {/* Right column — Services */}
-            <div className="nav-overlay-col">
-              <p className="nav-overlay-col-label">Services</p>
-              <ul className="nav-overlay-col-list">
-                <li>
-                  <Link href="/custom-home-builders-driggs-idaho" onClick={closeMenu}>
-                    Custom Home Builders
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/luxury-homes-teton-valley" onClick={closeMenu}>
-                    Luxury Homes in Teton Valley
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/spec-homes-driggs-idaho" onClick={closeMenu}>
-                    Spec Homes in Driggs
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/build-process" onClick={closeMenu}>
-                    Our Build Process
-                  </Link>
-                </li>
-              </ul>
+              <div className="nav-overlay-col">
+                <p className="nav-overlay-col-label">Services</p>
+                <ul className="nav-overlay-col-list">
+                  <li>
+                    <Link href="/custom-home-builders-driggs-idaho" onClick={closeMenu}>
+                      Custom Home Builders
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/luxury-homes-teton-valley" onClick={closeMenu}>
+                      Luxury Homes in Teton Valley
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/spec-homes-driggs-idaho" onClick={closeMenu}>
+                      Spec Homes in Driggs
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/build-process" onClick={closeMenu}>
+                      Our Build Process
+                    </Link>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
 

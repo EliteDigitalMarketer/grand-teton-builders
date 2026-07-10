@@ -67,7 +67,7 @@ export default function Nav() {
           aria-modal="true"
           aria-label="Site navigation"
         >
-          <div className="nav-overlay-header">
+          <div className="nav-overlay-topbar">
             <button
               type="button"
               className="nav-overlay-close"
@@ -77,63 +77,84 @@ export default function Nav() {
               <span className="nav-close-icon" aria-hidden="true" />
               <span>Close</span>
             </button>
-
-            <Link
-              href="/"
-              className="nav-logo"
-              onClick={closeMenu}
-              aria-label="Grand Teton Builders — Home"
-            >
-              <Image
-                src="/gtb-logo-light.png"
-                alt="Grand Teton Builders logo"
-                width={280}
-                height={100}
-                className="nav-logo-img"
-                priority
-              />
-            </Link>
-
-            <Link href="/#contact" className="nav-inquire" onClick={closeMenu}>
-              Inquire
-            </Link>
           </div>
 
-          <nav aria-label="Overlay navigation" className="nav-overlay-nav">
-            <ul className="nav-overlay-list">
-              <li>
-                <Link href="/" onClick={closeMenu}>Home</Link>
-              </li>
-              <li>
-                <Link href="/#about" onClick={closeMenu}>About</Link>
-              </li>
-              <li>
-                <Link href="/#gallery" onClick={closeMenu}>Gallery</Link>
-              </li>
-              <li>
-                <Link href="/projects" onClick={closeMenu}>Projects</Link>
-              </li>
-              <li>
-                <Link href="/#services" onClick={closeMenu}>Services</Link>
-              </li>
-              <li>
-                <Link href="/#contact" onClick={closeMenu}>Contact</Link>
-              </li>
-            </ul>
-          </nav>
+          <div className="nav-overlay-body">
+            {/* Left column — main nav (serif, larger) */}
+            <div className="nav-overlay-col nav-overlay-col-primary">
+              <ul className="nav-overlay-primary-list">
+                <li><Link href="/" onClick={closeMenu}>Home</Link></li>
+                <li><Link href="/#about" onClick={closeMenu}>About</Link></li>
+                <li><Link href="/#gallery" onClick={closeMenu}>Gallery</Link></li>
+                <li><Link href="/projects" onClick={closeMenu}>Projects</Link></li>
+                <li><Link href="/#services" onClick={closeMenu}>Services</Link></li>
+                <li><Link href="/#contact" onClick={closeMenu}>Contact</Link></li>
+              </ul>
+              <div className="nav-overlay-divider" />
+              <div className="nav-overlay-utility">
+                <Link href="/privacy-policy" onClick={closeMenu}>Privacy Policy</Link>
+              </div>
+            </div>
+
+            {/* Middle column — Current Homes */}
+            <div className="nav-overlay-col">
+              <p className="nav-overlay-col-label">Current Homes</p>
+              <ul className="nav-overlay-col-list">
+                <li>
+                  <Link href="/new-construction-home-for-sale-driggs-idaho" onClick={closeMenu}>
+                    The Powder Chalet &mdash; Driggs, ID
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/new-construction-home-for-sale-santa-fe-new-mexico" onClick={closeMenu}>
+                    6 High Desert Vista &mdash; Santa Fe, NM
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/projects" onClick={closeMenu} className="nav-overlay-col-arrow">
+                    View All Projects &rarr;
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            {/* Right column — Services */}
+            <div className="nav-overlay-col">
+              <p className="nav-overlay-col-label">Services</p>
+              <ul className="nav-overlay-col-list">
+                <li>
+                  <Link href="/custom-home-builders-driggs-idaho" onClick={closeMenu}>
+                    Custom Home Builders
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/luxury-homes-teton-valley" onClick={closeMenu}>
+                    Luxury Homes in Teton Valley
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/spec-homes-driggs-idaho" onClick={closeMenu}>
+                    Spec Homes in Driggs
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/build-process" onClick={closeMenu}>
+                    Our Build Process
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
 
           <div className="nav-overlay-footer">
-            <div>
-              <div className="nav-overlay-footer-label">Call</div>
+            <div className="nav-overlay-footer-item">
               <a href="tel:+12082623669">(208) 262-3669</a>
             </div>
-            <div>
-              <div className="nav-overlay-footer-label">Email</div>
+            <div className="nav-overlay-footer-item nav-overlay-footer-center">
               <a href="mailto:Hello@grandtetonbuilders.com">Hello@grandtetonbuilders.com</a>
             </div>
-            <div>
-              <div className="nav-overlay-footer-label">Based In</div>
-              <span>Driggs, Idaho</span>
+            <div className="nav-overlay-footer-item nav-overlay-footer-right">
+              Driggs, Idaho
             </div>
           </div>
         </div>

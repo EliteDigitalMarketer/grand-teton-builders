@@ -94,7 +94,8 @@ export default function HomePage() {
           <div className="hero-content">
             <p className="hero-eyebrow">Luxury Mountain Home Development</p>
             <h1>
-              Quality Mountain Homes, <em>Built to Last</em>
+              Quality Mountain Homes,<br />
+              <em>Built to Last</em>
             </h1>
             <p>
               Grand Teton Builders develops refined mountain homes shaped by

@@ -4,6 +4,7 @@ import Link from 'next/link'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 import SchemaOrg from '@/components/SchemaOrg'
+import ContactForm from '@/components/ContactForm'
 
 export const metadata: Metadata = {
   title: 'Grand Teton Builders | Quality Mountain Homes Built to Last',
@@ -655,8 +656,7 @@ export default function HomePage() {
                 </p>
               </div>
             </div>
-            {/* Contact form removed — placeholder reserves grid space until custom form is added */}
-            <div className="contact-form" aria-hidden="true" />
+            <ContactForm />
           </div>
         </section>
       </main>

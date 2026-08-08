@@ -75,6 +75,22 @@ const labelStyle = {
   letterSpacing: '0.04em',
 }
 
+// Brass-bordered callout for the CTIA-required mobile info disclosure — matches
+// the treatment used in the Terms of Service page so both compliance-critical
+// statements share a consistent, unmissable visual language.
+const calloutStyle = {
+  fontSize: 15,
+  fontWeight: 700 as const,
+  color: 'var(--charcoal)',
+  letterSpacing: '0.02em',
+  lineHeight: 1.7,
+  marginTop: 12,
+  marginBottom: 20,
+  padding: '18px 22px',
+  background: 'rgba(176, 138, 74, 0.08)',
+  borderLeft: '3px solid var(--brass)',
+}
+
 export default function PrivacyPolicyPage() {
   return (
     <>
@@ -123,7 +139,7 @@ export default function PrivacyPolicyPage() {
                 textTransform: 'uppercase',
               }}
             >
-              Last updated: June 23, 2026
+              Last updated: August 8, 2026
             </p>
           </header>
 
@@ -294,6 +310,38 @@ export default function PrivacyPolicyPage() {
               (208) 262-3669
             </a>
             .
+          </p>
+
+          {/* MOBILE INFORMATION SHARING — CTIA-REQUIRED DISCLOSURE */}
+          <h2 style={h2Style}>Mobile Information &amp; SMS Data Sharing</h2>
+          <p style={pStyle}>
+            Grand Teton Builders is committed to protecting the privacy of your
+            mobile information and adheres to the CTIA Messaging Principles and
+            Best Practices governing how mobile subscriber information and
+            opt-in consent are handled.
+          </p>
+          <p style={calloutStyle}>
+            <strong>
+              No mobile information &mdash; including phone numbers, opt-in
+              consent, or any text messaging originator data &mdash; will be
+              shared with third parties or affiliates for marketing or
+              promotional purposes.
+            </strong>
+          </p>
+          <p style={pStyle}>
+            Information sharing with subcontractors that support the delivery of
+            our SMS program (such as customer service platforms, messaging
+            infrastructure providers, and payment processors) is permitted only
+            to the extent necessary to provide the services you have opted in to
+            receive. Text messaging originator opt-in data and consent are
+            excluded from all other use case categories and will not be shared
+            with any third parties under any other circumstances.
+          </p>
+          <p style={pStyle}>
+            Grand Teton Builders does not sell, rent, or transfer your mobile
+            phone number or SMS opt-in consent information to any third party
+            for any purpose other than the delivery of the messages you have
+            specifically requested.
           </p>
 
           {/* WITH WHOM WE SHARE */}

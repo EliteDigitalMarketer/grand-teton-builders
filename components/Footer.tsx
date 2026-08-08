@@ -4,6 +4,15 @@ import Image from 'next/image'
 export default function Footer() {
   const currentYear = new Date().getFullYear()
 
+  // Shared style for the small legal links (Privacy Policy, Terms of Service)
+  // — matches the muted, low-emphasis treatment in the footer bottom row.
+  const legalLinkStyle = {
+    fontSize: 11,
+    color: 'rgba(231,224,210,0.4)',
+    textDecoration: 'none',
+    letterSpacing: '0.06em',
+  }
+
   return (
     <footer aria-label="Site footer">
       <div className="footer-grid">
@@ -83,16 +92,11 @@ export default function Footer() {
             &copy; {currentYear} Grand Teton Builders LLC &middot; Driggs, Idaho
             &middot; All rights reserved
           </p>
-          <Link
-            href="/privacy-policy"
-            style={{
-              fontSize: 11,
-              color: 'rgba(231,224,210,0.4)',
-              textDecoration: 'none',
-              letterSpacing: '0.06em',
-            }}
-          >
+          <Link href="/privacy-policy" style={legalLinkStyle}>
             Privacy Policy
+          </Link>
+          <Link href="/terms-of-service" style={legalLinkStyle}>
+            Terms of Service
           </Link>
         </div>
         <p className="footer-tagline">&ldquo;Built for Generations. Inspired by Nature.&rdquo;</p>

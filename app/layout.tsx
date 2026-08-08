@@ -85,15 +85,6 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap"
           rel="stylesheet"
         />
-
-        {/* TEMPORARY: LeadConnector chat widget — remove when replacing with custom solution */}
-        <script
-          src="https://widgets.leadconnectorhq.com/loader.js"
-          data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"
-          data-widget-id="6a38af776eb44d6f32d89c31"
-          data-source="WEB_USER"
-          async
-        />
       </head>
       <body>
         <div id="main-content" tabIndex={-1} style={{ outline: 'none' }}>

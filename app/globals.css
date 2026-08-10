@@ -389,6 +389,23 @@ section { padding: 96px 5vw; }
 }
 .section-sub { font-size: 14px; font-weight: 300; letter-spacing: 0.04em; color: var(--text-mid); max-width: 520px; line-height: 1.85; }
 
+/* Split-section layout — image + text side by side, used for Philosophy (image L, text R) and Craftsmanship (text L, image R). Stacks to a single column on narrow viewports. */
+.split-section-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.split-section-img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+  filter: sepia(6%) contrast(1.04);
+}
+
 /* ABOUT — now dark (charcoal); text inverted to light */
 .about { background: var(--charcoal); }
 .about .section-title { color: var(--limestone); }
@@ -639,6 +656,7 @@ footer {
   .gallery-item.gallery-wide { grid-column: span 2; }
   .nav-overlay-body { flex-direction: column; gap: 48px; padding-left: clamp(100px, 12vw, 180px); }
   .nav-overlay-sublists { gap: 40px; }
+  .split-section-inner { grid-template-columns: 1fr; gap: 48px; }
 }
 @media (max-width: 640px) {
   .nav-overlay-sublists { flex-direction: column; gap: 32px; }

@@ -262,24 +262,22 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* DEVELOPMENT PHILOSOPHY */}
+        {/* DEVELOPMENT PHILOSOPHY — now light (snowfield) */}
         <section
-          style={{ background: 'var(--charcoal)', padding: '96px 5vw' }}
+          style={{ background: 'var(--snowfield)', padding: '96px 5vw' }}
           aria-labelledby="philosophy-heading"
         >
           <div style={{ maxWidth: 820 }}>
-            <p className="section-eyebrow" style={{ color: 'var(--brass)' }}>Our Philosophy</p>
+            <p className="section-eyebrow">Our Philosophy</p>
             <h2
               className="section-title"
               id="philosophy-heading"
-              style={{ color: 'var(--limestone)' }}
             >
               Homes Developed with Purpose
             </h2>
             <p
               className="section-sub"
               style={{
-                color: 'rgba(231,224,210,0.65)',
                 maxWidth: '100%',
                 fontSize: 15,
                 lineHeight: 1.9,

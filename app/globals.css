@@ -444,11 +444,9 @@ section { padding: 96px 5vw; }
 }
 .featured-home .btn-outline:hover { border-color: var(--brass); color: var(--brass); }
 
-/* GALLERY */
-.gallery-section { background: var(--charcoal); padding: 96px 5vw; }
-.gallery-section .section-title { color: var(--limestone); }
-.gallery-section .section-sub { color: rgba(231,224,210,0.55); margin-bottom: 48px; }
-.gallery-section .section-eyebrow { color: var(--brass); }
+/* GALLERY — now light (snowfield); text/section overrides removed so defaults (charcoal title, text-mid sub) apply */
+.gallery-section { background: var(--snowfield); padding: 96px 5vw; }
+.gallery-section .section-sub { margin-bottom: 48px; }
 
 .gallery-grid {
   display: grid;

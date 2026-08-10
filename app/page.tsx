@@ -262,55 +262,93 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* DEVELOPMENT PHILOSOPHY — now light (snowfield) */}
+        {/* DEVELOPMENT PHILOSOPHY — image LEFT, text RIGHT (right-justified) */}
         <section
           style={{ background: 'var(--snowfield)', padding: '96px 5vw' }}
           aria-labelledby="philosophy-heading"
         >
-          <div style={{ maxWidth: 820 }}>
-            <p className="section-eyebrow">Our Philosophy</p>
-            <h2
-              className="section-title"
-              id="philosophy-heading"
-            >
-              Homes Developed with Purpose
-            </h2>
-            <p
-              className="section-sub"
-              style={{
-                maxWidth: '100%',
-                fontSize: 15,
-                lineHeight: 1.9,
-              }}
-            >
-              We approach each home as more than a project. Site planning,
-              architecture, material selection, livability, and long-term
-              performance all shape the homes we develop. The result is a
-              collection of refined mountain homes that feel considered, durable,
-              and connected to their surroundings.
-            </p>
+          <div className="split-section-inner">
+            {/* Image — left column */}
+            <div>
+              <Image
+                src="/Front%20Elevation%20Left%20Angle%203d%20Rendering%20Square%20Mountains.png"
+                alt="The Powder Chalet at sunset with the Grand Tetons in the background — refined mountain home in Driggs, Idaho"
+                width={900}
+                height={675}
+                className="split-section-img"
+                loading="lazy"
+              />
+            </div>
+            {/* Text — right column, right-aligned */}
+            <div style={{ textAlign: 'right' }}>
+              <p
+                className="section-eyebrow"
+                style={{ justifyContent: 'flex-end', flexDirection: 'row-reverse' }}
+              >
+                Our Philosophy
+              </p>
+              <h2
+                className="section-title"
+                id="philosophy-heading"
+              >
+                Homes Developed with Purpose
+              </h2>
+              <p
+                className="section-sub"
+                style={{
+                  maxWidth: '100%',
+                  fontSize: 15,
+                  lineHeight: 1.9,
+                  marginLeft: 'auto',
+                }}
+              >
+                We approach each home as more than a project. Site planning,
+                architecture, material selection, livability, and long-term
+                performance all shape the homes we develop. The result is a
+                collection of refined mountain homes that feel considered, durable,
+                and connected to their surroundings.
+              </p>
+            </div>
           </div>
         </section>
 
-        {/* GALLERY — anchor for nav "Gallery" link (was id="craftsmanship") */}
+        {/* GALLERY / CRAFTSMANSHIP — text LEFT, image RIGHT above the gallery grid */}
         <section
           className="gallery-section"
           id="gallery"
           aria-labelledby="gallery-heading"
           style={anchorOffset}
         >
-          <p className="section-eyebrow">Craftsmanship</p>
-          <h2 className="section-title" id="gallery-heading">
-            Craftsmanship in the Details
-          </h2>
-          <p className="section-sub">
-            The quality of a home is often found in the details most people do
-            not notice at first glance: the alignment of materials, the proportion
-            of the rooflines, the durability of the exterior envelope, the flow of
-            the floor plan, and the way finishes come together. Grand Teton
-            Builders focuses on these details because they shape how a home looks,
-            lives, and lasts.
-          </p>
+          <div className="split-section-inner" style={{ marginBottom: 56 }}>
+            {/* Text — left column */}
+            <div>
+              <p className="section-eyebrow">Craftsmanship</p>
+              <h2 className="section-title" id="gallery-heading">
+                Craftsmanship in the Details
+              </h2>
+              <p className="section-sub" style={{ marginBottom: 0 }}>
+                The quality of a home is often found in the details most people
+                do not notice at first glance: the alignment of materials, the
+                proportion of the rooflines, the durability of the exterior
+                envelope, the flow of the floor plan, and the way finishes come
+                together. Grand Teton Builders focuses on these details because
+                they shape how a home looks, lives, and lasts.
+              </p>
+            </div>
+            {/* Image — right column */}
+            <div>
+              <Image
+                src="/Front%20Elevation%20Right%20Angle%203d%20Rendering%20Rectangle.png"
+                alt="The Powder Chalet — right-angle view showing careful alignment of wood, stone, and dark modern finishes"
+                width={900}
+                height={675}
+                className="split-section-img"
+                loading="lazy"
+              />
+            </div>
+          </div>
+
+          {/* Gallery grid — 6 detail images below the split header */}
           <div className="gallery-grid" role="list" aria-label="Detail showcase">
             <div className="gallery-item gallery-large" role="listitem">
               <Image

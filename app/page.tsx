@@ -312,21 +312,20 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* GALLERY / CRAFTSMANSHIP — text LEFT, image RIGHT above the gallery grid */}
+        {/* CRAFTSMANSHIP — split section only (text L, image R). Gallery lives in its own section below. */}
         <section
-          className="gallery-section"
-          id="gallery"
-          aria-labelledby="gallery-heading"
-          style={anchorOffset}
+          style={{ background: 'var(--snowfield)', padding: '96px 5vw', ...anchorOffset }}
+          id="craftsmanship"
+          aria-labelledby="craftsmanship-heading"
         >
-          <div className="split-section-inner" style={{ marginBottom: 56 }}>
+          <div className="split-section-inner">
             {/* Text — left column */}
             <div>
               <p className="section-eyebrow">Craftsmanship</p>
-              <h2 className="section-title" id="gallery-heading">
+              <h2 className="section-title" id="craftsmanship-heading">
                 Craftsmanship in the Details
               </h2>
-              <p className="section-sub" style={{ marginBottom: 0 }}>
+              <p className="section-sub">
                 The quality of a home is often found in the details most people
                 do not notice at first glance: the alignment of materials, the
                 proportion of the rooflines, the durability of the exterior
@@ -347,74 +346,130 @@ export default function HomePage() {
               />
             </div>
           </div>
+        </section>
 
-          {/* Gallery grid — 6 detail images below the split header */}
-          <div className="gallery-grid" role="list" aria-label="Detail showcase">
-            <div className="gallery-item gallery-large" role="listitem">
-              <Image
-                src="/Front%20Elevation%20Left%20Angle%203d%20Rendering%20Square%20Mountains.png"
-                alt="The Powder Chalet — front view at sunset with mountain backdrop in Driggs, Idaho"
-                width={900}
-                height={600}
-                className="gallery-img"
-                loading="lazy"
-              />
-              <div className="gallery-caption">Sited for the mountains it sits beneath</div>
+        {/* PROPERTY GALLERY — dedicated editorial showcase; nav "Gallery" link targets this section */}
+        <section
+          className="property-gallery"
+          id="gallery"
+          aria-labelledby="property-gallery-heading"
+          style={anchorOffset}
+        >
+          <div className="property-gallery-inner">
+            <div className="property-gallery-header">
+              <p className="section-eyebrow">Featured Property</p>
+              <h2 className="section-title" id="property-gallery-heading">
+                The Powder Chalet, In Detail
+              </h2>
+              <p className="section-sub">
+                A closer look at the details of our current featured mountain
+                home &mdash; from thoughtful siting and material alignment to
+                outdoor living designed for four-season use in Teton Valley.
+              </p>
             </div>
-            <div className="gallery-item" role="listitem">
-              <Image
-                src="/Front%20Elevation%20Right%20Angle%203d%20Rendering%20Rectangle.png"
-                alt="The Powder Chalet — right angle view showing material alignment of wood and stone"
-                width={600}
-                height={400}
-                className="gallery-img"
-                loading="lazy"
-              />
-              <div className="gallery-caption">Material alignment &amp; warm finishes</div>
-            </div>
-            <div className="gallery-item" role="listitem">
-              <Image
-                src="/Left%20Elevation%203d%20Rendering%20Square.png"
-                alt="The Powder Chalet — side elevation showing roofline proportion and envelope detail"
-                width={600}
-                height={400}
-                className="gallery-img"
-                loading="lazy"
-              />
-              <div className="gallery-caption">Roofline proportion &amp; envelope detail</div>
-            </div>
-            <div className="gallery-item" role="listitem">
-              <Image
-                src="/Front%20Elevation%20Left%20Angle%203d%20Rendering%20Square.png"
-                alt="The Powder Chalet — left angle daytime view showing mountain-ready exterior"
-                width={600}
-                height={400}
-                className="gallery-img"
-                loading="lazy"
-              />
-              <div className="gallery-caption">Durable, mountain-ready exteriors</div>
-            </div>
-            <div className="gallery-item" role="listitem">
-              <Image
-                src="/Front%20Elevation%203d%20Rendering%20Square.png"
-                alt="The Powder Chalet — straight-on front elevation showing wood, stone, and dark modern finishes"
-                width={600}
-                height={400}
-                className="gallery-img"
-                loading="lazy"
-              />
-              <div className="gallery-caption">Wood, stone &amp; dark modern finishes</div>
-            </div>
-            <div className="gallery-item gallery-wide" role="listitem">
-              <Image
-                src="/Left%20Rear%20Elevation%203d%20Rendering%20Square.png"
-                alt="The Powder Chalet — rear view showing covered patio, outdoor dining, and hot tub designed for four-season mountain use"
-                width={900}
-                height={400}
-                className="gallery-img"
-                loading="lazy"
-              />
-              <div className="gallery-caption">Outdoor living, designed for four-season use</div>
+
+            <div className="property-gallery-grid" role="list" aria-label="The Powder Chalet detail gallery">
+              <div className="property-gallery-item" role="listitem">
+                <div className="property-gallery-img-wrap">
+                  <Image
+                    src="/Front%20Elevation%20Left%20Angle%203d%20Rendering%20Square%20Mountains.png"
+                    alt="The Powder Chalet at sunset with a mountain backdrop in Driggs, Idaho"
+                    width={900}
+                    height={675}
+                    className="property-gallery-img"
+                    loading="lazy"
+                  />
+                </div>
+                <p className="property-gallery-caption">
+                  <span className="property-gallery-caption-num">01</span>
+                  <span className="property-gallery-caption-text">Sited for the mountains it sits beneath</span>
+                </p>
+              </div>
+
+              <div className="property-gallery-item" role="listitem">
+                <div className="property-gallery-img-wrap">
+                  <Image
+                    src="/Front%20Elevation%20Right%20Angle%203d%20Rendering%20Rectangle.png"
+                    alt="The Powder Chalet — right-angle view showing the alignment of wood siding and stone base"
+                    width={900}
+                    height={675}
+                    className="property-gallery-img"
+                    loading="lazy"
+                  />
+                </div>
+                <p className="property-gallery-caption">
+                  <span className="property-gallery-caption-num">02</span>
+                  <span className="property-gallery-caption-text">Material alignment &amp; warm finishes</span>
+                </p>
+              </div>
+
+              <div className="property-gallery-item" role="listitem">
+                <div className="property-gallery-img-wrap">
+                  <Image
+                    src="/Left%20Elevation%203d%20Rendering%20Square.png"
+                    alt="The Powder Chalet — side elevation showing roofline proportion and envelope detail"
+                    width={900}
+                    height={675}
+                    className="property-gallery-img"
+                    loading="lazy"
+                  />
+                </div>
+                <p className="property-gallery-caption">
+                  <span className="property-gallery-caption-num">03</span>
+                  <span className="property-gallery-caption-text">Roofline proportion &amp; envelope detail</span>
+                </p>
+              </div>
+
+              <div className="property-gallery-item" role="listitem">
+                <div className="property-gallery-img-wrap">
+                  <Image
+                    src="/Front%20Elevation%20Left%20Angle%203d%20Rendering%20Square.png"
+                    alt="The Powder Chalet — left-angle daytime view showing the mountain-ready exterior"
+                    width={900}
+                    height={675}
+                    className="property-gallery-img"
+                    loading="lazy"
+                  />
+                </div>
+                <p className="property-gallery-caption">
+                  <span className="property-gallery-caption-num">04</span>
+                  <span className="property-gallery-caption-text">Durable, mountain-ready exteriors</span>
+                </p>
+              </div>
+
+              <div className="property-gallery-item" role="listitem">
+                <div className="property-gallery-img-wrap">
+                  <Image
+                    src="/Front%20Elevation%203d%20Rendering%20Square.png"
+                    alt="The Powder Chalet — front elevation showing wood, stone, and dark modern finishes"
+                    width={900}
+                    height={675}
+                    className="property-gallery-img"
+                    loading="lazy"
+                  />
+                </div>
+                <p className="property-gallery-caption">
+                  <span className="property-gallery-caption-num">05</span>
+                  <span className="property-gallery-caption-text">Wood, stone &amp; dark modern finishes</span>
+                </p>
+              </div>
+
+              <div className="property-gallery-item" role="listitem">
+                <div className="property-gallery-img-wrap">
+                  <Image
+                    src="/Left%20Rear%20Elevation%203d%20Rendering%20Square.png"
+                    alt="The Powder Chalet — rear view showing covered patio, outdoor dining, and hot tub designed for four-season mountain use"
+                    width={900}
+                    height={675}
+                    className="property-gallery-img"
+                    loading="lazy"
+                  />
+                </div>
+                <p className="property-gallery-caption">
+                  <span className="property-gallery-caption-num">06</span>
+                  <span className="property-gallery-caption-text">Outdoor living, designed for four-season use</span>
+                </p>
+              </div>
             </div>
           </div>
         </section>

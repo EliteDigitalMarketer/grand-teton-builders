@@ -461,7 +461,7 @@ section { padding: 96px 5vw; }
 }
 .featured-home .btn-outline:hover { border-color: var(--brass); color: var(--brass); }
 
-/* GALLERY — now light (snowfield); text/section overrides removed so defaults (charcoal title, text-mid sub) apply */
+/* GALLERY — legacy asymmetric grid; kept for backward compatibility but no longer used on homepage. The new dedicated section is .property-gallery below. */
 .gallery-section { background: var(--snowfield); padding: 96px 5vw; }
 .gallery-section .section-sub { margin-bottom: 48px; }
 
@@ -490,6 +490,82 @@ section { padding: 96px 5vw; }
   padding: 32px 16px 14px; transform: translateY(4px); transition: transform 0.3s;
 }
 .gallery-item:hover .gallery-caption { transform: translateY(0); }
+
+/* ===================================================================
+   PROPERTY GALLERY — dedicated showcase section
+   Clean editorial 3-column grid; uniform 4:3 aspect on every image;
+   numbered brass-serif captions below each tile (magazine style);
+   subtle hover zoom + brightness lift.
+   =================================================================== */
+.property-gallery { background: var(--snowfield); }
+.property-gallery-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.property-gallery-header {
+  max-width: 720px;
+  margin-bottom: 56px;
+}
+.property-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+.property-gallery-item {
+  display: flex;
+  flex-direction: column;
+}
+.property-gallery-img-wrap {
+  overflow: hidden;
+  background: var(--charcoal);
+}
+.property-gallery-img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+  filter: sepia(6%) contrast(1.04) brightness(0.98);
+  transition: transform 0.6s cubic-bezier(0.2, 0.7, 0.2, 1), filter 0.4s ease;
+}
+.property-gallery-item:hover .property-gallery-img {
+  transform: scale(1.04);
+  filter: sepia(3%) contrast(1.06) brightness(1.03);
+}
+.property-gallery-caption {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-mid);
+  margin-top: 18px;
+  padding: 0 2px;
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+}
+.property-gallery-caption-num {
+  font-family: var(--font-gfs-didot);
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--brass);
+  letter-spacing: 0;
+  line-height: 1;
+  flex-shrink: 0;
+}
+.property-gallery-caption-text {
+  line-height: 1.6;
+}
+
+@media (max-width: 1024px) {
+  .property-gallery-grid { gap: 24px; }
+}
+@media (max-width: 900px) {
+  .property-gallery-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+}
+@media (max-width: 640px) {
+  .property-gallery-grid { grid-template-columns: 1fr; gap: 24px; }
+  .property-gallery-header { margin-bottom: 40px; }
+}
 
 /* BUILD PROGRESS */
 .progress-section { background: var(--snowfield); }

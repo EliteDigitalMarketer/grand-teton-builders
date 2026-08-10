@@ -367,11 +367,17 @@ export default function HomePage() {
               <h2 className="section-title" id="property-gallery-heading">
                 The Powder Chalet, In Detail
               </h2>
-              <p className="section-sub">
+              <p className="section-sub" style={{ marginBottom: 28 }}>
                 A closer look at the details of our current featured mountain
                 home &mdash; from thoughtful siting and material alignment to
                 outdoor living designed for four-season use in Teton Valley.
               </p>
+              <Link
+                href="/new-construction-home-for-sale-driggs-idaho"
+                className="btn-primary"
+              >
+                View Home
+              </Link>
             </div>
 
             <div className="property-gallery-grid" role="list" aria-label="The Powder Chalet detail gallery">

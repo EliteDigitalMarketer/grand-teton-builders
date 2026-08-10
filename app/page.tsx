@@ -74,6 +74,10 @@ const websiteSchema = {
 // Offsets the scroll position when navigating to an anchor so the fixed nav doesn't overlap the section heading.
 const anchorOffset = { scrollMarginTop: 96 }
 
+// Shared sizes attribute for property-gallery images. Matches the responsive grid:
+// 3 cols above 900px (~33vw), 2 cols 640–900px (~50vw), 1 col below 640px (100vw).
+const galleryImageSizes = '(max-width: 640px) 100vw, (max-width: 900px) 50vw, 33vw'
+
 export default function HomePage() {
   return (
     <>
@@ -348,7 +352,9 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* PROPERTY GALLERY — dedicated editorial showcase; nav "Gallery" link targets this section */}
+        {/* PROPERTY GALLERY — dedicated editorial showcase. Uses Next.js `fill` prop
+            on Image so the wrapper's aspect-ratio 4:3 controls sizing, not the
+            image's intrinsic dimensions. */}
         <section
           className="property-gallery"
           id="gallery"
@@ -374,8 +380,8 @@ export default function HomePage() {
                   <Image
                     src="/Front%20Elevation%20Left%20Angle%203d%20Rendering%20Square%20Mountains.png"
                     alt="The Powder Chalet at sunset with a mountain backdrop in Driggs, Idaho"
-                    width={900}
-                    height={675}
+                    fill
+                    sizes={galleryImageSizes}
                     className="property-gallery-img"
                     loading="lazy"
                   />
@@ -391,8 +397,8 @@ export default function HomePage() {
                   <Image
                     src="/Front%20Elevation%20Right%20Angle%203d%20Rendering%20Rectangle.png"
                     alt="The Powder Chalet — right-angle view showing the alignment of wood siding and stone base"
-                    width={900}
-                    height={675}
+                    fill
+                    sizes={galleryImageSizes}
                     className="property-gallery-img"
                     loading="lazy"
                   />
@@ -408,8 +414,8 @@ export default function HomePage() {
                   <Image
                     src="/Left%20Elevation%203d%20Rendering%20Square.png"
                     alt="The Powder Chalet — side elevation showing roofline proportion and envelope detail"
-                    width={900}
-                    height={675}
+                    fill
+                    sizes={galleryImageSizes}
                     className="property-gallery-img"
                     loading="lazy"
                   />
@@ -423,10 +429,10 @@ export default function HomePage() {
               <div className="property-gallery-item" role="listitem">
                 <div className="property-gallery-img-wrap">
                   <Image
-                    src="/Front%20Elevation%20Left%20Angle%203d%20Rendering%20Square.png"
-                    alt="The Powder Chalet — left-angle daytime view showing the mountain-ready exterior"
-                    width={900}
-                    height={675}
+                    src="/Front%20Elevation%203d%20Rendering%20Rectangle.png"
+                    alt="The Powder Chalet — front elevation rendering showing the mountain-ready exterior"
+                    fill
+                    sizes={galleryImageSizes}
                     className="property-gallery-img"
                     loading="lazy"
                   />
@@ -442,8 +448,8 @@ export default function HomePage() {
                   <Image
                     src="/Front%20Elevation%203d%20Rendering%20Square.png"
                     alt="The Powder Chalet — front elevation showing wood, stone, and dark modern finishes"
-                    width={900}
-                    height={675}
+                    fill
+                    sizes={galleryImageSizes}
                     className="property-gallery-img"
                     loading="lazy"
                   />
@@ -459,8 +465,8 @@ export default function HomePage() {
                   <Image
                     src="/Left%20Rear%20Elevation%203d%20Rendering%20Square.png"
                     alt="The Powder Chalet — rear view showing covered patio, outdoor dining, and hot tub designed for four-season mountain use"
-                    width={900}
-                    height={675}
+                    fill
+                    sizes={galleryImageSizes}
                     className="property-gallery-img"
                     loading="lazy"
                   />

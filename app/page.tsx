@@ -602,8 +602,8 @@ export default function HomePage() {
               }}
             >
               <Image
-                src="/6-high-desert-vista/04-front-exterior-aerial-desert-modern-home-mountain-backdrop.jpg"
-                alt="6 High Desert Vista — aerial view of the new Contemporary Pueblo home in Santa Fe with mountain backdrop"
+                src="/6-high-desert-vista/6%20High%20Desert%20Vista%20-%20Santa%20Fe%20NM%20-%2035.webp"
+                alt="6 High Desert Vista — elevated aerial view of the completed Contemporary Pueblo home in Santa Fe nestled in the high desert landscape"
                 width={1600}
                 height={1067}
                 style={{ width: '100%', height: 280, objectFit: 'cover', display: 'block' }}
@@ -753,8 +753,8 @@ export default function HomePage() {
                 <p className="contact-highlight-title">Current Homes</p>
                 <p className="contact-highlight-body">
                   The Powder Chalet (Driggs, ID) is in pre-construction.
-                  6 High Desert Vista (Santa Fe, NM) is for sale at $1,400,000
-                  with staging in early July. Reach out to inquire about either
+                  6 High Desert Vista (Santa Fe, NM) is for sale at $1,400,000,
+                  complete and fully staged. Reach out to inquire about either
                   home or to schedule a private conversation.
                 </p>
               </div>

@@ -8,9 +8,9 @@ import SchemaOrg from '@/components/SchemaOrg'
 const PHOTOS_DIR = '/6-high-desert-vista'
 const PHOTOS_DIR_ABS = 'https://grand-teton-builders.vercel.app/6-high-desert-vista'
 
-const HERO_IMAGE = `${PHOTOS_DIR}/06-front-exterior-aerial-modern-desert-home-sunset-light.jpg`
-const HERO_IMAGE_ABS = `${PHOTOS_DIR_ABS}/06-front-exterior-aerial-modern-desert-home-sunset-light.jpg`
-const SIDEBAR_IMAGE = `${PHOTOS_DIR}/04-front-exterior-aerial-desert-modern-home-mountain-backdrop.jpg`
+const HERO_IMAGE = `${PHOTOS_DIR}/6%20High%20Desert%20Vista%20-%20Santa%20Fe%20NM%20-%2041.webp`
+const HERO_IMAGE_ABS = `${PHOTOS_DIR_ABS}/6%20High%20Desert%20Vista%20-%20Santa%20Fe%20NM%20-%2041.webp`
+const SIDEBAR_IMAGE = `${PHOTOS_DIR}/6%20High%20Desert%20Vista%20-%20Santa%20Fe%20NM%20-%2035.webp`
 
 export const metadata: Metadata = {
   title: '6 High Desert Vista | New Contemporary Santa Fe Home for Sale',
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
         url: HERO_IMAGE_ABS,
         width: 1600,
         height: 1067,
-        alt: '6 High Desert Vista — sunset aerial of the new Contemporary Pueblo home in Santa Fe',
+        alt: '6 High Desert Vista — twilight aerial of the completed Contemporary Pueblo home in Santa Fe',
       },
     ],
   },
@@ -47,11 +47,11 @@ const propertySchema = {
   description:
     '6 High Desert Vista is a new Contemporary Pueblo home developed by Grand Teton Builders in partnership with HiLow Builders. The home features 2,495 sq ft of single-level finished living on a 2.7-acre lot in the gated Longview community, with 3 bedrooms, 3 bathrooms (2 full, 1 half), an open-concept floor plan, chef-grade kitchen with ENERGY STAR appliances, gas fireplace, concrete flooring, exposed beams, spa-inspired primary suite, attached 3-car garage, and panoramic high desert views.',
   image: [
-    `${PHOTOS_DIR_ABS}/06-front-exterior-aerial-modern-desert-home-sunset-light.jpg`,
-    `${PHOTOS_DIR_ABS}/04-front-exterior-aerial-desert-modern-home-mountain-backdrop.jpg`,
-    `${PHOTOS_DIR_ABS}/02-rear-exterior-aerial-desert-modern-home-mountain-views.jpg`,
-    `${PHOTOS_DIR_ABS}/15-open-concept-great-room-with-beams-and-fireplace.jpg`,
-    `${PHOTOS_DIR_ABS}/16-great-room-facing-covered-patio-and-mountain-views.jpg`,
+    `${PHOTOS_DIR_ABS}/6%20High%20Desert%20Vista%20-%20Santa%20Fe%20NM%20-%2041.webp`,
+    `${PHOTOS_DIR_ABS}/6%20High%20Desert%20Vista%20-%20Santa%20Fe%20NM%20-%2035.webp`,
+    `${PHOTOS_DIR_ABS}/6%20High%20Desert%20Vista%20-%20Santa%20Fe%20NM%20-%2027.webp`,
+    `${PHOTOS_DIR_ABS}/6%20High%20Desert%20Vista%20-%20Santa%20Fe%20NM%20-%2003.webp`,
+    `${PHOTOS_DIR_ABS}/6%20High%20Desert%20Vista%20-%20Santa%20Fe%20NM%20-%2034.webp`,
   ],
   address: {
     '@type': 'PostalAddress',
@@ -161,11 +161,11 @@ const breadcrumbSchema = {
 const faqs = [
   {
     q: 'Is 6 High Desert Vista currently for sale?',
-    a: 'Yes. 6 High Desert Vista is currently listed for sale at $1,400,000. The home is substantially complete, with staging scheduled for early July. Contact Grand Teton Builders to schedule a private showing or request additional information.',
+    a: 'Yes. 6 High Desert Vista is currently listed for sale at $1,400,000. The home is complete and fully staged. Contact Grand Teton Builders to schedule a private showing or request additional information.',
   },
   {
     q: 'Who built 6 High Desert Vista?',
-    a: '6 High Desert Vista was developed by Grand Teton Builders in partnership with HiLow Builders, a Santa Fe-based builder with deep familiarity with the regional design vernacular and local construction practices. The collaboration brought together Grand Teton Builders\u2019 standards for thoughtful design, durable construction, and refined craftsmanship with HiLow Builders\u2019 Santa Fe expertise.',
+    a: '6 High Desert Vista was developed by Grand Teton Builders in partnership with HiLow Builders, a Santa Fe-based builder with deep familiarity with the regional design vernacular and local construction practices. The collaboration brought together Grand Teton Builders’ standards for thoughtful design, durable construction, and refined craftsmanship with HiLow Builders’ Santa Fe expertise.',
   },
   {
     q: 'How big is the home and what is the floor plan?',
@@ -173,7 +173,7 @@ const faqs = [
   },
   {
     q: 'What architectural style is the home?',
-    a: '6 High Desert Vista is designed in a Contemporary Pueblo style, combining clean modern architecture with the heritage of Southwestern design. The home features a flat membrane roof, exposed beams, concrete flooring throughout, and high ceilings \u2014 finishes that align with both the Santa Fe vernacular and contemporary luxury construction.',
+    a: '6 High Desert Vista is designed in a Contemporary Pueblo style, combining clean modern architecture with the heritage of Southwestern design. The home features a flat membrane roof, exposed beams, concrete flooring throughout, and high ceilings — finishes that align with both the Santa Fe vernacular and contemporary luxury construction.',
   },
   {
     q: 'What are the heating, cooling, and utility systems?',
@@ -193,7 +193,7 @@ const faqs = [
   },
   {
     q: 'Does Grand Teton Builders build outside of Idaho?',
-    a: 'Yes. Grand Teton Builders develops the majority of our homes in Driggs and the Teton Valley in Idaho. 6 High Desert Vista in Santa Fe was developed in partnership with Santa Fe-based HiLow Builders \u2014 a collaboration that brought Grand Teton Builders\u2019 standards for thoughtful design, durable construction, and refined craftsmanship to a new market and a new architectural style.',
+    a: 'Yes. Grand Teton Builders develops the majority of our homes in Driggs and the Teton Valley in Idaho. 6 High Desert Vista in Santa Fe was developed in partnership with Santa Fe-based HiLow Builders — a collaboration that brought Grand Teton Builders’ standards for thoughtful design, durable construction, and refined craftsmanship to a new market and a new architectural style.',
   },
 ]
 
@@ -223,7 +223,7 @@ const specs = [
   { label: 'Garage', value: '3-car attached (6 total spaces)' },
   { label: 'Year Built', value: '2026' },
   { label: 'Builders', value: 'Grand Teton Builders & HiLow Builders' },
-  { label: 'Status', value: 'For Sale — Substantially Complete' },
+  { label: 'Status', value: 'For Sale — Complete & Staged' },
   { label: 'Price', value: '$1,400,000' },
   { label: 'HOA', value: '$450 / quarter (~$150 / mo)' },
   { label: 'Parcel Number', value: '099305643' },
@@ -284,87 +284,132 @@ const constructionSystems = [
   },
 ]
 
-// 16 photos — full aerial sequence + interiors, ordered as a visual property tour
+// 25 photos — full property tour, ordered from exterior aerials through interiors
 const photos = [
   {
-    src: `${PHOTOS_DIR}/04-front-exterior-aerial-desert-modern-home-mountain-backdrop.jpg`,
+    src: `${PHOTOS_DIR}/6%20High%20Desert%20Vista%20-%20Santa%20Fe%20NM%20-%2041.webp`,
+    alt: '6 High Desert Vista — twilight aerial of the completed Contemporary Pueblo home with mountain views',
+    caption: 'Twilight Aerial',
+  },
+  {
+    src: `${PHOTOS_DIR}/6%20High%20Desert%20Vista%20-%20Santa%20Fe%20NM%20-%2052.webp`,
+    alt: '6 High Desert Vista — exterior view at dusk with dramatic desert sky',
+    caption: 'Dusk & Desert Sky',
+  },
+  {
+    src: `${PHOTOS_DIR}/6%20High%20Desert%20Vista%20-%20Santa%20Fe%20NM%20-%2035.webp`,
+    alt: '6 High Desert Vista — elevated aerial view of the home nestled in the high desert valley',
+    caption: 'Elevated Aerial, Valley Views',
+  },
+  {
+    src: `${PHOTOS_DIR}/6%20High%20Desert%20Vista%20-%20Santa%20Fe%20NM%20-%2022.webp`,
     alt: '6 High Desert Vista — front exterior aerial with mountain backdrop in Santa Fe',
-    caption: 'Front with mountain backdrop',
+    caption: 'Front With Mountain Backdrop',
   },
   {
-    src: `${PHOTOS_DIR}/06-front-exterior-aerial-modern-desert-home-sunset-light.jpg`,
-    alt: '6 High Desert Vista — front exterior aerial in golden sunset light',
-    caption: 'Golden hour',
+    src: `${PHOTOS_DIR}/6%20High%20Desert%20Vista%20-%20Santa%20Fe%20NM%20-%2048.webp`,
+    alt: '6 High Desert Vista — aerial panoramic of the property with long valley and mountain views',
+    caption: 'Panoramic High Desert Views',
   },
   {
-    src: `${PHOTOS_DIR}/08-front-exterior-straight-on-aerial-modern-desert-home.jpg`,
-    alt: '6 High Desert Vista — straight-on aerial of the front exterior',
-    caption: 'Straight-on aerial',
+    src: `${PHOTOS_DIR}/6%20High%20Desert%20Vista%20-%20Santa%20Fe%20NM%20-%2051.webp`,
+    alt: '6 High Desert Vista — modern Contemporary Pueblo exterior architecture and entry walkway',
+    caption: 'Modern Pueblo Architecture',
   },
   {
-    src: `${PHOTOS_DIR}/07-front-exterior-oblique-aerial-modern-desert-home.jpg`,
-    alt: '6 High Desert Vista — oblique aerial view of the front exterior',
-    caption: 'Oblique aerial',
+    src: `${PHOTOS_DIR}/6%20High%20Desert%20Vista%20-%20Santa%20Fe%20NM%20-%2001.webp`,
+    alt: '6 High Desert Vista — covered front entry courtyard at the Contemporary Pueblo home',
+    caption: 'Covered Front Entry',
   },
   {
-    src: `${PHOTOS_DIR}/09-front-exterior-right-angle-aerial-modern-desert-home.jpg`,
-    alt: '6 High Desert Vista — right-angle aerial showing the garage and entry',
-    caption: 'Right-angle aerial',
+    src: `${PHOTOS_DIR}/6%20High%20Desert%20Vista%20-%20Santa%20Fe%20NM%20-%2034.webp`,
+    alt: '6 High Desert Vista — covered patio with outdoor living furniture and mountain views',
+    caption: 'Covered Patio & Outdoor Living',
   },
   {
-    src: `${PHOTOS_DIR}/12-front-exterior-overhead-aerial-modern-desert-home.jpg`,
-    alt: '6 High Desert Vista — overhead aerial showing the home and site plan',
-    caption: 'Overhead aerial',
+    src: `${PHOTOS_DIR}/6%20High%20Desert%20Vista%20-%20Santa%20Fe%20NM%20-%2010.webp`,
+    alt: '6 High Desert Vista — covered patio seating at dusk with mountain views',
+    caption: 'Patio Seating at Dusk',
   },
   {
-    src: `${PHOTOS_DIR}/10-side-exterior-aerial-modern-desert-home-views.jpg`,
-    alt: '6 High Desert Vista — side exterior aerial showing the mountain landscape',
-    caption: 'Side elevation',
+    src: `${PHOTOS_DIR}/6%20High%20Desert%20Vista%20-%20Santa%20Fe%20NM%20-%2027.webp`,
+    alt: '6 High Desert Vista — open-concept great room with gas fireplace and vaulted beamed ceiling',
+    caption: 'Great Room With Fireplace',
   },
   {
-    src: `${PHOTOS_DIR}/02-rear-exterior-aerial-desert-modern-home-mountain-views.jpg`,
-    alt: '6 High Desert Vista — rear exterior aerial with mountain views',
-    caption: 'Rear with mountain views',
+    src: `${PHOTOS_DIR}/6%20High%20Desert%20Vista%20-%20Santa%20Fe%20NM%20-%2016.webp`,
+    alt: '6 High Desert Vista — living room with fireplace, sofa, and console',
+    caption: 'Living Room',
   },
   {
-    src: `${PHOTOS_DIR}/05-rear-exterior-aerial-desert-modern-home-wide-valley-views.jpg`,
-    alt: '6 High Desert Vista — rear exterior aerial with wide valley views',
-    caption: 'Wide valley panorama',
+    src: `${PHOTOS_DIR}/6%20High%20Desert%20Vista%20-%20Santa%20Fe%20NM%20-%2014.webp`,
+    alt: '6 High Desert Vista — open-concept kitchen, dining, and living space viewed from the entry',
+    caption: 'Open-Concept Living',
   },
   {
-    src: `${PHOTOS_DIR}/03-elevated-aerial-rooftop-and-valley-mountain-views.jpg`,
-    alt: '6 High Desert Vista — elevated aerial showing rooftop and valley mountain views at dusk',
-    caption: 'Rooftop & valley views',
+    src: `${PHOTOS_DIR}/6%20High%20Desert%20Vista%20-%20Santa%20Fe%20NM%20-%2003.webp`,
+    alt: '6 High Desert Vista — kitchen island with wood cabinetry and adjacent dining area',
+    caption: 'Kitchen & Dining',
   },
   {
-    src: `${PHOTOS_DIR}/11-covered-front-entry-modern-desert-home.jpg`,
-    alt: '6 High Desert Vista — covered front entry detail at the Contemporary Pueblo home',
-    caption: 'Covered front entry',
+    src: `${PHOTOS_DIR}/6%20High%20Desert%20Vista%20-%20Santa%20Fe%20NM%20-%2024.webp`,
+    alt: '6 High Desert Vista — kitchen open to the great room with beamed ceiling and pendant lighting',
+    caption: 'Kitchen Open to Great Room',
   },
   {
-    src: `${PHOTOS_DIR}/14-entry-foyer-with-beamed-ceiling-and-tile-floors.jpg`,
-    alt: '6 High Desert Vista — entry foyer with beamed ceiling and tile floors',
-    caption: 'Entry foyer with beams',
+    src: `${PHOTOS_DIR}/6%20High%20Desert%20Vista%20-%20Santa%20Fe%20NM%20-%2038.webp`,
+    alt: '6 High Desert Vista — dining room table by a window framing mountain views',
+    caption: 'Dining With a View',
   },
   {
-    src: `${PHOTOS_DIR}/15-open-concept-great-room-with-beams-and-fireplace.jpg`,
-    alt: '6 High Desert Vista — open-concept great room with exposed beams and gas fireplace',
-    caption: 'Great room with beams & fireplace',
+    src: `${PHOTOS_DIR}/6%20High%20Desert%20Vista%20-%20Santa%20Fe%20NM%20-%2025.webp`,
+    alt: '6 High Desert Vista — primary bedroom styled with warm mountain tones',
+    caption: 'Primary Bedroom',
   },
   {
-    src: `${PHOTOS_DIR}/16-great-room-facing-covered-patio-and-mountain-views.jpg`,
-    alt: '6 High Desert Vista — great room facing covered patio and mountain views',
-    caption: 'Great room to outdoor patio',
+    src: `${PHOTOS_DIR}/6%20High%20Desert%20Vista%20-%20Santa%20Fe%20NM%20-%2045.webp`,
+    alt: '6 High Desert Vista — guest bedroom with corner windows and mountain views',
+    caption: 'Guest Bedroom',
   },
   {
-    src: `${PHOTOS_DIR}/17-open-living-and-kitchen-space-new-construction-home.jpg`,
-    alt: '6 High Desert Vista — open living and kitchen space in the new construction home',
-    caption: 'Open living & kitchen',
+    src: `${PHOTOS_DIR}/6%20High%20Desert%20Vista%20-%20Santa%20Fe%20NM%20-%2058.webp`,
+    alt: '6 High Desert Vista — second guest bedroom with modern decor',
+    caption: 'Second Guest Bedroom',
   },
   {
-    src: `${PHOTOS_DIR}/13-bedroom-with-large-picture-windows-and-tile-floor.jpg`,
-    alt: '6 High Desert Vista — bedroom with large picture windows framing high desert views',
-    caption: 'Bedroom with picture windows',
+    src: `${PHOTOS_DIR}/6%20High%20Desert%20Vista%20-%20Santa%20Fe%20NM%20-%2029.webp`,
+    alt: '6 High Desert Vista — primary bath with freestanding soaking tub and glass shower',
+    caption: 'Primary Bath',
+  },
+  {
+    src: `${PHOTOS_DIR}/6%20High%20Desert%20Vista%20-%20Santa%20Fe%20NM%20-%2040.webp`,
+    alt: '6 High Desert Vista — bathroom soaking tub beneath a picture window framing mountain views',
+    caption: 'Soaking Tub With a View',
+  },
+  {
+    src: `${PHOTOS_DIR}/6%20High%20Desert%20Vista%20-%20Santa%20Fe%20NM%20-%2030.webp`,
+    alt: '6 High Desert Vista — bathroom with double vanity and wood cabinetry',
+    caption: 'Bathroom Double Vanity',
+  },
+  {
+    src: `${PHOTOS_DIR}/6%20High%20Desert%20Vista%20-%20Santa%20Fe%20NM%20-%2020.webp`,
+    alt: '6 High Desert Vista — primary walk-in closet with built-in shelving and drawers',
+    caption: 'Primary Walk-In Closet',
+  },
+  {
+    src: `${PHOTOS_DIR}/6%20High%20Desert%20Vista%20-%20Santa%20Fe%20NM%20-%2017.webp`,
+    alt: '6 High Desert Vista — home office nook with desk and mountain view',
+    caption: 'Home Office',
+  },
+  {
+    src: `${PHOTOS_DIR}/6%20High%20Desert%20Vista%20-%20Santa%20Fe%20NM%20-%2013.webp`,
+    alt: '6 High Desert Vista — mudroom and laundry nook with built-in cabinetry',
+    caption: 'Mudroom & Laundry',
+  },
+  {
+    src: `${PHOTOS_DIR}/6%20High%20Desert%20Vista%20-%20Santa%20Fe%20NM%20-%2007.webp`,
+    alt: '6 High Desert Vista — evening sky over the covered patio corner',
+    caption: 'Evening Sky',
   },
 ]
 
@@ -621,7 +666,7 @@ export default function SantaFeHomePage() {
             >
               <Image
                 src={SIDEBAR_IMAGE}
-                alt="6 High Desert Vista — aerial view of the Contemporary Pueblo home with mountain backdrop in Santa Fe"
+                alt="6 High Desert Vista — elevated aerial view of the completed Contemporary Pueblo home nestled in the high desert landscape"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
                 style={{ objectFit: 'cover' }}
@@ -644,9 +689,8 @@ export default function SantaFeHomePage() {
             6 High Desert Vista in Detail
           </h2>
           <p className="section-sub" style={{ color: 'rgba(231,224,210,0.6)' }}>
-            Aerial and interior photography of the new Contemporary Pueblo home
-            at 6 High Desert Vista. Final furnishings and styling to follow
-            staging completion in early July.
+            Aerial and interior photography of the completed, professionally
+            staged Contemporary Pueblo home at 6 High Desert Vista.
           </p>
           <div
             style={{
@@ -987,10 +1031,10 @@ export default function SantaFeHomePage() {
               <div className="contact-highlight">
                 <p className="contact-highlight-title">6 High Desert Vista &mdash; For Sale</p>
                 <p className="contact-highlight-body">
-                  Listed at $1,400,000. The home is substantially complete, with
-                  staging in early July. Developed by Grand Teton Builders in
-                  partnership with HiLow Builders. Qualified buyers are welcome
-                  to request a private showing.
+                  Listed at $1,400,000. The home is complete and fully staged.
+                  Developed by Grand Teton Builders in partnership with HiLow
+                  Builders. Qualified buyers are welcome to request a private
+                  showing.
                 </p>
               </div>
               <div style={{ marginTop: 24 }}>

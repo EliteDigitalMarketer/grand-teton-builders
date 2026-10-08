@@ -20,16 +20,16 @@ export const metadata: Metadata = {
     url: 'https://grand-teton-builders.vercel.app',
     images: [
       {
-        url: '/Front%20Elevation%20Left%20Angle%203d%20Rendering%20Square%20Mountains.png',
-        width: 1240,
-        height: 1240,
+        url: '/powder-chalet-driggs-idaho-home-for-sale-front-porch-stone-accents-rendering-4-3.png',
+        width: 1448,
+        height: 1086,
         alt: 'The Powder Chalet — refined mountain home in Driggs, Idaho by Grand Teton Builders',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    images: ['/Front%20Elevation%20Left%20Angle%203d%20Rendering%20Square%20Mountains.png'],
+    images: ['/powder-chalet-driggs-idaho-home-for-sale-front-porch-stone-accents-rendering-4-3.png'],
   },
 }
 
@@ -41,7 +41,7 @@ const organizationSchema = {
     'Grand Teton Builders develops quality mountain homes with thoughtful design, durable materials, craftsmanship, and attention to detail. Based in Driggs, Idaho and serving Teton Valley.',
   url: 'https://grand-teton-builders.vercel.app',
   logo: 'https://grand-teton-builders.vercel.app/gtb-logo-light.png',
-  image: 'https://grand-teton-builders.vercel.app/Front%20Elevation%20Left%20Angle%203d%20Rendering%20Square%20Mountains.png',
+  image: 'https://grand-teton-builders.vercel.app/powder-chalet-driggs-idaho-home-for-sale-front-porch-stone-accents-rendering-4-3.png',
   telephone: '+1-208-262-3669',
   email: 'Hello@grandtetonbuilders.com',
   foundingDate: '2024',
@@ -167,10 +167,10 @@ export default function HomePage() {
           </p>
           <div className="featured-home-card">
             <Image
-              src="/Front%20Elevation%203d%20Rendering%20Rectangle.png"
+              src="/powder-chalet-driggs-idaho-home-for-sale-front-elevation-rendering-4-3.png"
               alt="The Powder Chalet — front elevation rendering of the new 4-bedroom mountain modern home at 1230 Wind River Trail in Driggs, Idaho by Grand Teton Builders"
-              width={1664}
-              height={934}
+              width={1448}
+              height={1086}
               className="featured-home-img"
               loading="lazy"
             />
@@ -275,8 +275,8 @@ export default function HomePage() {
             {/* Image — left column */}
             <div>
               <Image
-                src="/Front%20Elevation%20Left%20Angle%203d%20Rendering%20Square%20Mountains.png"
-                alt="The Powder Chalet at sunset with the Grand Tetons in the background — refined mountain home in Driggs, Idaho"
+                src="/powder-chalet-driggs-idaho-home-for-sale-front-porch-stone-accents-rendering-4-3.png"
+                alt="The Powder Chalet at sunset — front porch, stone accents, and covered patio of the refined mountain home in Driggs, Idaho"
                 width={900}
                 height={675}
                 className="split-section-img"
@@ -341,7 +341,7 @@ export default function HomePage() {
             {/* Image — right column */}
             <div>
               <Image
-                src="/Front%20Elevation%20Right%20Angle%203d%20Rendering%20Rectangle.png"
+                src="/powder-chalet-driggs-idaho-home-for-sale-front-exterior-garage-rendering-4-3.png"
                 alt="The Powder Chalet — right-angle view showing careful alignment of wood, stone, and dark modern finishes"
                 width={900}
                 height={675}
@@ -384,8 +384,8 @@ export default function HomePage() {
               <div className="property-gallery-item" role="listitem">
                 <div className="property-gallery-img-wrap">
                   <Image
-                    src="/Front%20Elevation%20Left%20Angle%203d%20Rendering%20Square%20Mountains.png"
-                    alt="The Powder Chalet at sunset with a mountain backdrop in Driggs, Idaho"
+                    src="/powder-chalet-driggs-idaho-home-for-sale-front-porch-stone-accents-rendering-4-3.png"
+                    alt="The Powder Chalet at sunset — front porch and stone accents of the mountain modern home in Driggs, Idaho"
                     fill
                     sizes={galleryImageSizes}
                     className="property-gallery-img"
@@ -401,7 +401,7 @@ export default function HomePage() {
               <div className="property-gallery-item" role="listitem">
                 <div className="property-gallery-img-wrap">
                   <Image
-                    src="/Front%20Elevation%20Right%20Angle%203d%20Rendering%20Rectangle.png"
+                    src="/powder-chalet-driggs-idaho-home-for-sale-front-exterior-garage-rendering-4-3.png"
                     alt="The Powder Chalet — right-angle view showing the alignment of wood siding and stone base"
                     fill
                     sizes={galleryImageSizes}
@@ -418,8 +418,8 @@ export default function HomePage() {
               <div className="property-gallery-item" role="listitem">
                 <div className="property-gallery-img-wrap">
                   <Image
-                    src="/Left%20Elevation%203d%20Rendering%20Square.png"
-                    alt="The Powder Chalet — side elevation showing roofline proportion and envelope detail"
+                    src="/powder-chalet-driggs-idaho-home-for-sale-garage-side-exterior-rendering-4-3.png"
+                    alt="The Powder Chalet — garage-side elevation showing roofline proportion and envelope detail"
                     fill
                     sizes={galleryImageSizes}
                     className="property-gallery-img"
@@ -435,8 +435,8 @@ export default function HomePage() {
               <div className="property-gallery-item" role="listitem">
                 <div className="property-gallery-img-wrap">
                   <Image
-                    src="/Front%20Elevation%203d%20Rendering%20Rectangle.png"
-                    alt="The Powder Chalet — front elevation rendering showing the mountain-ready exterior"
+                    src="/powder-chalet-driggs-idaho-home-for-sale-side-exterior-lawn-rendering-4-3.png"
+                    alt="The Powder Chalet — side elevation rendering showing the mountain-ready exterior"
                     fill
                     sizes={galleryImageSizes}
                     className="property-gallery-img"
@@ -452,7 +452,7 @@ export default function HomePage() {
               <div className="property-gallery-item" role="listitem">
                 <div className="property-gallery-img-wrap">
                   <Image
-                    src="/Front%20Elevation%203d%20Rendering%20Square.png"
+                    src="/powder-chalet-driggs-idaho-home-for-sale-front-elevation-rendering-4-3.png"
                     alt="The Powder Chalet — front elevation showing wood, stone, and dark modern finishes"
                     fill
                     sizes={galleryImageSizes}
@@ -469,7 +469,7 @@ export default function HomePage() {
               <div className="property-gallery-item" role="listitem">
                 <div className="property-gallery-img-wrap">
                   <Image
-                    src="/Left%20Rear%20Elevation%203d%20Rendering%20Square.png"
+                    src="/powder-chalet-driggs-idaho-home-for-sale-rear-patio-hot-tub-rendering-4-3.png"
                     alt="The Powder Chalet — rear view showing covered patio, outdoor dining, and hot tub designed for four-season mountain use"
                     fill
                     sizes={galleryImageSizes}
@@ -523,10 +523,10 @@ export default function HomePage() {
               }}
             >
               <Image
-                src="/Front%20Elevation%203d%20Rendering%20Square.png"
+                src="/powder-chalet-driggs-idaho-home-for-sale-front-elevation-rendering-4-3.png"
                 alt="The Powder Chalet — refined 4-bedroom mountain modern home in development at 1230 Wind River Trail in Driggs, Idaho"
-                width={1240}
-                height={1240}
+                width={1448}
+                height={1086}
                 style={{ width: '100%', height: 280, objectFit: 'cover', display: 'block' }}
                 loading="lazy"
               />

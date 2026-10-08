@@ -8,7 +8,7 @@ import SchemaOrg from '@/components/SchemaOrg'
 export const metadata: Metadata = {
   title: 'The Powder Chalet | New 4-Bedroom Mountain Modern Home for Sale in Driggs, Idaho',
   description:
-    'The Powder Chalet at 1230 Wind River Trail — a new 4-bedroom mountain modern home on 0.33 acres in Driggs, Idaho with Teton mountain views, 2,258 sq ft, 2.5 baths, attached 2-car garage, and large patio.',
+    'The Powder Chalet at 1230 Wind River Trail — a new 4-bedroom mountain modern home on 0.33 acres in Driggs, Idaho with Teton mountain views, 2,270 sq ft, 2.5 baths, attached 2-car garage, and large patio.',
   alternates: {
     canonical:
       'https://grand-teton-builders.vercel.app/new-construction-home-for-sale-driggs-idaho',
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'The Powder Chalet | New 4-Bedroom Mountain Modern Home for Sale in Driggs, Idaho',
     description:
-      'The Powder Chalet at 1230 Wind River Trail — a new 4-bedroom mountain modern home on 0.33 acres in Driggs, Idaho with Teton mountain views, 2,258 sq ft, 2.5 baths, attached 2-car garage, and large patio.',
+      'The Powder Chalet at 1230 Wind River Trail — a new 4-bedroom mountain modern home on 0.33 acres in Driggs, Idaho with Teton mountain views, 2,270 sq ft, 2.5 baths, attached 2-car garage, and large patio.',
     url: 'https://grand-teton-builders.vercel.app/new-construction-home-for-sale-driggs-idaho',
     images: [
       {
@@ -39,7 +39,7 @@ const propertyDetails = {
   subdivision: 'Shoshoni Plains',
   status: 'Coming Soon / Pre-Construction',
   style: 'Mountain Modern',
-  sqft: '2,258 sq ft',
+  sqft: '2,270 sq ft',
   bedrooms: '4',
   bathrooms: '2.5',
   garage: '692 sq ft, 2-car attached',
@@ -56,7 +56,7 @@ const propertySchema = {
   name: 'The Powder Chalet — 1230 Wind River Trail, Driggs, Idaho',
   alternateName: 'The Powder Chalet',
   description:
-    'The Powder Chalet is a new 4-bedroom mountain modern home on a 0.33-acre lot in Driggs, Idaho with views of the Tetons and Grand Teton. Features include 2,258 sq ft of single-level living, an open-concept main living area, primary suite, office/flex bedroom, 2.5 bathrooms, attached 2-car garage, and 882 sq ft of patio space. Located in Shoshoni Plains, Teton Valley.',
+    'The Powder Chalet is a new 4-bedroom mountain modern home on a 0.33-acre lot in Driggs, Idaho with views of the Tetons and Grand Teton. Features include 2,270 sq ft of single-level living, an open-concept main living area, primary suite, office/flex bedroom, 2.5 bathrooms, attached 2-car garage, and 882 sq ft of patio space. Located in Shoshoni Plains, Teton Valley.',
   image: [
     'https://grand-teton-builders.vercel.app/powder-chalet-driggs-idaho-home-for-sale-front-porch-stone-accents-rendering-4-3.png',
     'https://grand-teton-builders.vercel.app/powder-chalet-driggs-idaho-home-for-sale-front-elevation-rendering-4-3.png',
@@ -78,7 +78,7 @@ const propertySchema = {
   numberOfPartialBathrooms: 1,
   floorSize: {
     '@type': 'QuantitativeValue',
-    value: 2258,
+    value: 2270,
     unitCode: 'FTK',
   },
   lotSize: {
@@ -143,7 +143,7 @@ const faqSchema = {
       name: 'How big is The Powder Chalet and what is the floor plan?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'The Powder Chalet offers 2,258 sq ft of finished single-level living with 4 bedrooms and 2.5 bathrooms, including an open great room, dining area, kitchen with large island and walk-in pantry, a primary suite with walk-in closet, two additional bedrooms in a separate wing, and a 4th bedroom designed as a flexible office or guest room with closet. The home also includes a 692 sq ft attached 2-car garage and 882 sq ft of concrete patio/deck space. The home sits on a 0.33-acre lot with views of the Tetons and Grand Teton.',
+        text: 'The Powder Chalet offers 2,270 sq ft of finished single-level living with 4 bedrooms and 2.5 bathrooms, including an open great room, dining area, kitchen with large island and walk-in pantry, a primary suite with walk-in closet, two additional bedrooms in a separate wing, and a 4th bedroom designed as a flexible office or guest room with closet. The home also includes a 692 sq ft attached 2-car garage and 882 sq ft of concrete patio/deck space. The home sits on a 0.33-acre lot with views of the Tetons and Grand Teton.',
       },
     },
     {
@@ -197,7 +197,7 @@ const specs = [
   { label: 'Lot Size', value: '0.33 acres' },
   { label: 'Views', value: 'Tetons & Grand Teton' },
   { label: 'Home Style', value: 'Mountain Modern' },
-  { label: 'Finished Living Area', value: '2,258 sq ft' },
+  { label: 'Finished Living Area', value: '2,270 sq ft' },
   { label: 'Bedrooms', value: '4' },
   { label: 'Bathrooms', value: '2.5' },
   { label: 'Layout', value: 'Single-level' },
@@ -210,7 +210,7 @@ const features = [
   'New mountain modern home in Driggs, Idaho',
   'Mountain views of the Tetons and Grand Teton',
   '0.33-acre lot in the Shoshoni Plains subdivision',
-  '2,258 sq ft of finished single-level living',
+  '2,270 sq ft of finished single-level living',
   '4 bedrooms — including a 4th bedroom designed as office/flex room with closet',
   '2.5 bathrooms',
   'Open-concept kitchen, dining, and great room',
@@ -291,7 +291,7 @@ const faqs = [
   },
   {
     q: 'How big is The Powder Chalet and what is the floor plan?',
-    a: 'The Powder Chalet offers 2,258 sq ft of finished single-level living with 4 bedrooms and 2.5 bathrooms, including an open great room, dining area, kitchen with large island and walk-in pantry, a primary suite with walk-in closet, two additional bedrooms in a separate wing, and a 4th bedroom designed as a flexible office or guest room with closet. The home also includes a 692 sq ft attached 2-car garage and 882 sq ft of concrete patio/deck space. The home sits on a 0.33-acre lot with views of the Tetons and Grand Teton.',
+    a: 'The Powder Chalet offers 2,270 sq ft of finished single-level living with 4 bedrooms and 2.5 bathrooms, including an open great room, dining area, kitchen with large island and walk-in pantry, a primary suite with walk-in closet, two additional bedrooms in a separate wing, and a 4th bedroom designed as a flexible office or guest room with closet. The home also includes a 692 sq ft attached 2-car garage and 882 sq ft of concrete patio/deck space. The home sits on a 0.33-acre lot with views of the Tetons and Grand Teton.',
   },
   {
     q: 'Can I select finishes or make changes to the home?',
@@ -338,7 +338,7 @@ export default function DriggsHomePage() {
               in <em>Driggs, Idaho</em>
             </h1>
             <p>
-              A new 4-bedroom mountain modern home with 2,258 sq ft of single-level
+              A new 4-bedroom mountain modern home with 2,270 sq ft of single-level
               living, 2.5 baths, attached 2-car garage, and expansive patio &mdash;
               designed for refined Teton Valley living.
             </p>

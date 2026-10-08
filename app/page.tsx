@@ -182,7 +182,7 @@ export default function HomePage() {
               <h3 className="featured-home-name">The Powder Chalet</h3>
               <p className="featured-home-loc">&#x1F4CD; 1230 Wind River Trail &middot; Shoshoni Plains, Driggs, Idaho</p>
               <p className="featured-home-desc">
-                A 4-bedroom mountain modern home with 2,258 sq ft of single-level
+                A 4-bedroom mountain modern home with 2,270 sq ft of single-level
                 living, an open-concept main living area, primary suite with
                 walk-in closet, office/flex bedroom, attached 2-car garage, and
                 882 sq ft of patio space &mdash; designed for the way people live
@@ -190,7 +190,7 @@ export default function HomePage() {
               </p>
               <div className="featured-home-specs">
                 <div>
-                  <div className="spec-val">2,258</div>
+                  <div className="spec-val">2,270</div>
                   <div className="spec-key">Sq Ft</div>
                 </div>
                 <div>

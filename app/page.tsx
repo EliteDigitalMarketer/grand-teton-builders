@@ -167,10 +167,10 @@ export default function HomePage() {
           </p>
           <div className="featured-home-card">
             <Image
-              src="/powder-chalet-driggs-idaho-home-for-sale-front-elevation-rendering-4-3.png"
+              src="/powder-chalet-driggs-idaho-home-for-sale-front-elevation-rendering-1-1.png"
               alt="The Powder Chalet — front elevation rendering of the new 4-bedroom mountain modern home at 1230 Wind River Trail in Driggs, Idaho by Grand Teton Builders"
-              width={1448}
-              height={1086}
+              width={1254}
+              height={1254}
               className="featured-home-img"
               loading="lazy"
             />
@@ -527,7 +527,7 @@ export default function HomePage() {
                 alt="The Powder Chalet — refined 4-bedroom mountain modern home in development at 1230 Wind River Trail in Driggs, Idaho"
                 width={1448}
                 height={1086}
-                style={{ width: '100%', height: 280, objectFit: 'cover', display: 'block' }}
+                style={{ width: '100%', height: 'auto', aspectRatio: '3 / 2', objectFit: 'cover', display: 'block' }}
                 loading="lazy"
               />
               <div
@@ -606,7 +606,7 @@ export default function HomePage() {
                 alt="6 High Desert Vista — elevated aerial view of the completed Contemporary Pueblo home in Santa Fe nestled in the high desert landscape"
                 width={1600}
                 height={1067}
-                style={{ width: '100%', height: 280, objectFit: 'cover', display: 'block' }}
+                style={{ width: '100%', height: 'auto', aspectRatio: '3 / 2', objectFit: 'cover', display: 'block' }}
                 loading="lazy"
               />
               <div

@@ -327,12 +327,8 @@ export default function DriggsHomePage() {
       <main>
         {/* HERO */}
         <section
-          className="hero"
-          style={{
-            backgroundImage:
-              "linear-gradient(180deg, rgba(31,36,33,0.4) 0%, rgba(31,36,33,0.6) 50%, rgba(31,36,33,0.97) 100%), url('/powder-chalet-driggs-idaho-home-for-sale-front-porch-stone-accents-rendering-wide.png')",
-            paddingTop: 116,
-          }}
+          className="hero hero-chalet"
+          style={{ paddingTop: 116 }}
           aria-label="The Powder Chalet hero"
         >
           <div className="hero-content">

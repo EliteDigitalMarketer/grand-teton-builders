@@ -20,16 +20,16 @@ export const metadata: Metadata = {
     url: 'https://grand-teton-builders.vercel.app/new-construction-home-for-sale-driggs-idaho',
     images: [
       {
-        url: '/powder-chalet-driggs-idaho-home-for-sale-front-porch-stone-accents-rendering-4-3.png',
-        width: 1448,
-        height: 1086,
-        alt: 'The Powder Chalet — new 4-bedroom mountain modern home at 1230 Wind River Trail in Driggs, Idaho',
+        url: '/powder-chalet-driggs-idaho-front-elevation-teton-backdrop-16-9.png',
+        width: 1672,
+        height: 941,
+        alt: 'The Powder Chalet — new 4-bedroom mountain modern home at 1230 Wind River Trail in Driggs, Idaho with the Grand Tetons behind it',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    images: ['/powder-chalet-driggs-idaho-home-for-sale-front-porch-stone-accents-rendering-4-3.png'],
+    images: ['/powder-chalet-driggs-idaho-front-elevation-teton-backdrop-16-9.png'],
   },
 }
 
@@ -58,8 +58,8 @@ const propertySchema = {
   description:
     'The Powder Chalet is a new 4-bedroom mountain modern home on a 0.33-acre lot in Driggs, Idaho with views of the Tetons and Grand Teton. Features include 2,270 sq ft of single-level living, an open-concept main living area, primary suite, office/flex bedroom, 2.5 bathrooms, attached 2-car garage, and 882 sq ft of patio space. Located in Shoshoni Plains, Teton Valley.',
   image: [
+    'https://grand-teton-builders.vercel.app/powder-chalet-driggs-idaho-front-elevation-teton-backdrop-16-9.png',
     'https://grand-teton-builders.vercel.app/powder-chalet-driggs-idaho-home-for-sale-front-porch-stone-accents-rendering-4-3.png',
-    'https://grand-teton-builders.vercel.app/powder-chalet-driggs-idaho-home-for-sale-front-elevation-rendering-4-3.png',
     'https://grand-teton-builders.vercel.app/powder-chalet-driggs-idaho-home-for-sale-front-exterior-garage-rendering-4-3.png',
     'https://grand-teton-builders.vercel.app/powder-chalet-driggs-idaho-home-for-sale-garage-side-exterior-rendering-4-3.png',
     'https://grand-teton-builders.vercel.app/powder-chalet-driggs-idaho-home-for-sale-side-exterior-lawn-rendering-4-3.png',
@@ -226,8 +226,8 @@ const features = [
 
 const renderings = [
   {
-    src: '/powder-chalet-driggs-idaho-home-for-sale-front-elevation-rendering-4-3.png',
-    alt: 'The Powder Chalet — straight-on front elevation rendering showing wood siding, stone accents, and dark modern finishes of the new 4-bedroom home in Driggs Idaho',
+    src: '/powder-chalet-driggs-idaho-front-elevation-teton-backdrop-4-3.png',
+    alt: 'The Powder Chalet — straight-on front elevation rendering at sunset with the Grand Tetons behind the new 4-bedroom home in Driggs Idaho',
     caption: 'Front elevation',
   },
   {
